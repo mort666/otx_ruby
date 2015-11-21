@@ -1,7 +1,7 @@
 module OTX
-  class Subscribed < OTX::Base
+  class Events < OTX::Base
     def get_all(limit=20)
-      uri = '/api/v1/pulses/subscribed'
+      uri = '/api/v1/pulses/events'
       params = {limit: limit}
       pulses = []
       begin
@@ -17,8 +17,8 @@ module OTX
     end
 
     def get_since(timestamp, limit=20)
-      uri = '/api/v1/pulses/subscribed'
-      params = {limit: limit, modified_since: timestamp}
+      uri = '/api/v1/pulses/events'
+      params = {limit: limit, since: timestamp}
       pulses = []
       begin
         json_data = get(uri, params)

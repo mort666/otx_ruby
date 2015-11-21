@@ -1,8 +1,8 @@
 # Open Threat Exchange (OTX) Ruby Wrapper
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/otx_ruby`. To experiment with that code, run `bin/console` for an interactive prompt.
+Open Threat Exchange is an open community that allows participants to learn about the latest threats, research indicators of compromise observed in their environments, share threats they have identified, and automatically update their security infrastructure with the latest indicators to defend their environment.
 
-TODO: Delete this and the text above, and describe your gem
+This gem provides a wrapper for Ruby applications to pull pulses from OTX and be consumed by the ruby application.
 
 ## Installation
 
@@ -22,7 +22,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+  require `otx_ruby`
+
+  api_key = '4xxx........'
+  otx = OTX::Subscribed.new(apikey)
+
+  # Get all subscribed pulses
+  pulses = otx.get_all
+
+```
 
 ## Development
 
@@ -32,4 +41,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/otx_ruby.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mort666/otx_ruby.
