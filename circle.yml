@@ -6,8 +6,8 @@ database:
     - echo 'no database'
 dependencies:
   pre:
-    - gem install package_cloud
     - gem install brakeman
+    - gem install bundler
 test:
   post:
     - brakeman --exit-on-warn -o $CIRCLE_ARTIFACTS/brakeman.html
