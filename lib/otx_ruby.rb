@@ -9,6 +9,9 @@ require "otx_ruby/pulses.rb"
 require "otx_ruby/types/pulse.rb"
 require "otx_ruby/types/indicators.rb"
 
+#
+# Base AlienVault OTX Module
+#
 module OTX
 
 end

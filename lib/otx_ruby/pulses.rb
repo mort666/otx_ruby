@@ -1,4 +1,7 @@
 module OTX
+  #
+  # Retrieve and parse into the appropriate object a pulse from the OTX System
+  #
   class Pulses < OTX::Base
     #
     # Download an individually identified pulse and parse the output

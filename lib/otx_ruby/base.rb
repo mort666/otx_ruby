@@ -39,21 +39,22 @@ module OTX
   end
 end
 
-#
-# Base Class for Returned Data from API
-#
-# Implements two default handlers for created and modified timestamps as DataTime
-# objects
-#
+
 module OTX
+  #
+  # Base Data Types for Returned Data from API
+  #
+  # Implements two default handlers for created and modified timestamps as DataTime
+  # objects
+  #
   module Type
+    #
+    # Base Class for types
+    #
+    # @attr [DateTime] created Date and Time stamp for the creation of the records
+    # @attr [DateTime] modified Date and Time stamp for the last modification of the records
+    #
     class Base
-      #
-      # Base Class for types
-      #
-      # @attr [DateTime] created Date and Time stamp for the creation of the records
-      # @attr [DateTime] modified Date and Time stamp for the last modification of the records
-      #
       attr_writer :modified, :created
 
       def created

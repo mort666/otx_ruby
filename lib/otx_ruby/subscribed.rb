@@ -1,4 +1,9 @@
 module OTX
+  #
+  # Within the OTX system you are able to subscribe to pulses from other users,
+  # this class allows the retreival of the currently subscribed pulse feeds and the
+  # associated pulses
+  #
   class Subscribed < OTX::Base
     #
     # Get all subscribed pulses from the API, get all events in chunks defined by limit

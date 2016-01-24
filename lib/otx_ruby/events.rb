@@ -1,4 +1,9 @@
 module OTX
+  #
+  # Besides receiving the pulse information, it is possible to return details of
+  # events that have occured in the OTX system and affect your account. This class
+  # provides a wrapper around this functionality.
+  #
   class Events < OTX::Base
     #
     # Get all events from the API, get all events in chunks defined by limit
