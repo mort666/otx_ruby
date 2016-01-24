@@ -31,6 +31,23 @@ Or install it yourself as:
   # Get all subscribed pulses
   pulses = otx.get_all
 
+  # Read contents of a single pulse
+  pulse_id = '56xxxx..........'
+  pulses = OTX::Pulses.new(apikey)
+
+  pulse = pulses.get_pulse(pulse_id)
+```
+
+## API Key
+
+Library requires your API key this can be found in your settings page https://otx.alienvault.com/settings
+
+## API Timestamp
+
+The API uses ISO Format timestamps, however there is a quirk, the API seems to use Python style timestamps as a result it is important to ensure that the sent time stamp uses the UTC format when sent
+
+```
+"2010-10-25T23:48:46Z"
 ```
 
 ## Development

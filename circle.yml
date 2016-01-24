@@ -1,0 +1,13 @@
+machine:
+  ruby:
+    version: 2.1.5
+database:
+  override:
+    - echo 'no database'
+dependencies:
+  pre:
+    - gem install package_cloud
+    - gem install brakeman
+test:
+  post:
+    - brakeman --exit-on-warn -o $CIRCLE_ARTIFACTS/brakeman.html
