@@ -59,3 +59,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/mort666/otx_ruby.
+
+## Copyright
+
+Copyright (c) 2015-2016 Stephen Kapp. See LICENSE for details.
