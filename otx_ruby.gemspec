@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{AlienVault OTX Ruby Gem}
   spec.description   = %q{AlienVault Open Threat Exchange Threat Intel feed API Wrapper}
   spec.homepage      = "http://github.com/mort666/otx_ruby"
+  spec.license       = "Apache-2.0"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
