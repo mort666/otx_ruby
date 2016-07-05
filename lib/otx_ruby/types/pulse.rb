@@ -13,10 +13,14 @@ module OTX
   # @attr [Array<OTX::Indicators>] indicators Array of the IoC attached to the OTX pulse
   # @attr [String] tlp Traffic light protocol color as appropriate to U.S. DHS
   # @attr [Boolean] public Privacy setting
+  # @attr [Boolean] in_group
+  # @attr [Boolean] group_id
+  # @attr [Boolean] group_name
   #
   class Pulse < OTX::Type::Base
     attr_accessor :id, :name, :description, :author_name,
-      :tags, :references, :revision, :indicators, :tlp, :public
+      :tags, :references, :revision, :indicators, :tlp, :public, :in_group,
+      :group_id, :group_name
 
     def initialize(attributes={})
       attributes.each do |key, value|
