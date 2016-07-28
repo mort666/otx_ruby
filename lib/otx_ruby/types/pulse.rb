@@ -14,13 +14,14 @@ module OTX
   # @attr [String] tlp Traffic light protocol color as appropriate to U.S. DHS
   # @attr [Boolean] public Privacy setting
   # @attr [Boolean] in_group
-  # @attr [Boolean] group_id
-  # @attr [Boolean] group_name
+  # @attr [String] group_id
+  # @attr [String] group_name
+  # @attr [Array<String>] groups
   #
   class Pulse < OTX::Type::Base
     attr_accessor :id, :name, :description, :author_name,
       :tags, :references, :revision, :indicators, :tlp, :public, :in_group,
-      :group_id, :group_name
+      :group_id, :group_name, :groups
 
     def initialize(attributes={})
       attributes.each do |key, value|
