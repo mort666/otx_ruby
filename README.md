@@ -4,6 +4,9 @@ Open Threat Exchange is an open community that allows participants to learn abou
 
 This gem provides a wrapper for Ruby applications to pull pulses from OTX and be consumed by the ruby application.
 
+## Build Status
+
+[![security](https://hakiri.io/github/mort666/otx_ruby/master.svg)](https://hakiri.io/github/mort666/otx_ruby/master) [![CircleCI](https://circleci.com/gh/mort666/otx_ruby/tree/master.svg?style=svg)](https://circleci.com/gh/mort666/otx_ruby/tree/master)
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -23,7 +26,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-  require `otx_ruby`
+  require 'otx_ruby'
 
   api_key = '4xxx........'
   otx = OTX::Subscribed.new(apikey)
