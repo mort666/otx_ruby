@@ -12,7 +12,6 @@ module OTX
   # @attr [String] is_active value 0 or 1 if active
   # @attr [String] role
   # @attr [String] observations
-  # @attr [String] created Date record was created
   # @attr [String] expiration
   # @attr [Array] access_groups
   # @attr [String] access_reason
@@ -38,6 +37,6 @@ module OTX
   #
   class Indicators < OTX::Type::Base
     attr_accessor :id, :_id, :indicator, :type, :description, :title, :content, :is_active, :access_reason, :access_type, :access_groups,
-    :expiration, :observations, :role, :created
+    :expiration, :observations, :role
   end
 end
