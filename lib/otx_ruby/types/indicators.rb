@@ -2,6 +2,7 @@ module OTX
   #
   # Pulse Indicator of Compromise (IoC) records
   #
+  # @attr [String] id IoC record ID value
   # @attr [String] _id IoC record ID value
   # @attr [String] indicator Value of the indicator type
   # @attr [String] type Type of IoC
@@ -9,6 +10,13 @@ module OTX
   # @attr [String] title
   # @attr [String] content
   # @attr [String] is_active value 0 or 1 if active
+  # @attr [String] role
+  # @attr [String] observations
+  # @attr [String] created Date record was created
+  # @attr [String] expiration
+  # @attr [Array] access_groups
+  # @attr [String] access_reason
+  # @attr [String] access_type
   #
   # Indicator of Compromise types:
   #   IPv4 - An IPv4 address indicating the online location of a server or other computer.
