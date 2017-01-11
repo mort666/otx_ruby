@@ -25,7 +25,7 @@ module OTX
     attr_accessor :id, :name, :description, :author_name,
       :tags, :references, :revision, :indicators, :tlp, :public, :in_group,
       :group_id, :group_name, :groups, :adversary, :targeted_countries,
-      :industries
+      :industries, :modified, :created
 
     def initialize(attributes={})
       attributes.each do |key, value|

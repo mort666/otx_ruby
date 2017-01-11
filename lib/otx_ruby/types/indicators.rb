@@ -8,6 +8,7 @@ module OTX
   # @attr [String] description Description associated with the IoC
   # @attr [String] title
   # @attr [String] content
+  # @attr [String] is_active value 0 or 1 if active
   #
   # Indicator of Compromise types:
   #   IPv4 - An IPv4 address indicating the online location of a server or other computer.
@@ -28,6 +29,7 @@ module OTX
   #   CVE - Common Vulnerability and Exposure (CVE) entry describing a software vulnerability that can be exploited to engage in malicious activity.
   #
   class Indicators < OTX::Type::Base
-    attr_accessor :_id, :indicator, :type, :description, :title, :content
+    attr_accessor :id, :_id, :indicator, :type, :description, :title, :content, :is_active, :access_reason, :access_type, :access_groups,
+    :expiration, :observations, :role, :created
   end
 end
