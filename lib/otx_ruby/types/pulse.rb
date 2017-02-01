@@ -22,7 +22,7 @@ module OTX
   # @attr [Array<String>] industries
   #
   class Pulse < OTX::Type::Base
-    attr_accessor :id, :name, :description, :author_name,
+    attr_accessor :name, :description, :author_name,
       :tags, :references, :revision, :indicators, :tlp, :public, :in_group,
       :group_id, :group_name, :groups, :adversary, :targeted_countries,
       :industries

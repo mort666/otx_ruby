@@ -56,6 +56,7 @@ module OTX
     #
     class Base
       attr_writer :modified, :created
+      attr_accessor :id
 
       def created
         return @created.nil? ? nil : DateTime.parse(@created)

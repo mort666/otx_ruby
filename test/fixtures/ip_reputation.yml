@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/69.73.130.198/reputation
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Allow:
+      - GET, HEAD, OPTIONS
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 01 Feb 2017 01:58:56 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept, Cookie
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '1853'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"reputation":{"as":"11042","threat_score":2,"counts":{"Scanning Host":1,"Malware
+        Domain":10},"first_seen":"2012-09-28T18:37:52","city":null,"allow_ping":"","reputation_rel_checked":1,"lon":-97,"state":-1,"last_seen":"2013-08-22T23:50:46","status":1,"activities":[{"domain":"cronhosting.com","name":"Malware
+        Domain","visible":"1","url":"http://cronhosting.com/yjioe/isaht/2.js","data":{"url":"http://cronhosting.com/yjioe/isaht/2.js","domain":"cronhosting.com","vt":{"F-Secure":"Trojan.Script.187651","GData":"Trojan.Script.187651","AntiVir":"JS/Dldr.Agent.psyx","Norman":"W32/Suspicious_Gen2.SVBPK","McAfee-GW-Edition":"Heuristic.BehavesLike.JS.Obfuscated.A","Sophos":"JS/RefC-Gen","nProtect":"Trojan.Script.187651","BitDefender":"Trojan.Script.187651","AhnLab-V3":"JS/Downloader","Microsoft":"Trojan:JS/Redirector.IT","AVG":"HTML/Framer.BW","Avast":"JS:Redirector-I
+        [Trj]","Comodo":"UnclassifiedMalware"},"file":"ASCII text, with very long
+        lines, with no line terminators","md5":"54a800b1b53fe3a88f21bdf90704e1b0"},"source":"url-system-virustotal","vt":"F-Secure:
+        Trojan.Script.187651<br>GData: Trojan.Script.187651<br>AntiVir: JS/Dldr.Agent.psyx<br>Norman:
+        W32/Suspicious_Gen2.SVBPK<br>McAfee-GW-Edition: Heuristic.BehavesLike.JS.Obfuscated.A<br>Sophos:
+        JS/RefC-Gen<br>nProtect: Trojan.Script.187651<br>BitDefender: Trojan.Script.187651<br>AhnLab-V3:
+        JS/Downloader<br>Microsoft: Trojan:JS/Redirector.IT<br>AVG: HTML/Framer.BW<br>Avast:
+        JS:Redirector-I [Trj]<br>Comodo: UnclassifiedMalware","file":"ASCII text,
+        with very long lines, with no line terminators","data_key":"url-system-http://cronhosting.com/yjioe/isaht/2.js","md5":"54a800b1b53fe3a88f21bdf90704e1b0"},{"domain":"cronhosting.com","name":"Malware
+        Domain","visible":"1","url":"http://cronhosting.com/yjioe/isaht/2.js","data":{"url":"http://cronhosting.com/yjioe/isaht/2.js","domain":"cronhosting.com","vt":{"F-Secure":"Trojan.Script.187651","GData":"Trojan.Script.187651","AntiVir":"JS/Dldr.Agent.psyx","Norman":"Suspicious_Gen2.SVBPK","McAfee-GW-Edition":"Heuristic.BehavesLike.JS.Obfuscated.A","Sophos":"JS/RefC-Gen","nProtect":"Trojan.Script.187651","BitDefender":"Trojan.Script.187651","AhnLab-V3":"JS/Downloader","Antiy-AVL":"Trojan/win32.agent","Microsoft":"Trojan:JS/Redirector.IT","AVG":"HTML/Framer.BW","Avast":"JS:Redirector-I
+        [Trj]","Comodo":"UnclassifiedMalware"},"file":"ASCII text, with very long
+        lines, with no line terminators","md5":"54a800b1b53fe3a88f21bdf90704e1b0"},"source":"url-system-virustotal","vt":"F-Secure:
+        Trojan.Script.187651<br>GData: Trojan.Script.187651<br>AntiVir: JS/Dldr.Agent.psyx<br>Norman:
+        Suspicious_Gen2.SVBPK<br>McAfee-GW-Edition: Heuristic.BehavesLike.JS.Obfuscated.A<br>Sophos:
+        JS/RefC-Gen<br>nProtect: Trojan.Script.187651<br>BitDefender: Trojan.Script.187651<br>AhnLab-V3:
+        JS/Downloader<br>Antiy-AVL: Trojan/win32.agent<br>Microsoft: Trojan:JS/Redirector.IT<br>AVG:
+        HTML/Framer.BW<br>Avast: JS:Redirector-I [Trj]<br>Comodo: UnclassifiedMalware","file":"ASCII
+        text, with very long lines, with no line terminators","data_key":"url-system-http://cronhosting.com/yjioe/isaht/2.js","md5":"54a800b1b53fe3a88f21bdf90704e1b0"},{"status":1,"domain":"qualityfinserv.com","name":"Malware
+        Domain","first_date":"2012-09-28T18:37:52","data":{"domain":"qualityfinserv.com"},"source":"malware-domains","last_date":"2012-09-28T18:37:52","data_key":"qualityfinserv.com
+        malware"},{"status":1,"domain":"qualityfinserv.com","name":"Malware Domain","first_date":"2012-10-19T01:56:56","data_key":"qualityfinserv.com
+        malware","source":"malware-domains","last_date":"2012-10-19T01:56:56","data":{"domain":"qualityfinserv.com"}},{"status":1,"domain":"qualityfinserv.com","name":"Malware
+        Domain","first_date":"2012-11-08T13:29:05","data_key":"qualityfinserv.com
+        malware","source":"malware-domains","last_date":"2012-11-08T13:29:05","data":{"domain":"qualityfinserv.com"}},{"status":1,"domain":"qualityfinserv.com","name":"Malware
+        Domain","first_date":"2012-11-29T06:42:17","data_key":"qualityfinserv.com
+        malware","source":"malware-domains","last_date":"2012-11-29T06:42:17","data":{"domain":"qualityfinserv.com"}},{"status":1,"domain":"qualityfinserv.com","name":"Malware
+        Domain","first_date":"2012-12-19T09:29:23","data_key":"qualityfinserv.com
+        malware","source":"malware-domains","last_date":"2012-12-19T09:29:23","data":{"domain":"qualityfinserv.com"}},{"status":1,"domain":"qualityfinserv.com","name":"Malware
+        Domain","first_date":"2013-01-09T00:22:19","data_key":"qualityfinserv.com
+        malware","source":"malware-domains","last_date":"2013-01-09T00:22:19","data":{"domain":"qualityfinserv.com"}},{"status":1,"domain":"qualityfinserv.com","name":"Malware
+        Domain","first_date":"2013-01-29T09:05:57","data_key":"qualityfinserv.com
+        malware","source":"malware-domains","last_date":"2013-01-29T09:05:57","data":{"domain":"qualityfinserv.com"}},{"status":1,"domain":"qualityfinserv.com","name":"Malware
+        Domain","first_date":"2013-02-18T12:52:42","data_key":"qualityfinserv.com
+        malware","source":"malware-domains","last_date":"2013-02-18T12:52:42","data":{"domain":"qualityfinserv.com"}},{"status":1,"name":"Scanning
+        Host","first_date":"2013-08-22T23:50:46","data_key":"69.73.130.198 Hostile
+        (886 attacks)","source":"dshield-daily","last_date":"2013-08-22T23:50:46","data":[]}],"server_type":"","matched_bl":["None"],"address":"69.73.130.198","lat":38,"date_added":{"usec":308000,"sec":1338991650},"country":"US
+        (United States)","up":0,"reputation_rel":"2","matched_wl":["None"],"domains":["additon.co.id","arsalgroup.com","astutesol.com","avin.net","ayb.am","babeloon.com","best-hard-drive-deals.com","bonek.org","calizainmobiliaria.com","carboxy.in","cctech.com.ph","climatehnic.ro","club.ayb.am","coorg.org","corescape.com","costel21d.com","ecomaxdistribuidora.com","ekopurnomo.net","esitenow.com","ev.am","evconsulting.am","exservicemen.in","freedailyhoroscope.org","geos.mn","granja21.com","homeocareonline.com","hyanpharma.net","intermaritimeghana.com","intertecpk.com","jazba.tv","kallulu.com","kid.mn","managedhosting.in","mobiledj.mn","mongolembassychina.org","musmans.com","ns1.best-hard-drive-deals.com","ns2.tenthost.com","ns2.variohost.net","optimspace.com","orkhon-mta.com","pamepi.org","pensiunea-ambiance.com","pixenario.com","presalibera.ro","provideseo.com","ragegaming.com","rca-asig.com","realautogh.com","scheme.ro","souvenir-pernikahan.com","sr.mn","static-198-130-73-69.nocdirect.com","sukhvinder.com","tatabeverages.com","tecnonegocios.com","tecnonegocios.net","thehabitat.org","thermotek.com.pe","todaysastrology.net","tonycai.com","trio-nec.ro","tv-live.info","undangan-pernikahan.com","variohost.net","webworx.com.pk","willkaknitwear.com","xpyh.com","www.arsalgroup.com","www.avin.net","www.ayb.am","www.babeloon.com","www.coorg.org","www.costel21d.com","www.evconsulting.am","www.jazba.tv","mail.mobiledj.mn","mail.mongolembassychina.org","www.rca-asig.com","www.scheme.ro","www.souvenir-pernikahan.com","www.tatabeverages.com","www.tonycai.com","www.tv-live.info","www.undangan-pernikahan.com","www.webworx.com.pk","cronhosting.com"],"reputation_val_checked":1,"_id":{"$id":"4fcf642203b04d42c100028f"},"reputation_val":"2"}}'
+    http_version: 
+  recorded_at: Wed, 01 Feb 2017 01:58:56 GMT
+recorded_with: VCR 3.0.3

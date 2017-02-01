@@ -36,7 +36,7 @@ module OTX
   #   CVE - Common Vulnerability and Exposure (CVE) entry describing a software vulnerability that can be exploited to engage in malicious activity.
   #
   class Indicators < OTX::Type::Base
-    attr_accessor :id, :_id, :indicator, :type, :description, :title, :content, :is_active, :access_reason, :access_type, :access_groups,
+    attr_accessor :_id, :indicator, :type, :description, :title, :content, :is_active, :access_reason, :access_type, :access_groups,
     :expiration, :observations, :role
   end
 end

@@ -22,6 +22,18 @@ class OtxRubyTest < Minitest::Test
     end
   end
 
+  def test_ip_reputation
+    VCR.use_cassette('ip_reputation') do
+      reputation = OTX::Reputation.new('test_api')
+
+      ip_rep = reputation.get_reputation('69.73.130.198')
+
+      assert_equal 'US (United States)', ip_rep.country
+      assert_equal '4fcf642203b04d42c100028f', ip_rep.id
+      assert_equal 87, ip_rep.domains.count
+    end
+  end
+
   def test_subscribers
     VCR.use_cassette('subscibed') do
       subscibed = OTX::Subscribed.new('test_api')

@@ -9,6 +9,6 @@ module OTX
   # @attr [String] object_id ID value for the object the event is created for
   #
   class Event < OTX::Type::Base
-    attr_accessor :id, :action, :object_type, :object_id
+    attr_accessor :action, :object_type, :object_id
   end
 end
