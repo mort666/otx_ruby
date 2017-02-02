@@ -68,7 +68,11 @@ module OTX
 
       def initialize(attributes={})
         attributes.each do |key, value|
-          send("#{key}=", value)
+          unless self.respond_to?(key.downcase)
+            self.class.send(:attr_accessor, key.downcase)
+          end
+
+          send("#{key.downcase}=", value)
         end
       end
     end

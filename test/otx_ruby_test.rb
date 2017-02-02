@@ -34,6 +34,21 @@ class OtxRubyTest < Minitest::Test
     end
   end
 
+  def test_cve_general
+    VCR.use_cassette('cve_general') do
+      cve_general = OTX::CVE.new('4c509fd06f6147a2da7dab98d73f5cfc98cbbcbbc547b004b6146c58c8d087c8')
+
+      cve = cve_general.get_general('CVE-2014-0160')
+
+      assert_equal 'CVE-2014-0160', cve.indicator
+      assert_equal 'CWE-119', cve.cwe
+      assert_equal 'public', cve.base_indicator.access_type
+      assert_equal '563c17ae67db8c7a156ab753', cve.pulse_info.pulses.first.id
+      assert_equal 'matthewssa', cve.pulse_info.pulses.first.author.username
+      assert_equal 110, cve.references.count
+    end
+  end
+
   def test_subscribers
     VCR.use_cassette('subscibed') do
       subscibed = OTX::Subscribed.new('test_api')

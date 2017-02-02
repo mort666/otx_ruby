@@ -1,4 +1,4 @@
 module OTX
   # Library Version Number
-  VERSION = "0.7.1"
+  VERSION = "0.7.5"
 end

@@ -29,13 +29,24 @@ module OTX
 
     def initialize(attributes={})
       attributes.each do |key, value|
-        if key != 'indicators'
-          send("#{key.downcase}=", value)
-        else
+        # Dynamically Add any missing attributes
+        unless self.respond_to?(key)
+          self.class.send(:attr_accessor, key)
+        end
+
+        if key == 'indicators'
           @indicators = []
           value.each do |indicator|
             @indicators << OTX::Indicators.new(indicator)
           end
+        elsif key == 'observation'
+          @observation = OTX::Indicator::Pulse::Observation.new(value)
+        elsif key == 'indicator_type_counts'
+          @indicator_type_counts = OTX::Indicator::Pulse::IndicatorTypeCounts.new(value)
+        elsif key == 'author'
+          @author = OTX::Indicator::Pulse::Author.new(value)
+        else
+          send("#{key.downcase}=", value)
         end
       end
     end
