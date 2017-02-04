@@ -36,7 +36,7 @@ class OtxRubyTest < Minitest::Test
 
   def test_cve_general
     VCR.use_cassette('cve_general') do
-      cve_general = OTX::CVE.new('4c509fd06f6147a2da7dab98d73f5cfc98cbbcbbc547b004b6146c58c8d087c8')
+      cve_general = OTX::CVE.new('test_api')
 
       cve = cve_general.get_general('CVE-2014-0160')
 

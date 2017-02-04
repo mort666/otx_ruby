@@ -4,6 +4,9 @@ machine:
 database:
   override:
     - echo 'no database'
+test:
+  post:
+    - curl -sSL https://download.sourceclear.com/ci.sh | bash
 dependencies:
   pre:
     - gem install bundler
