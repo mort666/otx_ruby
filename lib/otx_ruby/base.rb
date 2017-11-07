@@ -21,13 +21,47 @@ module OTX
     end
 
     #
-    # Get the provided URL
+    # GET the provided URL
     #
     # @param url [String] URL to make API request to
     # @param params [Hash] Additional parameters to be added to the requests
     #
     def get(url, params={})
       response = @conn.get do |req|
+        req.url url
+        req.headers['X-OTX-API-KEY'] = @key
+        req.params = params
+      end
+
+      # Parse and return JSON object as hash to caller
+      return Oj.load(response.body)
+    end
+
+    # 
+    # POST to the provided URL
+    # 
+    # @param url [String] URL to make API request to
+    # @param params [Hash] Additional parameters to be added to the requests
+    # 
+    def post(url, params={})
+      response = @conn.post do |req|
+        req.url url
+        req.headers['X-OTX-API-KEY'] = @key
+        req.params = params
+      end
+
+      # Parse and return JSON object as hash to caller
+      return Oj.load(response.body)
+    end
+
+    #
+    # PATCH to the provided URL
+    # 
+    # @param url [String] URL to make API request to
+    # @param params [Hash] Additional parameters to be added to the requests
+    # 
+    def patch(url, params={})
+      response = @conn.patch do |req|
         req.url url
         req.headers['X-OTX-API-KEY'] = @key
         req.params = params
