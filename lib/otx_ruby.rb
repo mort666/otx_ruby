@@ -9,6 +9,7 @@ require "otx_ruby/pulses"
 require "otx_ruby/reputation"
 require "otx_ruby/cve"
 require "otx_ruby/users"
+require "otx_ruby/activity"
 
 require "otx_ruby/types/pulse"
 require "otx_ruby/types/observation"
@@ -24,6 +25,7 @@ require "otx_ruby/types/reference"
 require "otx_ruby/types/base_indicator"
 require "otx_ruby/types/pulse_info"
 require "otx_ruby/types/user"
+require "otx_ruby/types/indicator_type"
 
 #
 # Base AlienVault OTX Module
