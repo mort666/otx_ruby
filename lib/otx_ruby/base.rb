@@ -37,12 +37,12 @@ module OTX
       return Oj.load(response.body)
     end
 
-    # 
+    #
     # POST to the provided URL
-    # 
+    #
     # @param url [String] URL to make API request to
     # @param params [Hash] Additional parameters to be added to the requests
-    # 
+    #
     def post(url, params={})
       response = @conn.post do |req|
         req.url url
@@ -56,10 +56,10 @@ module OTX
 
     #
     # PATCH to the provided URL
-    # 
+    #
     # @param url [String] URL to make API request to
     # @param params [Hash] Additional parameters to be added to the requests
-    # 
+    #
     def patch(url, params={})
       response = @conn.patch do |req|
         req.url url

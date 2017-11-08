@@ -1,7 +1,7 @@
 module OTX
   #
   # Within the OTX system you are able to subscribe to pulses from other users,
-  # this class allows the retreival of the currently subscribed pulse feeds and 
+  # this class allows the retreival of the currently subscribed pulse feeds and
   # the associated pulses, as well as pulses from followed Users
   #
   class Activity < OTX::Base
@@ -37,11 +37,11 @@ module OTX
     # Get all pulses activity from the API, get all events in chunks defined by
     # limit and since timestamp
     #
-    # @param timestamp [Time] Timestamp of point in time to get records since in 
+    # @param timestamp [Time] Timestamp of point in time to get records since in
     # ISO Format
     # @param limit [Integer] Size of chunk of data to be Returned (default = 20)
     # @return [Array<OTX::Pulse>] Parsed Pulses
-    # 
+    #
     def get_since(timestamp, limit=20)
       uri = '/api/v1/pulses/activity'
       params = {limit: limit, modified_since: timestamp}
