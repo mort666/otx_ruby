@@ -11,7 +11,9 @@ module OTX
     def create(params)
       uri = '/api/v1/pulses/create'
 
-      post(uri, params)
+      pulse = { body: params }
+
+      post(uri, pulse)
     end
 
     #
