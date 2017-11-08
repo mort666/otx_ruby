@@ -12,6 +12,7 @@ require "otx_ruby/users"
 require "otx_ruby/activity"
 require "otx_ruby/ip"
 require "otx_ruby/domain"
+require "otx_ruby/hostname"
 
 require "otx_ruby/types/pulse"
 require "otx_ruby/types/observation"
