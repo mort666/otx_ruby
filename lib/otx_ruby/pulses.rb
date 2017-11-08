@@ -4,6 +4,28 @@ module OTX
   #
   class Pulses < OTX::Base
     #
+    # Create a Pulse
+    #
+    # @param params [Hash] Parameters to create a Pulse
+    #
+    def create(params)
+      uri = '/api/v1/pulses/create'
+
+      post(uri, params)
+    end
+
+    #
+    # Validate a Pulse indicator
+    #
+    # @param indicator [Hash] An indicator key value pair
+    #
+    def validate_indicator(indicator)
+      uri = '/api/v1/pulses/indicators/validate'
+
+      post(uri, indicator)
+    end
+
+    #
     # Download an individually identified pulse and parse the output
     #
     # @param id [String] The id value for the pulse to Download
