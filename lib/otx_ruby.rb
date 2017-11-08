@@ -11,6 +11,7 @@ require "otx_ruby/cve"
 require "otx_ruby/users"
 require "otx_ruby/activity"
 require "otx_ruby/ip"
+require "otx_ruby/domain"
 
 require "otx_ruby/types/pulse"
 require "otx_ruby/types/observation"
@@ -34,6 +35,7 @@ require "otx_ruby/types/ip/malware"
 require "otx_ruby/types/ip/url"
 require "otx_ruby/types/ip/dns"
 require "otx_ruby/types/ip/http_scan"
+require "otx_ruby/types/ip/whois"
 
 #
 # Base AlienVault OTX Module
