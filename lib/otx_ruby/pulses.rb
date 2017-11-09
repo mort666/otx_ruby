@@ -67,7 +67,7 @@ module OTX
       json_data = get(uri, params)
 
       json_data['results'].each do |pulse|
-        results << OTX::Pulse.new(user)
+        results << OTX::Pulse.new(pulse)
       end
 
       return results
