@@ -17,6 +17,7 @@ require "otx_ruby/file"
 require "otx_ruby/url"
 require "otx_ruby/nids"
 require "otx_ruby/correlation_rule"
+require "otx_ruby/export"
 
 require "otx_ruby/types/pulse"
 require "otx_ruby/types/observation"
