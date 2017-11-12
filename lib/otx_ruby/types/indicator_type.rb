@@ -1,6 +1,6 @@
 module OTX
   module Indicator
-    class IndicatorType < OTX::TYPE::Base
+    class IndicatorType < OTX::Type::Base
     end
   end
 end

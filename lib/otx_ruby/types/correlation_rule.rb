@@ -1,5 +1,5 @@
 module OTX
-  module Indicators
+  module Indicator
     class CorrelationRule < OTX::Type::Base
       def initialize(attributes={})
         attributes.each do |key, value|

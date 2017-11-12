@@ -1,7 +1,7 @@
 module OTX
   module Indicator
     module IP
-      class Whois < OTC::Type::Base
+      class Whois < OTX::Type::Base
       end
     end
   end

@@ -58,7 +58,7 @@ module OTX
       url_list = []
       begin
         page += 1
-        params{limit: 20, page: page}
+        params = {limit: 20, page: page}
         json_data = get(uri, params)
         has_next = json_data['has_next']
 
