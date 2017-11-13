@@ -22,7 +22,7 @@ module OTX
         has_next = json_data['has_next']
 
         url_list += json_data['url_list']
-      end while !has_next.nil?
+      end while has_next
 
       results = []
       url_list.each do |url|

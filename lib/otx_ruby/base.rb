@@ -102,11 +102,13 @@ module OTX
 
       def initialize(attributes={})
         attributes.each do |key, value|
-          unless self.respond_to?(key.downcase)
-            self.class.send(:attr_accessor, key.downcase)
+          _key = key.gsub('-', '_')
+
+          unless self.respond_to?(_key.downcase)
+            self.class.send(:attr_accessor, _key.downcase)
           end
 
-          send("#{key.downcase}=", value)
+          send("#{_key.downcase}=", value)
         end
       end
     end

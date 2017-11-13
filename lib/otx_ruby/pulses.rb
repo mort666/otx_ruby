@@ -79,7 +79,7 @@ module OTX
     # @param id [String] The ID of the Pulse
     # @param param [Hash] Parameters to edit
     #
-    def edit_pulse(id, params)
+    def edit(id, params)
       uri = "/api/v1/pulses/#{id}"
 
       patch(uri, params)
@@ -94,8 +94,9 @@ module OTX
     # @return [Array<OTX::Pulse>] Parsed Pulses
     #
     def get_user_pulses(username, limit = 10, page = 1)
-      uri = "/api/v1/pulses/users/#{username}"
+      uri = "/api/v1/pulses/user/#{username}"
       params = { limit: limit, page: page }
+      results = []
 
       json_data = get(uri, params)
 
@@ -114,9 +115,10 @@ module OTX
     # @param page [Integer] Return results for this page
     # @return [Array<OTX::Pulse>] Parsed Pulses
     #
-    def get_related_pulses(id, limit = 10, page = 1)
+    def get_related(id, limit = 10, page = 1)
       uri = "/api/v1/pulses/#{id}/related"
       params = { limit: limit, page: page }
+      results = []
 
       json_data = get(uri, params)
 
@@ -135,9 +137,10 @@ module OTX
     # @param page [Integer] Return results for this page
     # @return [Array<OTX::Pulse>] Parsed Indicators
     #
-    def get_pulse_indicators(id, limit = 10, page = 1)
+    def get_indicators(id, limit = 10, page = 1)
       uri = "/api/v1/pulses/#{id}/indicators"
       params = { limit: limit, page: page }
+      results = []
 
       json_data = get(uri, params)
 
@@ -153,14 +156,13 @@ module OTX
     #
     # @return [Array<OTX::Indicator::IndicatorType>]
     #
-    def get_pulse_indicator_types
+    def get_indicator_types
       uri = '/api/v1/pulses/indicators/types'
+      types = []
 
       json_data = get(uri)
 
-      types = []
-
-      json_data.each do |type|
+      json_data['detail'].each do |type|
         types << OTX::Indicator::IndicatorType.new(type)
       end
 

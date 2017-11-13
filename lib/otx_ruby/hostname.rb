@@ -13,7 +13,7 @@ module OTX
     def get_geo(hostname)
       uri = "/api/v1/indicators/hostname/#{hostname}/geo"
 
-      json_dat = get(uri)
+      json_data = get(uri)
 
       geo = OTX::Indicator::IP::Geo.new(json_data)
 
@@ -23,15 +23,16 @@ module OTX
     def get_malware(hostname)
       uri = "/api/v1/indicators/hostname/#{hostname}/malware"
       malwares = []
+      params = {}
 
       begin
-        json_data = get(uri)
+        json_data = get(uri, params)
         page = json_data['next']
 
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         malwares += json_data['data']
-      end while !page.nil?
+      end while page && !json_data['data'].empty?
 
       results = []
       malwares.each do |malware|
@@ -53,7 +54,7 @@ module OTX
         has_next = json_data['has_next']
 
         url_list += json_data['url_list']
-      end while !has_next.nil?
+      end while has_next
 
       results = []
       url_list.each do |url|
@@ -82,8 +83,10 @@ module OTX
       json_data = get(uri)
 
       results = []
-      json_data['data'].each do |http_scan|
-        results << OTX::Indicator::IP::HTTPScan.new(http_scan)
+      unless json_data['data'].nil?
+        json_data['data'].each do |http_scan|
+          results << OTX::Indicator::IP::HTTPScan.new(http_scan)
+        end
       end
 
       return results

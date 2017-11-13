@@ -5,13 +5,28 @@ module OTX
   # associated pulses
   #
   class Subscribed < OTX::Base
+    def get_subscribed(limit = 10, page = 1, params = {})
+      uri = '/api/v1/pulses/subscribed'
+      params['limit'] = limit
+      params['page'] = page
+      results = []
+
+      json_data = get(uri, params)
+
+      json_data['results'].each do |pulse|
+        results << OTX::Pulse.new(pulse)
+      end
+
+      return results
+    end
+
     #
     # Get all subscribed pulses from the API, get all events in chunks defined by limit
     #
     # @param limit [Integer] Size of chunk of data to be Returned (default = 20)
     # @return [Array] Array of OTX::Pulse records
     #
-    def get_all(limit=20)
+    def get_all(limit = 20)
       uri = '/api/v1/pulses/subscribed'
       params = {limit: limit}
       pulses = []
@@ -22,7 +37,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         pulses += json_data['results']
-      end while !page.nil?
+      end while page
 
       results = []
       pulses.each do |pulse|
@@ -40,7 +55,7 @@ module OTX
     # @param limit [Integer] Size of chunk of data to be Returned (default = 20)
     # @return [Array] Array of OTX::Pulse records
     #
-    def get_since(timestamp, limit=20)
+    def get_since(timestamp, limit = 20)
       uri = '/api/v1/pulses/subscribed'
       params = {limit: limit, modified_since: timestamp}
       pulses = []
@@ -51,7 +66,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         pulses += json_data['results']
-      end while !page.nil?
+      end while page
 
       results = []
       pulses.each do |pulse|

@@ -6,13 +6,35 @@ module OTX
   #
   class Activity < OTX::Base
     #
+    # Get pulse activity from the API
+    #
+    # @param limit [Integer] Number of records returned
+    # @param page [Integer] page of records returned
+    # @param params [Hash] Addtional parameters eg `modified_since: DateTime`
+    #
+    def get_activity(limit = 10, page = 1, params = {})
+      uri = '/api/v1/pulses/activity'
+      params['limit'] = limit
+      params['page'] = page
+
+      json_data = get(uri, params)
+
+      pulses = json_data['results']
+
+      results = []
+      pulses.each do |pulse|
+        results << OTX::Pulse.new(pulse)
+      end
+    end
+
+    #
     # Get all pulses activity from the API, get all events in chunks defined by
     # limit
     #
     # @param limit [Integer] Size of chunk of data to be Returned (default = 20)
     # @return [Array<OTX::Pulse>] Parsed Pulses
     #
-    def get_all(limit=20)
+    def get_all(limit = 20)
       uri = '/api/v1/pulses/activity'
       params = {limit: limit}
       pulses = []
@@ -23,7 +45,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         pulses += json_data['results']
-      end while !page.nil?
+      end while page
 
       results = []
       pulses.each do |pulse|
@@ -42,7 +64,7 @@ module OTX
     # @param limit [Integer] Size of chunk of data to be Returned (default = 20)
     # @return [Array<OTX::Pulse>] Parsed Pulses
     #
-    def get_since(timestamp, limit=20)
+    def get_since(timestamp, limit = 20)
       uri = '/api/v1/pulses/activity'
       params = {limit: limit, modified_since: timestamp}
       pulses = []
@@ -53,7 +75,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         pulses += json_data['results']
-      end while !page.nil?
+      end while page
 
       results = []
       pulses.each do |pulse|

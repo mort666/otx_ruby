@@ -1,9 +1,10 @@
 module OTX
-  class Export
-    def get(limit = 10, page = 1, params = {})
+  class Export < OTX::Base
+    def get_export(limit = 10, page = 1, params = {})
       uri = '/api/v1/indicators/export'
 
-      params += { limit: limit, page: page }
+      params['limit'] = limit
+      params['page'] = page
       indicators = []
 
       json_data = get(uri, params)
@@ -26,11 +27,11 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         indicators += json_data['results']
-      end while !page.nil?
+      end while page
 
       results = []
       indicators.each do |indicator|
-        results << OTX::Indicator.new(indicator)
+        results << OTX::Indicators.new(indicator)
       end
 
       return results
@@ -47,11 +48,11 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         indicators += json_data['results']
-      end while !page.nil?
+      end while page
 
       results = []
       indicators.each do |indicator|
-        results << OTX::Indicator.new(indicator)
+        results << OTX::Indicators.new(indicator)
       end
 
       return results
@@ -68,7 +69,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         indicators += json_data['results']
-      end while !page.nil?
+      end while page
 
       results = []
       indicators.each do |indicator|
@@ -89,7 +90,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         indicators += json_data['results']
-      end while !page.nil?
+      end while page
 
       results = []
       indicators.each do |indicator|
