@@ -23,7 +23,7 @@ class OtxRubyTest < Minitest::Test
   end
 
   def test_ip_reputation
-    VCR.use_cassette('ip_reputation') do
+    VCR.use_cassette('reputation') do
       reputation = OTX::Reputation.new('test_api')
 
       ip_rep = reputation.get_reputation('69.73.130.198')
