@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/search/users?limit=10&page=1&q=AlienVault&sort=created
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 16 Nov 2017 12:52:33 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '466'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 168, "next": "https://otx.alienvault.com/api/v1/search/users?q=AlienVault&sort=created&limit=10&page=2",
+        "results": [{"username": "mbeavers+151007@alienvault.com", "pulse_count":
+        0, "user_id": 4891, "subscriber_count": 1, "member_since": "770 days ago ",
+        "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "PCIAlienVault", "pulse_count": 0, "user_id": 13661, "subscriber_count": 1,
+        "member_since": "575 days ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "alienvault1964", "pulse_count": 0, "user_id": 26066, "subscriber_count":
+        1, "member_since": "284 days ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "alienvaultmakelmi", "pulse_count": 0, "user_id": 33592, "subscriber_count":
+        1, "member_since": "157 days ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "mscalienvault", "pulse_count": 0, "user_id": 41659, "subscriber_count": 1,
+        "member_since": "57 days ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "Alienvault@Maptek", "pulse_count": 0, "user_id": 6310, "subscriber_count":
+        2, "member_since": "737 days ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "bshopp@alienvault.com", "pulse_count": 0, "user_id": 17995, "subscriber_count":
+        1, "member_since": "470 days ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "sam3rfaour+alienvault@gmail.co", "pulse_count": 0, "user_id": 28833, "subscriber_count":
+        1, "member_since": "234 days ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "alienvaultlab401", "pulse_count": 0, "user_id": 37188, "subscriber_count":
+        1, "member_since": "119 days ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "rwood@alienvault.com", "pulse_count": 0, "user_id": 44148, "subscriber_count":
+        1, "member_since": "23 days ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}], "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 16 Nov 2017 12:52:33 GMT
+recorded_with: VCR 3.0.3

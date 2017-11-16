@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/search/users?limit=10&page=1&q=AlienVault&sort=username
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 14 Nov 2017 16:33:47 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '512'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 168, "next": "https://otx.alienvault.com/api/v1/search/users?q=AlienVault&sort=username&limit=10&page=2",
+        "results": [{"username": "4979-AlienVault", "pulse_count": 0, "user_id": 45001,
+        "subscriber_count": 0, "member_since": "13 days ago ", "award_count": 0, "avatar_url":
+        "https://otx.alienvault.com/static/img/default.png", "awards": [], "follower_count":
+        0, "accepted_edits_count": 0}, {"username": "abloch@alienvault.com", "pulse_count":
+        0, "user_id": 15194, "subscriber_count": 0, "member_since": "537 days ago
+        ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "ahartotx@alienvault.com", "pulse_count": 0, "user_id": 46139, "subscriber_count":
+        0, "member_since": "21 hours ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "ahs_alienvault", "pulse_count": 0, "user_id": 18510, "subscriber_count":
+        0, "member_since": "456 days ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "akalienvault", "pulse_count": 0, "user_id": 1583, "subscriber_count": 0,
+        "member_since": "830 days ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "AlienVault", "pulse_count": 1056, "user_id": 2, "subscriber_count": 43250,
+        "member_since": "1005 days ago ", "award_count": 0, "avatar_url": "https://otx20-web-media.s3.amazonaws.com/media/avatars/AlienVault/resized/80/unnamed
+        (1).jpg", "awards": [], "follower_count": 1401, "accepted_edits_count": 85},
+        {"username": "alienvault-IS", "pulse_count": 0, "user_id": 20272, "subscriber_count":
+        0, "member_since": "413 days ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "alienvault-kitkat", "pulse_count": 0, "user_id": 25567, "subscriber_count":
+        0, "member_since": "293 days ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "alienvault-lauren", "pulse_count": 0, "user_id": 34898, "subscriber_count":
+        0, "member_since": "140 days ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}, {"username":
+        "AlienVault-OTX", "pulse_count": 0, "user_id": 14572, "subscriber_count":
+        2, "member_since": "552 days ago ", "award_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "awards": [], "follower_count": 0, "accepted_edits_count": 0}], "previous":
+        null}'
+    http_version: 
+  recorded_at: Tue, 14 Nov 2017 16:33:47 GMT
+recorded_with: VCR 3.0.3

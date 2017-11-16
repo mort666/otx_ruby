@@ -1,0 +1,215 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/pulses/57204e9b3c4c3e015d93cb12/related?limit=10&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 16 Nov 2017 12:52:35 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '2467'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 2, "next": null, "results": [{"industries": [], "TLP": "green",
+        "description": "Unit 42 recently observed a 9002 Trojan delivered using a
+        combination of shortened links and a shared file hosted on Google Drive. The
+        delivery method also uses an actor-controlled server hosting a custom redirection
+        script to track successful clicks by targeted email addresses. The infrastructure
+        associated with this 9002 Trojan sample was also found to have previous ties
+        to attacks on Myanmar and other Asian countries that used Poison Ivy as the
+        payload, including a recent, and possibly ongoing campaign against Taiwan",
+        "created": "2016-07-27T12:40:25.797000", "tags": ["http", "trojan", "base64",
+        "url", "poison ivy", "figure", "dll", "google drive", "myanmar", "powerpoint",
+        "zip", "mon", "sha256", "july", "jul", "date", "taiwan", "autofocus", "network",
+        "tcp", "userprofile", "test", "gmail", "post", "payload", "urls", "may", "xor",
+        "wildfire"], "modified": "2016-07-27T13:10:44.829000", "author_name": "infosec@firstfinancial.org",
+        "public": 1, "references": ["http://researchcenter.paloaltonetworks.com/2016/07/unit-42-attack-delivers-9002-trojan-through-google-drive/"],
+        "targeted_countries": [], "indicators": [{"indicator": "6bdd45cb6c021512c203cf01a051dce28449e364627e1366412c0051094f60a0",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481427}, {"indicator": "c11b963e2df167766e32b14fb05fd71409092092db93b310a953e1d0e9ec9bc3",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481428}, {"indicator": "08dee1f5ced372716ad5c6e3f2041bcdeb25e905efc19d3749fe637d0a589ccc",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481429}, {"indicator": "0940602e7d47941f36c975afa9d2c6b1b0d2bd15bbea6ad4baf0f828420d72bf",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481430}, {"indicator": "f76f639f2a7b8f39abf83737c6d3e533be66398c85ec95526e4b13561e15fbae",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481431}, {"indicator": "49ac6a6c5449396b98a89709b0ad21d078af783ec8f1cd32c1c8b5ae71bec129",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481432}, {"indicator": "53671fe98a0c8c85f6f8eabfa851e27b437f6c392b46e42ddea3f0a656591b12",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481433}, {"indicator": "ac8fc264c7ec3cf70836e1bb21f9a20174b04ad49731b8797d7d8bb95cb353e2",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481434}, {"indicator": "10d40c51d85ea9ced6050b8951802aaebe81f7db13f42fe5a5589172af481a7e",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481435}, {"indicator": "12759f7fd01ffdea97954be5404d7e43a3941a7388129e7b6ace85f56b500cd8",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481436}, {"indicator": "269c03e205c403ab8fa1033caa1c8e3a86a1495cc33a7f3a3a3c9b8a9ea77490",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 175135}, {"indicator": "3a9ab623c8a0a9f6c65e108e83c90da7620d2d6b22192c857556117587d0d038",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481437}, {"indicator": "fd21cd1846f25d42b1997ec1fd5ae6e14ea9b5bb0161ab7edf0ce184174e6da6",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481438}, {"indicator": "f0ab826ea65b4a9eb66528ad74c4d3e747c1ecebfca6bdafd2504e0f794195d9",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481439}, {"indicator": "e2fb4a53e54774f1645c940f905e76beb5fc729e9e968b736b8377312cb2454a",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481440}, {"indicator": "0af768b4ba8fe7aac7a7da7fd5f21e7496d5617dccdf2321f526fd1091d64a6d",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481441}, {"indicator": "193ae4da14874aa29902052d08064395afa5e4763f949e7369157d893fa08653",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481442}, {"indicator": "outhmail.com",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "domain", "id": 481443}, {"indicator": "queryurl.com", "description":
+        "", "created": "2016-07-27T12:40:26", "title": "", "content": "", "type":
+        "domain", "id": 481444}, {"indicator": "microsoftdefence.com", "description":
+        "", "created": "2016-07-27T12:40:26", "title": "", "content": "", "type":
+        "domain", "id": 481445}, {"indicator": "gooledriveservice.com", "description":
+        "", "created": "2016-07-27T12:40:26", "title": "", "content": "", "type":
+        "domain", "id": 481446}, {"indicator": "appupdatemoremagic.com", "description":
+        "", "created": "2016-07-27T12:40:26", "title": "", "content": "", "type":
+        "domain", "id": 481447}, {"indicator": "logitechwkgame.com", "description":
+        "", "created": "2016-07-27T12:40:26", "title": "", "content": "", "type":
+        "domain", "id": 481448}, {"indicator": "microsoftserve.com", "description":
+        "", "created": "2016-07-27T12:40:26", "title": "", "content": "", "type":
+        "domain", "id": 481449}, {"indicator": "tinyurl.com", "description": "", "created":
+        "2016-07-27T12:40:26", "title": "", "content": "", "type": "domain", "id":
+        416694}, {"indicator": "mxdnsv6.com", "description": "", "created": "2016-07-27T12:40:26",
+        "title": "", "content": "", "type": "domain", "id": 481450}, {"indicator":
+        "gmail.comhttp://tinyurl.com/jfj9ouv", "description": "", "created": "2016-07-27T12:40:26",
+        "title": "", "content": "", "type": "URL", "id": 481451}, {"indicator": "http://222.239.91.152",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "URL", "id": 481452}, {"indicator": "http://tinyurl.com/jfj9ouv",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "URL", "id": 481453}, {"indicator": "http://222.239.91.152/?ZmFrZUBnbWFpbC5jb215YWhvby5jb20",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "URL", "id": 481454}, {"indicator": "http://222.239.91.152/?ZmFrZUBnbWFpbC5jb21odHRwOi8veWFob28uY29t",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "URL", "id": 481455}, {"indicator": "http://tinyurl.com/zmu4dry",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "URL", "id": 481456}, {"indicator": "webserver.servehttp.com",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "hostname", "id": 361850}, {"indicator": "admin.nslookupdns.com",
+        "description": "", "created": "2016-07-27T12:40:26", "title": "", "content":
+        "", "type": "hostname", "id": 361852}, {"indicator": "jackhex.md5c.net", "description":
+        "", "created": "2016-07-27T12:40:26", "title": "", "content": "", "type":
+        "hostname", "id": 175207}, {"indicator": "222.239.91.30", "description": "",
+        "created": "2016-07-27T12:40:26", "title": "", "content": "", "type": "IPv4",
+        "id": 481457}, {"indicator": "222.239.91.152", "description": "", "created":
+        "2016-07-27T12:40:26", "title": "", "content": "", "type": "IPv4", "id": 481458},
+        {"indicator": "symposium.zip", "description": "", "created": "2016-07-27T12:40:26",
+        "title": "", "content": "", "type": "domain", "id": 481459}], "revision":
+        3, "adversary": null, "id": "5798abb91b3ce70133760b3b", "name": "9002 Trojan
+        via Google Drive Tiny URL"}, {"industries": [], "TLP": "green", "description":
+        "Unit 42 recently observed a 9002 Trojan delivered using a combination of
+        shortened links and a shared file hosted on Google Drive. The delivery method
+        also uses an actor-controlled server hosting a custom redirection script to
+        track successful clicks by targeted email addresses. The infrastructure associated
+        with this 9002 Trojan sample was also found to have previous ties to attacks
+        on Myanmar and other Asian countries that used Poison Ivy as the payload,
+        including a recent, and possibly ongoing campaign against Taiwan.", "created":
+        "2016-07-27T12:52:37.782000", "tags": ["poison ivy", "google drive", "myanmar",
+        "powerpoint", "zip", "sha256", "taiwan", "autofocus", "tcp", "userprofile",
+        "gmail", "post", "payload", "urls", "xor", "wildfire"], "modified": "2016-07-27T16:11:40.850000",
+        "author_name": "zer0daydan", "public": 1, "references": ["http://researchcenter.paloaltonetworks.com/2016/07/unit-42-attack-delivers-9002-trojan-through-google-drive/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+PaloAltoNetworks+%28Palo+Alto+Networks+Research+Center%29"],
+        "targeted_countries": [], "indicators": [{"indicator": "6bdd45cb6c021512c203cf01a051dce28449e364627e1366412c0051094f60a0",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481427}, {"indicator": "c11b963e2df167766e32b14fb05fd71409092092db93b310a953e1d0e9ec9bc3",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481428}, {"indicator": "08dee1f5ced372716ad5c6e3f2041bcdeb25e905efc19d3749fe637d0a589ccc",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481429}, {"indicator": "0940602e7d47941f36c975afa9d2c6b1b0d2bd15bbea6ad4baf0f828420d72bf",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481430}, {"indicator": "f76f639f2a7b8f39abf83737c6d3e533be66398c85ec95526e4b13561e15fbae",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481431}, {"indicator": "49ac6a6c5449396b98a89709b0ad21d078af783ec8f1cd32c1c8b5ae71bec129",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481432}, {"indicator": "53671fe98a0c8c85f6f8eabfa851e27b437f6c392b46e42ddea3f0a656591b12",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481433}, {"indicator": "ac8fc264c7ec3cf70836e1bb21f9a20174b04ad49731b8797d7d8bb95cb353e2",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481434}, {"indicator": "10d40c51d85ea9ced6050b8951802aaebe81f7db13f42fe5a5589172af481a7e",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481435}, {"indicator": "12759f7fd01ffdea97954be5404d7e43a3941a7388129e7b6ace85f56b500cd8",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481436}, {"indicator": "269c03e205c403ab8fa1033caa1c8e3a86a1495cc33a7f3a3a3c9b8a9ea77490",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 175135}, {"indicator": "3a9ab623c8a0a9f6c65e108e83c90da7620d2d6b22192c857556117587d0d038",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481437}, {"indicator": "fd21cd1846f25d42b1997ec1fd5ae6e14ea9b5bb0161ab7edf0ce184174e6da6",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481438}, {"indicator": "f0ab826ea65b4a9eb66528ad74c4d3e747c1ecebfca6bdafd2504e0f794195d9",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481439}, {"indicator": "e2fb4a53e54774f1645c940f905e76beb5fc729e9e968b736b8377312cb2454a",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481440}, {"indicator": "0af768b4ba8fe7aac7a7da7fd5f21e7496d5617dccdf2321f526fd1091d64a6d",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481441}, {"indicator": "193ae4da14874aa29902052d08064395afa5e4763f949e7369157d893fa08653",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 481442}, {"indicator": "outhmail.com",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "domain", "id": 481443}, {"indicator": "queryurl.com", "description":
+        "", "created": "2016-07-27T12:52:38", "title": "", "content": "", "type":
+        "domain", "id": 481444}, {"indicator": "microsoftdefence.com", "description":
+        "", "created": "2016-07-27T12:52:38", "title": "", "content": "", "type":
+        "domain", "id": 481445}, {"indicator": "gooledriveservice.com", "description":
+        "", "created": "2016-07-27T12:52:38", "title": "", "content": "", "type":
+        "domain", "id": 481446}, {"indicator": "appupdatemoremagic.com", "description":
+        "", "created": "2016-07-27T12:52:38", "title": "", "content": "", "type":
+        "domain", "id": 481447}, {"indicator": "logitechwkgame.com", "description":
+        "", "created": "2016-07-27T12:52:38", "title": "", "content": "", "type":
+        "domain", "id": 481448}, {"indicator": "microsoftserve.com", "description":
+        "", "created": "2016-07-27T12:52:38", "title": "", "content": "", "type":
+        "domain", "id": 481449}, {"indicator": "mxdnsv6.com", "description": "", "created":
+        "2016-07-27T12:52:38", "title": "", "content": "", "type": "domain", "id":
+        481450}, {"indicator": "gmail.comhttp://tinyurl.com/jfj9ouv", "description":
+        "", "created": "2016-07-27T12:52:38", "title": "", "content": "", "type":
+        "URL", "id": 481451}, {"indicator": "http://222.239.91.152", "description":
+        "", "created": "2016-07-27T12:52:38", "title": "", "content": "", "type":
+        "URL", "id": 481452}, {"indicator": "http://gmail.comyahoo.com.", "description":
+        "", "created": "2016-07-27T12:52:38", "title": "", "content": "", "type":
+        "URL", "id": 481470}, {"indicator": "http://222.239.91.152/?ZmFrZUBnbWFpbC5jb215YWhvby5jb20",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "URL", "id": 481454}, {"indicator": "http://222.239.91.152/?ZmFrZUBnbWFpbC5jb21odHRwOi8veWFob28uY29t",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "URL", "id": 481455}, {"indicator": "webserver.servehttp.com",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "hostname", "id": 361850}, {"indicator": "admin.nslookupdns.com",
+        "description": "", "created": "2016-07-27T12:52:38", "title": "", "content":
+        "", "type": "hostname", "id": 361852}, {"indicator": "jackhex.md5c.net", "description":
+        "", "created": "2016-07-27T12:52:38", "title": "", "content": "", "type":
+        "hostname", "id": 175207}, {"indicator": "gmail.comyahoo.com", "description":
+        "", "created": "2016-07-27T12:52:38", "title": "", "content": "", "type":
+        "hostname", "id": 481471}, {"indicator": "222.239.91.30", "description": "",
+        "created": "2016-07-27T12:52:38", "title": "", "content": "", "type": "IPv4",
+        "id": 481457}, {"indicator": "222.239.91.152", "description": "", "created":
+        "2016-07-27T12:52:38", "title": "", "content": "", "type": "IPv4", "id": 481458}],
+        "revision": 5, "adversary": null, "id": "5798ae960164110134d3bbdd", "name":
+        "Attack Delivers 9002 Trojan Through Google Drive"}], "previous": null}'
+    http_version: 
+  recorded_at: Thu, 16 Nov 2017 12:52:35 GMT
+recorded_with: VCR 3.0.3

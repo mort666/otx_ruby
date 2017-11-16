@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/8.8.8.8/reputation
+    uri: https://otx.alienvault.com/api/v1/indicators/hostname/mail.vspcord.com/geo
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 12:52:29 GMT
+      - Thu, 16 Nov 2017 12:52:12 GMT
       Server:
       - nginx
       Vary:
@@ -29,12 +29,17 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Content-Length:
-      - '40'
+      - '247'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"reputation": null}'
+      string: '{"flag_url": "/static/img/flags/gb.png", "city_data": true, "city":
+        null, "region": null, "charset": 0, "area_code": 0, "continent_code": "EU",
+        "country_code3": "GBR", "latitude": 51.49639892578125, "postal_code": null,
+        "longitude": -0.12240000069141388, "country_code": "GB", "country_name": "United
+        Kingdom", "asn": "AS8426 Claranet Ltd", "dma_code": 0, "flag_title": "United
+        Kingdom"}'
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 12:52:29 GMT
+  recorded_at: Thu, 16 Nov 2017 12:52:12 GMT
 recorded_with: VCR 3.0.3

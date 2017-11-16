@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/domain/spywaresite.info/geo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 14 Nov 2017 16:33:48 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '268'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"flag_url": "/static/img/flags/us.png", "city_data": true, "city":
+        "Sunnyvale", "region": "CA", "charset": 0, "area_code": 408, "continent_code":
+        "NA", "country_code3": "USA", "latitude": 37.42490005493164, "postal_code":
+        "94089", "longitude": -122.00740051269531, "country_code": "US", "country_name":
+        "United States", "asn": "AS25875 FriendFinder Networks Inc", "dma_code": 807,
+        "flag_title": "United States"}'
+    http_version: 
+  recorded_at: Tue, 14 Nov 2017 16:33:48 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/export?limit=10&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 16 Nov 2017 12:52:37 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '347'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 53097, "next": "https://otx.alienvault.com/api/v1/indicators/export?limit=10&page=2",
+        "results": [{"indicator": "src.sandcastlesmagazine.com", "description": "",
+        "title": "", "content": "", "type": "hostname", "id": 1}, {"indicator": "img.lakeforestparkhome.info",
+        "description": "", "title": "", "content": "", "type": "hostname", "id": 2},
+        {"indicator": "cdn.jameswoodwardmusic.com", "description": "", "title": "",
+        "content": "", "type": "hostname", "id": 3}, {"indicator": "cdn2.movetoclarksville.com",
+        "description": "", "title": "", "content": "", "type": "hostname", "id": 4},
+        {"indicator": "cdn.movetoclarksville.com", "description": "", "title": "",
+        "content": "", "type": "hostname", "id": 5}, {"indicator": "img.greenwoodhouse.info",
+        "description": "", "title": "", "content": "", "type": "hostname", "id": 6},
+        {"indicator": "yimg.1stdayofwinter.com", "description": "", "title": "", "content":
+        "", "type": "hostname", "id": 7}, {"indicator": "yimg.1208nw199thpl.info",
+        "description": "", "title": "", "content": "", "type": "hostname", "id": 8},
+        {"indicator": "src.sheffieldwoods.org", "description": "", "title": "", "content":
+        "", "type": "hostname", "id": 9}, {"indicator": "img.kirklandhouse.info",
+        "description": "", "title": "", "content": "", "type": "hostname", "id": 10}],
+        "previous": null}'
+    http_version: 
+  recorded_at: Thu, 16 Nov 2017 12:52:37 GMT
+recorded_with: VCR 3.0.3

@@ -21,7 +21,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 13 Nov 2017 18:13:01 GMT
+      - Thu, 16 Nov 2017 12:52:39 GMT
       Server:
       - nginx
       Vary:
@@ -29,7 +29,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Content-Length:
-      - '5018'
+      - '5053'
       Connection:
       - keep-alive
     body:
@@ -45,18 +45,18 @@ http_interactions:
         Memory Disclosure", "author": "Jared Stafford", "url": "https://github.com/offensive-security/exploit-database/blob/master/platforms/multiple/remote/32745.py",
         "platform": "multiple", "date": "2014-04-08", "cve": "CVE-2014-0160", "type":
         "remote", "port": "443"}, {"name": "OpenSSL TLS Heartbeat Extension - ''Heartbleed''
+        Information Leak Exploit (1)", "author": "prdelka", "url": "https://github.com/offensive-security/exploit-database/blob/master/platforms/multiple/remote/32791.c",
+        "platform": "multiple", "date": "2014-04-10", "cve": "CVE-2014-0160", "type":
+        "remote", "port": "443"}, {"name": "OpenSSL TLS Heartbeat Extension - ''Heartbleed''
         Information Leak Exploit (2) (DTLS Support)", "author": "Ayman Sagy", "url":
         "https://github.com/offensive-security/exploit-database/blob/master/platforms/multiple/remote/32998.c",
         "platform": "multiple", "date": "2014-04-24", "cve": "CVE-2014-0160", "type":
-        "remote", "port": "0"}, {"name": "OpenSSL TLS Heartbeat Extension - ''Heartbleed''
-        Information Leak Exploit (1)", "author": "prdelka", "url": "https://github.com/offensive-security/exploit-database/blob/master/platforms/multiple/remote/32791.c",
-        "platform": "multiple", "date": "2014-04-10", "cve": "CVE-2014-0160", "type":
-        "remote", "port": "443"}], "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0160",
-        "date_modified": "2017-01-06T00:00:00", "cwe": "CWE-119", "pulse_info": {"count":
+        "remote", "port": "0"}], "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0160",
+        "date_modified": "2017-11-14T00:00:00", "cwe": "CWE-119", "pulse_info": {"count":
         3, "references": ["https://www.us-cert.gov/ncas/alerts.xml"], "pulses": [{"indicator_type_counts":
         {"FileHash-SHA256": 2, "domain": 2, "URL": 24, "hostname": 20, "IPv4": 11,
         "CVE": 36, "FileHash-MD5": 67}, "pulse_source": "web", "TLP": "green", "description":
-        "NCAS Alerts US-CERT", "subscriber_count": 32, "tags": ["earliest pe", "import",
+        "NCAS Alerts US-CERT", "subscriber_count": 33, "tags": ["earliest pe", "import",
         "pe", "uint32", "uint16", "mitm", "flash", "dns", "e.g.", "proxy", "aaeh",
         "privacy", "windows", "name", "adobe flash", "simda", "regin", "malware",
         "vista", "united", "wiper", "microsoft", "ssl", "tcp", "superfish", "firefox",
@@ -70,7 +70,7 @@ http_interactions:
         "u.s.", "jul", "vbobfus", "united kingdom", "aug", "cryptolocker", "java",
         "avoid", "excel", "application", "email", "vendor", "singapore", "putty",
         "thailand", "poland", "ics", "as"], "export_count": 2, "is_following": 0,
-        "is_modified": false, "upvotes_count": 2.0, "modified_text": "738 days ago
+        "is_modified": false, "upvotes_count": 2.0, "modified_text": "741 days ago
         ", "is_subscribing": 0, "references": ["https://www.us-cert.gov/ncas/alerts.xml"],
         "targeted_countries": [], "groups": [], "vote": 0, "validator_count": 0, "is_author":
         false, "adversary": null, "id": "563c17ae67db8c7a156ab753", "observation":
@@ -98,17 +98,17 @@ http_interactions:
         "thailand", "poland", "ics", "as"], "downvotes_count": 2.0, "modified": "2015-11-06T02:59:58.886000",
         "export_count": 2, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
         "follower_count": 0, "votes_count": 0.0, "author_id": 6090, "user_subscriber_count":
-        2, "public": 1, "revision": 1}, "industries": [], "locked": 0, "name": "NCAS
+        3, "public": 1, "revision": 1}, "industries": [], "locked": 0, "name": "NCAS
         Alerts", "created": "2015-11-06T02:59:58.886000", "cloned_from": null, "downvotes_count":
         2.0, "modified": "2015-11-06T02:59:58.886000", "comment_count": 0, "indicator_count":
         162, "author": {"username": "matthewssa", "is_subscribed": 0, "avatar_url":
         "https://otx.alienvault.com/static/img/default.png", "is_following": 0, "id":
         "6090"}, "in_group": false, "follower_count": 0, "votes_count": 0.0, "public":
-        1}]}, "seen_wild": true, "products": ["cpe:/a:openssl:openssl:1.0.1a", "cpe:/a:openssl:openssl:1.0.1b",
-        "cpe:/a:openssl:openssl:1.0.1c", "cpe:/a:openssl:openssl:1.0.1d", "cpe:/a:openssl:openssl:1.0.1e",
-        "cpe:/a:openssl:openssl:1.0.1f", "cpe:/a:openssl:openssl:1.0.1", "cpe:/a:openssl:openssl:1.0.1:beta1",
-        "cpe:/a:openssl:openssl:1.0.2:beta1", "cpe:/a:openssl:openssl:1.0.1:beta3",
-        "cpe:/a:openssl:openssl:1.0.1:beta2"], "references": [{"external_source":
+        1}]}, "seen_wild": true, "products": ["cpe:/a:openssl:openssl:1.0.1", "cpe:/a:openssl:openssl:1.0.1:beta1",
+        "cpe:/a:openssl:openssl:1.0.1:beta2", "cpe:/a:openssl:openssl:1.0.1:beta3",
+        "cpe:/a:openssl:openssl:1.0.1a", "cpe:/a:openssl:openssl:1.0.1b", "cpe:/a:openssl:openssl:1.0.1c",
+        "cpe:/a:openssl:openssl:1.0.1d", "cpe:/a:openssl:openssl:1.0.1e", "cpe:/a:openssl:openssl:1.0.1f",
+        "cpe:/a:openssl:openssl:1.0.2:beta1"], "references": [{"external_source":
         "CONFIRM", "href": "http://advisories.mageia.org/MGASA-2014-0165.html", "type":
         "UNKNOWN", "name": "http://advisories.mageia.org/MGASA-2014-0165.html"}, {"external_source":
         "MISC", "href": "http://blog.fox-it.com/2014/04/08/openssl-heartbleed-bug-live-blog/",
@@ -214,6 +214,8 @@ http_interactions:
         "59139"}, {"external_source": "SECUNIA", "href": "http://secunia.com/advisories/59243",
         "type": "UNKNOWN", "name": "59243"}, {"external_source": "SECUNIA", "href":
         "http://secunia.com/advisories/59347", "type": "UNKNOWN", "name": "59347"},
+        {"external_source": "CONFIRM", "href": "http://support.citrix.com/article/CTX140605",
+        "type": "UNKNOWN", "name": "http://support.citrix.com/article/CTX140605"},
         {"external_source": "CISCO", "href": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140409-heartbleed",
         "type": "UNKNOWN", "name": "20140409 OpenSSL Heartbeat Extension Vulnerability
         in Multiple Cisco Products"}, {"external_source": "CONFIRM", "href": "http://www-01.ibm.com/support/docview.wss?uid=isg400001841",
@@ -298,7 +300,9 @@ http_interactions:
         "https://lists.balabit.hu/pipermail/syslog-ng-announce/2014-April/000184.html",
         "type": "UNKNOWN", "name": "[syslog-ng-announce] 20140411 syslog-ng Premium
         Edition 5 LTS (5.0.4a) has been released"}, {"external_source": "CONFIRM",
-        "href": "https://support.f5.com/kb/en-us/solutions/public/15000/100/sol15159.html?sr=36517217",
+        "href": "https://support.f5.com/kb/en-us/solutions/public/15000/100/sol15159.html",
+        "type": "UNKNOWN", "name": "https://support.f5.com/kb/en-us/solutions/public/15000/100/sol15159.html"},
+        {"external_source": "CONFIRM", "href": "https://support.f5.com/kb/en-us/solutions/public/15000/100/sol15159.html?sr=36517217",
         "type": "UNKNOWN", "name": "https://support.f5.com/kb/en-us/solutions/public/15000/100/sol15159.html?sr=36517217"},
         {"external_source": "MISC", "href": "https://www.cert.fi/en/reports/2014/vulnerability788210.html",
         "type": "UNKNOWN", "name": "https://www.cert.fi/en/reports/2014/vulnerability788210.html"}],
@@ -315,5 +319,5 @@ http_interactions:
         via crafted packets that trigger a buffer over-read, as demonstrated by reading
         private keys, related to d1_both.c and t1_lib.c, aka the Heartbleed bug."}'
     http_version: 
-  recorded_at: Mon, 13 Nov 2017 18:13:01 GMT
+  recorded_at: Thu, 16 Nov 2017 12:52:39 GMT
 recorded_with: VCR 3.0.3

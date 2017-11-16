@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/hostname/mail.vspcord.com/url_list?limit=20&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 16 Nov 2017 12:52:06 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '304'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"has_next": false, "actual_size": 2, "url_list": [{"domain": "vspcord.com",
+        "url": "http://mail.vspcord.com", "hostname": "mail.vspcord.com", "httpcode":
+        200, "gsb": [], "result": {"urlworker": {"ip": "212.61.180.100", "http_code":
+        200}, "safebrowsing": {"matches": []}}, "date": "2017-07-09T18:34:20", "encoded":
+        "http%3A//mail.vspcord.com"}, {"domain": "vspcord.com", "url": "http://mail.vspcord.com/",
+        "hostname": "mail.vspcord.com", "httpcode": null, "result": {"urlworker":
+        {"ip": "195.22.26.254"}}, "date": "2013-11-07T03:03:31.567000", "encoded":
+        "http%3A//mail.vspcord.com/"}], "page_num": 1, "limit": 20, "full_size": 2,
+        "paged": true}'
+    http_version: 
+  recorded_at: Thu, 16 Nov 2017 12:52:06 GMT
+recorded_with: VCR 3.0.3

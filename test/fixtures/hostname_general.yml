@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/hostname/mail.vspcord.com/general
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 16 Nov 2017 12:52:04 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '287'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"indicator": "mail.vspcord.com", "alexa": "http://www.alexa.com/siteinfo/mail.vspcord.com",
+        "whois": "http://whois.domaintools.com/mail.vspcord.com", "type_title": "Hostname",
+        "base_indicator": {"indicator": "mail.vspcord.com", "description": "", "title":
+        "", "access_reason": "", "access_type": "public", "content": "", "type": "hostname",
+        "id": 1446814}, "pulse_info": {"count": 1, "references": [], "pulses": []},
+        "domain": "vspcord.com", "type": "hostname", "validation": [], "sections":
+        ["general", "geo", "url_list", "passive_dns", "malware", "whois", "http_scans"]}'
+    http_version: 
+  recorded_at: Thu, 16 Nov 2017 12:52:04 GMT
+recorded_with: VCR 3.0.3
