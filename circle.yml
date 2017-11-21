@@ -1,12 +1,9 @@
 machine:
   ruby:
-    version: 2.2.4
+    version: 2.3.5
 database:
   override:
     - echo 'no database'
-test:
-  post:
-    - curl -sSL https://download.sourceclear.com/ci.sh | bash
 dependencies:
   pre:
     - gem install bundler
