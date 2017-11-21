@@ -5,7 +5,12 @@ class EventsTest < Minitest::Test
     VCR.use_cassette('events_get') do
       events = OTX::Events.new('test_api')
 
-      events_get = events.get_events
+      e = events.get_events
+
+      assert_equal 'subscribe', e.first.action
+      assert_equal 'user', e.first.object_type
+      assert_equal 1506106, e.first.id
+      assert_equal 'AlienVault', e.first.object_id
     end
   end
 

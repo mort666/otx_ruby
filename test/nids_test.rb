@@ -5,7 +5,14 @@ class NIDSTest < Minitest::Test
     VCR.use_cassette('nids_general') do
       nids = OTX::NIDS.new('test_api')
 
-      nids_general = nids.get_general('2820184')
+      n = nids.get_general('2820184')
+
+      assert_equal '2820184', n.indicator
+      assert_equal '2820184', n.base_indicator.indicator
+      assert_equal 0, n.pulse_info.count
+      assert_equal 'Suspicious Activity', n.category
+      assert_equal 'Webshell', n.subcategory
+      assert_equal 'IndoXploit Shell Uploader Inbound', n.name
     end
   end
 end

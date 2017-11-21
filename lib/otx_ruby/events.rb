@@ -25,6 +25,8 @@ module OTX
       events.each do |event|
         results << OTX::Event.new(event)
       end
+
+      return results
     end
 
     #
@@ -44,7 +46,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         events += json_data['results']
-      end while page
+      end while page && !json_data['results'].empty?
 
       results = []
       events.each do |event|
@@ -73,7 +75,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         events += json_data['results']
-      end while page
+      end while page && !json_data['results'].empty?
 
       results = []
       events.each do |event|

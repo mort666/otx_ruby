@@ -37,7 +37,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         pulses += json_data['results']
-      end while page
+      end while page && !json_data['results'].empty?
 
       results = []
       pulses.each do |pulse|
@@ -66,7 +66,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         pulses += json_data['results']
-      end while page
+      end while page && !json_data['results'].empty?
 
       results = []
       pulses.each do |pulse|

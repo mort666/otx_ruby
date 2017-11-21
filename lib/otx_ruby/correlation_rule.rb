@@ -5,7 +5,7 @@ module OTX
 
       json_data = get(uri)
 
-      general = OTX::Indicator::IP::General.new(json_data)
+      general = OTX::Indicator::CorrelationRule.new(json_data)
 
       return general
     end

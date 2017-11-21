@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://otx.alienvault.com/api/v1/indicators/hostname/mail.vspcord.com/geo
+    uri: https://otx.alienvault.com/api/v1/indicators/hostname/otx.alienvault.com/geo
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 12:52:12 GMT
+      - Mon, 20 Nov 2017 14:55:11 GMT
       Server:
       - nginx
       Vary:
@@ -29,17 +29,17 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Content-Length:
-      - '247'
+      - '262'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"flag_url": "/static/img/flags/gb.png", "city_data": true, "city":
-        null, "region": null, "charset": 0, "area_code": 0, "continent_code": "EU",
-        "country_code3": "GBR", "latitude": 51.49639892578125, "postal_code": null,
-        "longitude": -0.12240000069141388, "country_code": "GB", "country_name": "United
-        Kingdom", "asn": "AS8426 Claranet Ltd", "dma_code": 0, "flag_title": "United
-        Kingdom"}'
+      string: '{"flag_url": "/static/img/flags/us.png", "city_data": true, "city":
+        "Boardman", "region": "OR", "charset": 0, "area_code": 541, "continent_code":
+        "NA", "country_code3": "USA", "latitude": 45.869598388671875, "postal_code":
+        "97818", "longitude": -119.68800354003906, "country_code": "US", "country_name":
+        "United States", "asn": "AS16509 Amazon.com, Inc.", "dma_code": 810, "flag_title":
+        "United States"}'
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 12:52:12 GMT
+  recorded_at: Mon, 20 Nov 2017 14:55:11 GMT
 recorded_with: VCR 3.0.3

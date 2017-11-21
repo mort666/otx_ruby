@@ -27,7 +27,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         indicators += json_data['results']
-      end while page
+      end while page && !json_data['results'].empty?
 
       results = []
       indicators.each do |indicator|
@@ -48,7 +48,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         indicators += json_data['results']
-      end while page
+      end while page && !json_data['results'].empty?
 
       results = []
       indicators.each do |indicator|
@@ -69,7 +69,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         indicators += json_data['results']
-      end while page
+      end while page && !json_data['results'].empty?
 
       results = []
       indicators.each do |indicator|
@@ -90,7 +90,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         indicators += json_data['results']
-      end while page
+      end while page && !json_data['results'].empty?
 
       results = []
       indicators.each do |indicator|
