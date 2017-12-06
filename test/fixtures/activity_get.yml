@@ -1,0 +1,816 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/pulses/activity?limit=10&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 17 Nov 2017 14:53:23 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 1057, "next": "https://otx.alienvault.com/api/v1/pulses/activity?limit=10&page=2",
+        "results": [{"industries": ["government"], "TLP": "white", "description":
+        "This blog discusses targeted attacks against the Middle East taking place
+        between February and October 2017 by a group Unit 42 is naming \u201cMuddyWater\u201d.
+        This blog links this recent activity with previous isolated public reporting
+        on similar attacks we believe are related. We refer to these attacks as MuddyWater
+        due to the confusion in attributing these attacks. Although the activity was
+        previously linked by others to the FIN7 threat actor group, our research suggests
+        the activity is in fact espionage related and unlikely to be FIN7 related.\n\nThe
+        MuddyWater attacks are primarily against Middle Eastern nations. However,
+        we have also observed attacks against surrounding nations and beyond, including
+        targets in India and the USA. MuddyWater attacks are characterized by the
+        use of a slowly evolving PowerShell-based first stage backdoor we call \u201cPOWERSTATS\u201d.
+        Despite broad scrutiny and reports on MuddyWater attacks, the activity continues
+        with only incremental changes to the tools and techniques.", "created": "2017-11-14T22:08:31.715000",
+        "tags": ["MuddyWater", "powershell", "POWERSTATS", "DNSMessenger", "LazaGne",
+        "unit42"], "modified": "2017-11-14T22:08:31.715000", "author_name": "AlienVault",
+        "public": 1, "references": ["https://researchcenter.paloaltonetworks.com/2017/11/unit42-muddying-the-water-targeted-attacks-in-the-middle-east/"],
+        "targeted_countries": ["Saudi Arabia", "Iraq", "Israel", "United Arab Emirates",
+        "Georgia", "India", "Pakistan", "Turkey", "United States"], "indicators":
+        [{"indicator": "12a7898fe5c75e0b57519f1e7019b5d09f5c5cbe49c48ab91daf6fcc09ee8a30",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 77069066}, {"indicator": "1421a5cd0566f4a69e7ca9cdefa380507144d7ed59cd22e53bfd25263c201a6f",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295941}, {"indicator": "16985600c959f6267476da614243a585b1b222213ec938351ef6a26560c992db",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295942}, {"indicator": "1b60b7f9b0faf25288f1057b154413921a6cb373dcee43e831b9263c5b3077ce",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 101737908}, {"indicator": "2602e817a67949860733b3548b37792616d52ffd305405ccab0409bcfedc5d63",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 77069067}, {"indicator": "2bb1637c80f0a7df7260a8583beb033f4afbdd5c321ff5642bc8e1868194e009",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 77069068}, {"indicator": "2c8d18f03b6624fa38cae0141b91932ba9dc1221ec5cf7f841a2f7e31685e6a1",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 101737909}, {"indicator": "3030d80cfe1ee6986657a2d9b76b626ea05e2c289dee05bd7b9553b10d14e4a1",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295943}, {"indicator": "367021beedb3ad415c69c9a0e657dc3ed82b1b24a41a71537d889f5e2b7ca433",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 101737910}, {"indicator": "40a6b4c6746e37d0c5ecb801e7656c9941f4839f94d8f4cd61eaf2b812feaabe",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295944}, {"indicator": "42a4d9527063f73004b049a093a34a4fc3b6ea9505cb9b50b895486cb2dca94b",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 77069069}, {"indicator": "4e3c7defd6f3061b0303e687a4b5b3cc2a4ae84cdc48706c65a7b1e53402efc0",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295945}, {"indicator": "58282917a024ac252966650361ac4cbbbed48a0df7cab7b9a6329d4a04551c0d",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 101737911}, {"indicator": "58898648a68f0639c06bedc8242ca48bc6ec56f11ed40d00aa5fdda4e5553482",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 101737912}, {"indicator": "588cd0fe3ae6fbd2fa4cf8de8db8ae2069ea62c9eaa6854caedf45045780661f",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 101737913}, {"indicator": "58aec38e98aba66f9f01ca53442d160a2da7b137efbc940672982a4d8415a186",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295946}, {"indicator": "5d049bd7f478ea5d978b3c78f7f0afdf294a94f526fc20ffd6e33022d40d15ae",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 77069071}, {"indicator": "5ed5fc6c6918ff6fa4eab7742c03d59155ca87e0fe12bac339f18928e2924a96",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 77069072}, {"indicator": "605fefc7829cfa41710e0b844084eab1f180fe513adc1d8f0f82501a154db0f4",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 77069073}, {"indicator": "81523e0199ae1dc9e87d2b952642785bfbda6326f22e4c0794a19afdf001a9a3",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 101737915}, {"indicator": "886e3a2f74bf8f46b23c78a6bad80c74fe33579f6fe866bc5075b034c4d5d432",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295947}, {"indicator": "8b96804d861ea690fcb61224ec27b84476cf3117222cca05e6eba955d9395deb",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295948}, {"indicator": "8ec108b8f66567a8d84975728b2d5e6a2786c2ca368310cca55acad02bb00fa6",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295949}, {"indicator": "90b66b3fef77962fbfda364a4f8799bfcc9ab73772026d7a8922a7cf5556a024",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 101737916}, {"indicator": "917a6c816684f22934e2998f43633179e14dcc2e609c6931dd2fc36098c48028",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 101737917}, {"indicator": "96101de2386e35bc5e38d32524a02c6c5ca7cc6624e656a629b2e0f1693a76fd",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 101737918}, {"indicator": "964aaf5d9b1c749df0a2df1f1b4193e5a643893f251e2d74b47663f895da9b13",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295950}, {"indicator": "96d80ae577e9b899772a940b4941da39cf7399b5c852048f0d06926eb6c9868a",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295951}, {"indicator": "97f9a83bc6bb1b3f5cb7ac9401f95265597bff796bb4901631d6fa2c79a48bdc",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 101737919}, {"indicator": "99077dcb37395603db0f99823a190f50313dc4e9819462c7da29c4bc983f42fd",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295952}, {"indicator": "9b5e36bb7518a9e333c31d09b589102f89e3425571dd434820ab3c437dc4e0d9",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295953}, {"indicator": "a2ad6bfc47c4f69a2170cc1a9fd620a68b1ebb474b7bdf601066e780e592222f",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295954}, {"indicator": "a3c1fd46177a078c4b95c744a24103df7d0a58cee1a3be92bc4cdd7dec1b1aa5",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 101737920}, {"indicator": "a6673c6d52dd5361afd96f8143b88810812daa97004f69661da625aaaba9363b",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295955}, {"indicator": "bb1a5fb87d34c63ade0ed8a8b95412ba3795fd648a97836cb5117aff8ea08423",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295956}, {"indicator": "c23ece07fc5432ca200f3de3e4c4b68430c6a22199d7fab11916a8c404fb63dc",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 77069075}, {"indicator": "cb96cd26f36a3b1aacabfc79bbb5c1e0c9850b1c75c30aa498ad2d4131b02b98",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 13656807}, {"indicator": "cf87a2ac51503d645e827913dd69f3d80b66a58195e5a0044af23ea6ba46b823",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295957}, {"indicator": "d2a0eec18d755d456a34865ff2ffc14e3969ea77f7235ef5dfc3928972d7960f",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295958}, {"indicator": "d65e2086aeab56a36896a56589e47773e9252747338c6b59c458155287363f28",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295959}, {"indicator": "db7bdd6c3ff7a27bd4aa9acc17dc35c38b527fb736a17d0927a0b3d7e94acb42",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295960}, {"indicator": "de6ce9b75f4523a5b235f90fa00027be5920c97a972ad6cb2311953446c81e1d",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295961}, {"indicator": "e8a832b04dbdc413b71076754c3a0bf07cb7b9b61927248c482ddca32e1dab89",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 77069077}, {"indicator": "ed2f9c9d5554d5248a7ad9ad1017af5f1bbadbd2275689a8b019a04c516eeec2",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295962}, {"indicator": "fcfbdffbcad731e0a5aad349215c87ed919865d66c287a6723fd8e2f896c5834",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143295963}, {"indicator": "fe16543109f640ddbf3725e4d9f593de9f13ee9ae96c5e41e9cdccb7ab35b661",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 77069078}, {"indicator": "http://106.187.38.21/short_qr/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224776}, {"indicator": "http://arbiogaz.com/upload/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143295964}, {"indicator": "http://azmwn.suliparwarda.com/wp-content/plugins/wpdatatables/panda.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224777}, {"indicator": "http://azmwn.suliparwarda.com/wp-content/themes/twentyfifteen/logs.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224778}, {"indicator": "http://bangortalk.org.uk/speakers.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224779}, {"indicator": "http://best2.thebestconference.org/ccb/browse_cat.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224780}, {"indicator": "http://camco.com.pk/Controls/data.aspx?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143295965}, {"indicator": "http://cbpexbrasilia.com.br/wp-content/plugins/wordpress-seo/power.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224781}, {"indicator": "http://cbpexbrasilia.com.br/wp-includes/widgets/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224782}, {"indicator": "http://cgss.com.pk/data.aspx?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143295966}, {"indicator": "http://diplomat.com.sa/wp-content/plugins/wordpress-importer/cache.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224783}, {"indicator": "http://feribschat.eu/logs.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224784}, {"indicator": "http://ghanaconsulate.com.pk/data.aspx?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143295967}, {"indicator": "http://magical-energy.com/css.aspx?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224785}, {"indicator": "http://magical-energy.com/css/css.aspx?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224786}, {"indicator": "http://mainandstrand.com/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224787}, {"indicator": "http://riyadhfoods.com/css/edu.aspx?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224788}, {"indicator": "http://riyadhfoods.com/jquery-ui/js/jquery.aspx?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224789}, {"indicator": "http://school.suliparwarda.com/components/com_akeeba/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224790}, {"indicator": "http://school.suliparwarda.com/plugins/editors/codemirror/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224791}, {"indicator": "http://suliparwarda.com/includes/panda.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143295968}, {"indicator": "http://suliparwarda.com/layouts/joomla/logs.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143295969}, {"indicator": "http://suliparwarda.com/wp-content/plugins/entry-views/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224792}, {"indicator": "http://suliparwarda.com/wp-content/themes/twentyfifteen/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224793}, {"indicator": "http://tmclub.eu/clubdata.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224794}, {"indicator": "http://watyanagr.nfe.go.th/e-office/lib/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143295970}, {"indicator": "http://watyanagr.nfe.go.th/watyanagr/power.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224796}, {"indicator": "http://whiver.in/power.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224797}, {"indicator": "http://www.4seasonrentacar.com/viewsure/data.aspx?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143295971}, {"indicator": "http://www.akhtaredanesh.com/d/file/sym/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224798}, {"indicator": "http://www.akhtaredanesh.com/d/oschool/power.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224799}, {"indicator": "http://www.arcadecreative.com/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224800}, {"indicator": "http://www.armaholic.com/list.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224801}, {"indicator": "http://www.asan-max.com/files/articles/css.aspx?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224802}, {"indicator": "http://www.asan-max.com/files/articles/large/css.aspx?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224803}, {"indicator": "http://www.autotrans.hr/index.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224804}, {"indicator": "http://www.dafc.co.uk/news.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224805}, {"indicator": "http://www.eapa.org/asphalt.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224806}, {"indicator": "http://www.elev8tor.com/show-work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224807}, {"indicator": "http://www.jdarchs.com/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224808}, {"indicator": "http://www.kunkrooann.com/inc/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224809}, {"indicator": "http://www.mackellarscreenworks.com/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224810}, {"indicator": "http://www.mitegen.com/mic_catalog.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224811}, {"indicator": "http://www.nigelwhitfield.com/v2/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224812}, {"indicator": "http://www.pomegranates.org/index.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224813}, {"indicator": "http://www.ridefox.com/content.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224814}, {"indicator": "http://www.shapingtomorrowsworld.org/category.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224815}, {"indicator": "http://www.vanessajackson.co.uk/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224816}, {"indicator": "http://www.yaran.co//wp-content/plugins/so-masonry/logs.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224817}, {"indicator": "http://www.yaran.co/wp-includes/widgets/logs.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224818}, {"indicator": "http://www.ztm.waw.pl/pop.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224819}, {"indicator": "https://coa.inducks.org/publication.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224820}, {"indicator": "https://mhtevents.com/account.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224821}, {"indicator": "https://skepticalscience.com/graphics.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224822}, {"indicator": "https://wallpapercase.com/wp-content/themes/twentyfifteen/logs.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224823}, {"indicator": "https://wallpapercase.com/wp-includes/customize/logs.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224824}, {"indicator": "https://www.spearhead-training.com//html/power.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224825}, {"indicator": "https://www.spearhead-training.com/work.php?c=",
+        "description": "", "created": "2017-11-14T22:08:32", "title": "", "content":
+        "", "type": "URL", "id": 143224826}, {"indicator": "106.187.38.21", "description":
+        "", "created": "2017-11-14T22:08:32", "title": "", "content": "", "type":
+        "IPv4", "id": 143295972}, {"indicator": "138.201.75.227", "description": "",
+        "created": "2017-11-14T22:08:32", "title": "", "content": "", "type": "IPv4",
+        "id": 3003311}, {"indicator": "144.76.109.88", "description": "", "created":
+        "2017-11-14T22:08:32", "title": "", "content": "", "type": "IPv4", "id": 44379774},
+        {"indicator": "148.251.204.131", "description": "", "created": "2017-11-14T22:08:32",
+        "title": "", "content": "", "type": "IPv4", "id": 101737929}], "revision":
+        1, "adversary": "", "id": "5a0b695faa066457f990a598", "name": "Muddying the
+        Water: Targeted Attacks in the Middle East"}, {"industries": [], "TLP": "white",
+        "description": "Ongoing reporting by ClearSky", "created": "2017-11-14T15:27:02.520000",
+        "tags": ["molerats", "palestine"], "modified": "2017-11-14T15:27:02.520000",
+        "author_name": "AlienVault", "public": 1, "references": ["https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc",
+        "https://twitter.com/ClearskySec/status/929998314002673666"], "targeted_countries":
+        ["Israel"], "indicators": [{"indicator": "http://supports.mefound.com/Track.php?Pn=UExBQ0VIT0wtNkY2OTlBIHwgQWRtaW5pc3RyYXRvcg&amp;amp;fr=&amp;amp;GR=TU9TU0FEKFRyYWNrKTxicj4gMjAxNS0xMS0wOA&amp;amp;com=IDxicj4gIDxicj4g&amp;amp;ID=25682191698114320915855241632272054717388MOSSAD&amp;amp;o=TWljcm9zb2Z0IFdpbmRvd3MgWFAgUHJvZmVzc2lvbmFs&amp;amp;ho=c3VwcG9ydHMubWVmb3VuZC5jb20=&amp;amp;av=&amp;amp;v=704",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "URL", "id": 21811691}, {"indicator": "7e122a882d625f4ccac019efb7bf1b1024b9e0919d205105e7e299fb1a20a326",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 21778568}, {"indicator": "7a4c078a687e0c12acda81681231b823a8d59353cdb7b814d7bd50a0c136771d",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 21811690}, {"indicator": "32643fad3191cc5f2a3e8f0194b65505d77e3dc0703a98f66bb7df865d9747d5",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 21778569}, {"indicator": "0a777b0b981df907e42b277c2ae6da0d68539781dfdbb256ea4c41a5b7a9996e",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198424}, {"indicator": "0f0a9724abaaf0f7ab9a55b136212f757f9929319b64314550ca594d87c8c255",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198425}, {"indicator": "15d390626fea8d06adc261e0588ec40d17b6a62a2320313073ba94809c5e0f4d",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198426}, {"indicator": "17fbc98aa216bee93a14fddefedce3563a1b41095ea32fff0f0de6b86854a11f",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198427}, {"indicator": "202d1d51254eb13c64d143c387a87c5e7ce97ba3dcfd12dd202a640439a9ea3b",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198428}, {"indicator": "211caa67fa9fff89ba719cb0b711e4c86bf9ac2926bd4413bcb1106b326b4672",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198429}, {"indicator": "26c672b2537f8a89f2d59674f00bcfe9825796ca9b1ec51c96e5675dd586b87b",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198430}, {"indicator": "4af094cd8704149d810175a192fcb1b6ea39c77085c7cf4535c03061bf7577a8",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198431}, {"indicator": "50eedaf3150253cc2298446615421f4caa0482cb93658dc095855c38d425e3fb",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198432}, {"indicator": "5ae0a582ed5d60324d6d1397be3deb0c704a1d77c9ef3d5f486455f99da32e7f",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198433}, {"indicator": "70dde32a57ac2e92c35d35ff9544010170e10ea914c14e7f6a45d4a0f1b4cb0b",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198434}, {"indicator": "75e67dab3ce2db8e20dd866125667dfed7e8e0289ab25fc2012e30cbe0ada999",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198435}, {"indicator": "760ace17ad8aacd23699682600bd7ee319d617dc225b87aa873ad92ef5abcb24",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198436}, {"indicator": "8c81eb0fb49c40a1fa5474f45ff638961330ff73198dc7d537667455e5273bb8",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198437}, {"indicator": "aed93c002574f25dabd1859f080203a2c8f332e92c80db9aa983316695d938d3",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198438}, {"indicator": "c34888f50bd1fc09b70fd5e0fbc333be9d8f0ad998221ce4fbd4cb2cc0b78f6b",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198439}, {"indicator": "c3f5f5bfe39b55ffe0343950e0a4bf0433c35679a01daf07ce6c0ccc7d4da9b7",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198440}, {"indicator": "c44e13c75dff157604934ca4d1e792b4250f7e0e9206f00e7ff367d62763d6aa",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198441}, {"indicator": "d5b22843aabbbc20af253d579fd1f098138be85e2cff4677f7886e8d31ff00cb",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198442}, {"indicator": "dd43ba370d10caa673ffdc55a265ed4a997681a0049a5ac38539f11e252a5cfb",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198443}, {"indicator": "e32e8d881fdd250a2f72002afbbdb9b03d02953f64d21b287715b60590ccefe2",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198444}, {"indicator": "ebf2423b9de131eab1c61ac395cbcfc2ac3b15bd9c83b96ae0a48619a4a38d0a",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198445}, {"indicator": "ebff3cdf34d4df6341d12a400169a5bd27ee3bf9c62276b00b01904c1d749c23",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198446}, {"indicator": "f35e10f9bda03e53d3e00a4ba32f352ccf36b3b09e373e32e29504345aaed196",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198447}, {"indicator": "f6fbd0edcf8ab32e3b16053012d28e60523544ac9a1bfbdea0eca7eb0a23eceb",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198448}, {"indicator": "fb5c44f5736d2bd14cf7b5702af346fe08fd778db418a827256c01de2c16ca97",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 143198449}, {"indicator": "http://188.209.52.29/sand/c.xls",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "URL", "id": 143198450}, {"indicator": "http://saudiedi.toh.info/search?q=%E7%DF%5D%10&amp;amp;cvid=714105926300154928",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "URL", "id": 143198451}, {"indicator": "checktest.www1.biz", "description":
+        "", "created": "2017-11-14T15:27:03", "title": "", "content": "", "type":
+        "hostname", "id": 143198452}, {"indicator": "fulltest.yourtrap.com", "description":
+        "", "created": "2017-11-14T15:27:03", "title": "", "content": "", "type":
+        "hostname", "id": 143198453}, {"indicator": "saudiedi.toh.info", "description":
+        "", "created": "2017-11-14T15:27:03", "title": "", "content": "", "type":
+        "hostname", "id": 143198454}, {"indicator": "space.support-reg.space", "description":
+        "", "created": "2017-11-14T15:27:03", "title": "", "content": "", "type":
+        "hostname", "id": 409361}, {"indicator": "supports.mefound.com", "description":
+        "", "created": "2017-11-14T15:27:03", "title": "", "content": "", "type":
+        "hostname", "id": 173176}, {"indicator": "wiknet.wikaba.com", "description":
+        "", "created": "2017-11-14T15:27:03", "title": "", "content": "", "type":
+        "hostname", "id": 21778571}, {"indicator": "www.supports.mefound.com", "description":
+        "", "created": "2017-11-14T15:27:03", "title": "", "content": "", "type":
+        "hostname", "id": 143198455}, {"indicator": "05854d1475cfbbcca799b3b1d03fd5af",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198456}, {"indicator": "0970aec05937e51a52463a7360b4c8b3",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198457}, {"indicator": "0ea8f665f5e2d20e6a6e852c57264193",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198458}, {"indicator": "1c64b27a58b016a966c654f1fdf4c155",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 21778572}, {"indicator": "23370b0c977d7e3f114ee6152a4642b5",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198459}, {"indicator": "2a7e0463c7814465f9a78355c4754d0a",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 21778574}, {"indicator": "2b6bd6f99c913cd895891114bef55bdd",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198460}, {"indicator": "486954967e02a2e1577bd7dd91026102",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198461}, {"indicator": "5d5b2ed283af4c9c96bc05c566bf5063",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198462}, {"indicator": "5da48e60c61a7f16e69f8163df76fac3",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198463}, {"indicator": "6c81f73fb99c56b90548b9769ab6a747",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198464}, {"indicator": "6dc73f2b635019724353b251f1b6f849",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198465}, {"indicator": "76191048a30b395461449266d13c3d33",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198466}, {"indicator": "8598313222c41280eb42863eda8a9490",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198467}, {"indicator": "9a42f42ca73620c3258faab06666446c",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198468}, {"indicator": "a08b9b8f0d09f293c731b122648579d3",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198469}, {"indicator": "a9dd94f3f0eb23b4d8b030ad758e49c9",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198470}, {"indicator": "ade199b16607fd29c8e7288fb750ca2b",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198471}, {"indicator": "aede654e77e92dbd77ca512e19f495b8",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198472}, {"indicator": "b726fe42c5b6c80b4f10d3542507340f",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198473}, {"indicator": "b76f4c8c22b84600ac3cff64dadfaf8b",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198474}, {"indicator": "b8d5d8e79f1f83548f1efef7f53606da",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198475}, {"indicator": "bb161c7a01d218ee0cc98b4d5404d460",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198476}, {"indicator": "c9a0e0c04b27276fcce552cf175b2c82",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198477}, {"indicator": "cfac5b53db9024a80be5d0c13290f62a",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198478}, {"indicator": "ea406ea60a05afa14f7debc67a75a472",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 21778582}, {"indicator": "fea6546e3299a31a58a3aa2a6b7060c9",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 143198479}, {"indicator": "0dda541139a85bd4caaa58110c2bdfbd9547fa8b",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198480}, {"indicator": "1f2f306d6c55305bf5ab2d4b69e9acc481fdb7b5",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198481}, {"indicator": "256c631372692a1a907b04d27a735eb0905a003e",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198482}, {"indicator": "2d61843bea61af94add72ea6e9517933122d96a0",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198483}, {"indicator": "3ff45e700338eaa3f6704ec30d9552a605c92132",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198484}, {"indicator": "505c98fdc2e8d6ef7cc317339f48003b5523c04e",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198485}, {"indicator": "584c7631758b98f7d33a95128bc9bfe77907fb8d",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198486}, {"indicator": "62969b6cd78d9da829ccd3f8410cc794b3b57fea",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198487}, {"indicator": "78c0266456e33abed00895cb05d0f9fe09b83da3",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198488}, {"indicator": "8ed0273baea21de2361eaede7b9ed6fd7080cdef",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198489}, {"indicator": "970bed241c3382c09ded9f0661f955232b97fb58",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198490}, {"indicator": "a1047665ed9d665f5cf066e4a9902d809e7325cf",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198491}, {"indicator": "c3c8e5346e084b99cbaa69e3586af35d29612e94",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198492}, {"indicator": "ca00fa8110d567d5b09337d87c67bc8b6ee2db9b",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198493}, {"indicator": "cda07b55beacf4a97fc310ea2d7b4e2f33d252c3",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198494}, {"indicator": "d9fac68b6c49c485675d9141f375799d10572999",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198495}, {"indicator": "e9bb52b4b24393e00bcda074d8d323f3fc5570bd",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198496}, {"indicator": "eddf2ca780b4396c0bf5ea3f13d22275fb6822fc",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198497}, {"indicator": "f24a18fa29af2c2213c3f2728e0ddff141d1d5d9",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 143198498}, {"indicator": "CVE-2017-11826",
+        "description": "", "created": "2017-11-14T15:27:03", "title": "", "content":
+        "", "type": "CVE", "id": 124629599}, {"indicator": "CVE-2017-0199", "description":
+        "", "created": "2017-11-14T15:27:03", "title": "", "content": "", "type":
+        "CVE", "id": 9419289}], "revision": 1, "adversary": "Molerats", "id": "5a0b0b46fee07f41c7a21123",
+        "name": "Continued Molerats Activity"}, {"industries": ["Finance"], "TLP":
+        "white", "description": "According to X-Force research, the new banking Trojan
+        emerged in the wild in September 2017, when its first test campaigns were
+        launched. Our researchers noted that IcedID has a modular malicious code with
+        modern banking Trojan capabilities comparable to malware such as the Zeus
+        Trojan.\n\nAt this time, the malware targets banks, payment card providers,
+        mobile services providers, payroll, webmail and e-commerce sites in the U.S.
+        Two major banks in the U.K. are also on the target list the malware fetches.",
+        "created": "2017-11-13T16:24:35.479000", "tags": ["iceid"], "modified": "2017-11-13T16:24:35.479000",
+        "author_name": "AlienVault", "public": 1, "references": ["http://securityintelligence.com/new-banking-trojan-icedid-discovered-by-ibm-x-force-research"],
+        "targeted_countries": [], "indicators": [{"indicator": "medicalciferol.com",
+        "description": "", "created": "2017-11-13T16:24:36", "title": "", "content":
+        "", "type": "domain", "id": 142495678}, {"indicator": "38921f28bb74fea2cab6e70039ee65f3",
+        "description": "", "created": "2017-11-13T16:24:36", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 142473678}, {"indicator": "6899d3b51430679254635d78357c087e",
+        "description": "", "created": "2017-11-13T16:24:36", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 142473679}, {"indicator": "c01dcdba9223d037eb8bf0944f1c1c9e",
+        "description": "", "created": "2017-11-13T16:24:36", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 142473680}, {"indicator": "d982c6de627441765c89da5cfeb04d6f",
+        "description": "", "created": "2017-11-13T16:24:36", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 142473681}, {"indicator": "de4ef2e24306b35d29891b45c1e3fbfd",
+        "description": "", "created": "2017-11-13T16:24:36", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 142473682}], "revision": 1, "adversary":
+        "IceID", "id": "5a09c743fee07f44d3a21123", "name": "New Banking Trojan IcedID"},
+        {"industries": [], "TLP": "white", "description": "Unit 42 has discovered
+        a new malware family we\u2019ve named \u201cReaver\u201d with ties to attackers
+        who use SunOrcal malware. SunOrcal activity has been documented to at least
+        2013, and based on metadata surrounding some of the C2s, may have been active
+        as early as 2010. The new family appears to have been in the wild since late
+        2016 and to date we have only identified 10 unique samples, indicating it
+        may be sparingly used. Reaver is also somewhat unique in the fact that its
+        final payload is in the form of a Control panel item, or CPL file. To date,
+        only 0.006% of all malware seen by Palo Alto Networks employs this technique,
+        indicating that it is in fact fairly rare.", "created": "2017-11-12T11:06:29.844000",
+        "tags": ["china"], "modified": "2017-11-12T11:06:29.844000", "author_name":
+        "AlienVault", "public": 1, "references": ["https://researchcenter.paloaltonetworks.com/2017/11/unit42-new-malware-with-ties-to-sunorcal-discovered/"],
+        "targeted_countries": ["Taiwan, Province of China"], "indicators": [{"indicator":
+        "http://www.fyoutside.com/dwm99.bmp", "description": "", "created": "2017-11-12T11:06:31",
+        "title": "", "content": "", "type": "URL", "id": 142029399}, {"indicator":
+        "30a9c8c028ae217269893f4c8a4d97070d7dfccf471dfe468318b94efeee1b54", "description":
+        "", "created": "2017-11-12T11:06:31", "title": "", "content": "", "type":
+        "FileHash-SHA256", "id": 142029400}, {"indicator": "a16dc9ec40bba2ba1c3d3cfdff46cde5c76ebf643ead7675908ec0ea967d8981",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 142029401}, {"indicator": "bd7b3e29049e992b921b79a4c633a5de5269c76f544b38b5d9614b8c3db9e61a",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 142029402}, {"indicator": "f5426b52e1e820123d1f490b386213407f8ef356e3839758a954eaa8c4dc8fea",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 142029403}, {"indicator": "05ddbd0506ec95fb460b3994e5b21cdb0418ba4aa406374ca1b91249349b7640",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 142029404}, {"indicator": "1813f10bcf74beb582c824c64fff63cb150d178bef93af81d875ca84214307a1",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 142029405}, {"indicator": "18ac3b14300ecfeed4b64a844c16dccb06b0e3513d0954d6c6182f2ea14e4c92",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 141990974}, {"indicator": "1fcda755e8fa23d27329e4bc0443a82e1c1e9a6c1691639db256a187365e4db1",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 142029406}, {"indicator": "26c234c73e2c3448589c7d4a0cf17f615ad3666541a4e611e2d8b77637205bcf",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 142029407}, {"indicator": "38ea33dab0ba2edd16ecd98cba161c550d1036b253c8666c4110d198948329fb",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 142029408}, {"indicator": "58312fb742ce881e040e1b5b8555f00a402b8dd4fc886acaae2f862040b3bfc5",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 141990975}, {"indicator": "799139b5278dc2ac24279cc6c3db44f4ef0ea78ee7b721b0ace38fd8018c51ac",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 141990976}, {"indicator": "81d887fefdbb0219647991c2b7bddf45c2fede4dc6fc18408f1706e0279615b2",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 142029409}, {"indicator": "9213f70bce491991c4cbbbd7dc3e67d3a3d535b965d7064973b35c50f265e59b",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 141990977}, {"indicator": "98eb5465c6330b9b49df2e7c9ad0b1164aa5b35423d9e80495a178eb510cdc1c",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 141990978}, {"indicator": "ae9f158e4886cfdbfb4f1b3b25707d05f6fd873d0be9d8e7334a2c28741228ee",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 141990979}, {"indicator": "c0f8bb77284b96e07cab1c3fab8800b1bbd030720c74628c4ee5666694ef903d",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 142029410}, {"indicator": "c906250e0a4c457663e37119ebe1efa1e4b97eef1d975f383ac3243f9f09908c",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 141990980}, {"indicator": "cb7c0cf1750baaa11783e93369230ee666b9f3da7298e4d1bb9a07af6a439f2f",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 141990981}, {"indicator": "d560f44188fb56d3abb11d9508e1167329470de19b811163eb1167534722e666",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 141990982}, {"indicator": "www.fyoutside.com",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "hostname", "id": 1487538}, {"indicator": "www.olinaodi.com",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "hostname", "id": 293847}, {"indicator": "www.tashdqdxp.com",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "hostname", "id": 141990984}, {"indicator": "www.weryhstui.com",
+        "description": "", "created": "2017-11-12T11:06:31", "title": "", "content":
+        "", "type": "hostname", "id": 141990985}], "revision": 1, "adversary": "SunOrcal",
+        "id": "5a082b35fd011205ada56957", "name": "New Malware with Ties to SunOrcal
+        Discovered"}, {"industries": [], "TLP": "white", "description": "A few months
+        ago, we covered the ChessMaster cyberespionage campaign, which leveraged a
+        variety of toolsets and malware such as ChChes and remote access trojans like
+        RedLeaves and PlugX to compromise its targets\u2014primarily organizations
+        in Japan. A few weeks ago, we observed new activity from ChessMaster, with
+        notable evolutions in terms of new tools and tactics that weren\u2019t present
+        in the initial attacks. From what we\u2019ve seen, ChessMaster is continuously
+        evolving, using open source tools and ones they developed, likely as a way
+        to anonymize their operations. Based on the way the campaign has developed,
+        it won\u2019t be surprising to see additional evolutions from ChessMaster
+        in the future.", "created": "2017-11-11T12:13:54.837000", "tags": ["apt10",
+        "cnches", "china"], "modified": "2017-11-11T12:15:34.942000", "author_name":
+        "AlienVault", "public": 1, "references": ["http://blog.trendmicro.com/trendlabs-security-intelligence/chessmasters-new-strategy-evolving-tools-tactics/"],
+        "targeted_countries": [], "indicators": [{"indicator": "af1b2cd8580650d826f48ad824deef3749a7db6fde1c7e1dc115c6b0a7dfa0dd",
+        "description": "", "created": "2017-11-11T12:13:55", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 141707476}, {"indicator": "http://62.75.197.131/page/?[random",
+        "description": "", "created": "2017-11-11T12:13:55", "title": "", "content":
+        "", "type": "URL", "id": 141707477}, {"indicator": "http://89.18.27.159/FA347FEiwq.jpg",
+        "description": "", "created": "2017-11-11T12:13:55", "title": "", "content":
+        "", "type": "URL", "id": 141707478}, {"indicator": "http://89.18.27.159/img.db",
+        "description": "", "created": "2017-11-11T12:13:55", "title": "", "content":
+        "", "type": "URL", "id": 141707479}, {"indicator": "http://89.18.27.159:8080/lK0RS",
+        "description": "", "created": "2017-11-11T12:13:55", "title": "", "content":
+        "", "type": "URL", "id": 141707480}], "revision": 1, "adversary": "APT10",
+        "id": "5a06e982aece4f705d614430", "name": "ChessMasters New Strategy: Evolving
+        Tools and Tactics"}, {"industries": [], "TLP": "white", "description": "We
+        previously reported on SamSam ransomware charging high ransoms for infected
+        servers. But SamSam isn\u2019t the only ransomware out there charging eye-watering
+        amounts to decrypt business servers.\n\nInitial reports of a new variant of
+        ransomware called LockCrypt started in June of this year. In October we saw
+        an increase in infections.", "created": "2017-11-09T15:59:24.319000", "tags":
+        ["ransomware", "lockcrypt"], "modified": "2017-11-09T15:59:24.319000", "author_name":
+        "AlienVault", "public": 1, "references": ["https://www.alienvault.com/blogs/labs-research/lockcrypt-ransomware-spreading-via-rdp-brute-force-attacks"],
+        "targeted_countries": [], "indicators": [{"indicator": "stnsatan@aol.com",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "", "type": "email", "id": 140952228}, {"indicator": "jekr@aol.com", "description":
+        "", "created": "2017-11-09T15:59:25", "title": "", "content": "", "type":
+        "email", "id": 140952229}, {"indicator": "jajanielse@aol.com", "description":
+        "", "created": "2017-11-09T15:59:25", "title": "", "content": "", "type":
+        "email", "id": 140952230}, {"indicator": "enigmax_x@aol.com", "description":
+        "", "created": "2017-11-09T15:59:25", "title": "", "content": "", "type":
+        "email", "id": 140952231}, {"indicator": "djekr@aol.com", "description": "",
+        "created": "2017-11-09T15:59:25", "title": "", "content": "", "type": "email",
+        "id": 140952232}, {"indicator": "3e90c22133dcd854eb16d052350599adf46d20f7",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "rule lockcrypt_installer_packer {   \n      \n       strings:   \n      \n           $a
+        = \"c:\\\\users\\\\nachalnik\\\\documents\\\\visual\" nocase wide ascii   \n      \n           $b
+        = \"WshShell.Run chr(34) & \\\"bcn1.exe\\\" & Chr(34), 0\" nocase wide ascii   \n      \n       condition:   \n      \n           any
+        of them   \n      \n   }", "type": "YARA", "id": 140952233}, {"indicator":
+        "0948390b18338b460edf60beaf1a792d1d85dab64ec59b158fa2d47e78ad4373", "description":
+        "", "created": "2017-11-09T15:59:25", "title": "", "content": "", "type":
+        "FileHash-SHA256", "id": 71606779}, {"indicator": "0ab44a962ababbf4500b335171e25d930ae3b8356a50bc547979126007aa42c0",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140952234}, {"indicator": "151cf4f4c5e2a90b57af8d22e085ebc5f8927cf8b14eeaade3adb271c11eb54f",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140952235}, {"indicator": "1df3d4da1ef11373966f54a6d67c38a223229f272438e1c6ec7cb4c1ea3ff3e2",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140952236}, {"indicator": "3756c1fcf3f6404582a19c5e1fd23aa043cb71e85700bdf6b0e6df80593ad565",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140952237}, {"indicator": "64d6cc34ad16e2ecbaf7e71573ed222cfa16b710cc6ff79ab3cc3c1c6c4b1138",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140952238}, {"indicator": "714546c621a797743f0bce6a8843611860d3392a7f3fcff5cf661d0a6bffa78b",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140952239}, {"indicator": "722df6f33a9d11d841ce399a9081bac2788ce007474b0be9ee76efbf1f5a132b",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140952240}, {"indicator": "bce16a425c37d2ad3280c19d4c64bc7ed037d29dabe3e34ab4941a245cb5ec34",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140952241}, {"indicator": "cdd61a00a8175f1753b55094be506bd9fc1a6511a3f0abeeed0216b1db17e95e",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140952242}, {"indicator": "d69c972d578a3d4b15158ac14600f0e996113e510a4bc9815193c9e74740e612",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140952243}, {"indicator": "bf80ef6cfea9478bf69f247b59d17dab9ede4b74193234168ee6e3d55dc526e1",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140952244}, {"indicator": "dc892346618f8fe561a7219a59e7c6fd2e15ff463469a29708886a23f54157b9",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140952245}, {"indicator": "jajanielse@bitmessage.ch",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "", "type": "email", "id": 140952246}, {"indicator": "satan-stn@bitmessage.ch",
+        "description": "", "created": "2017-11-09T15:59:25", "title": "", "content":
+        "", "type": "email", "id": 132132193}], "revision": 1, "adversary": "", "id":
+        "5a047b5c872e084d6bdfe706", "name": "LockCrypt Ransomware Spreading via RDP
+        Brute-Force Attacks"}, {"industries": ["Energy"], "TLP": "white", "description":
+        "Unit 42 has been closely tracking the OilRig threat group since May 2016.
+        One technique we\u2019ve been tracking with this threat group is their use
+        of the Clayslide delivery document as attachments to spear-phishing emails
+        in attacks since May 2016. In our April 2017 posting OilRig Actors Provide
+        a Glimpse into Development and Testing Efforts we showed how we observed the
+        OilRig threat group developing and refining these Clayside delivery documents.\n\nRecently,
+        we observed a new version of the Clayslide delivery document used to install
+        a new custom Trojan whose developer calls it \u201cALMA Communicator\u201d.
+        The delivery document also saved the post-exploitation credential harvesting
+        tool known as Mimikatz, which we believe the threat actors will use to gather
+        account credentials from the compromised system. While we do not have detailed
+        telemetry, we have reason to believe this attack targeted an individual at
+        a public utilities company in the Middle East.", "created": "2017-11-09T00:24:39.953000",
+        "tags": ["oilrig"], "modified": "2017-11-09T00:24:39.953000", "author_name":
+        "AlienVault", "public": 1, "references": ["https://researchcenter.paloaltonetworks.com/2017/11/unit42-oilrig-deploys-alma-communicator-dns-tunneling-trojan/"],
+        "targeted_countries": [], "indicators": [{"indicator": "prosalar.com", "description":
+        "", "created": "2017-11-09T00:24:41", "title": "", "content": "", "type":
+        "domain", "id": 140741405}, {"indicator": "2d6f06d8ee0da16d2335f26eb18cd1f620c4db3e880efa6a5999eff53b12415c",
+        "description": "", "created": "2017-11-09T00:24:41", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 137676987}, {"indicator": "2fc7810a316863a5a5076bf3078ac6fad246bc8773a5fb835e0993609e5bb62e",
+        "description": "", "created": "2017-11-09T00:24:41", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 137676988}, {"indicator": "f37b1bbf5a07759f10e0298b861b354cee13f325bc76fbddfaacd1ea7505e111",
+        "description": "", "created": "2017-11-09T00:24:41", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140741406}], "revision": 1, "adversary":
+        "OilRig", "id": "5a03a0473eb9410bc7e8ee0f", "name": "OilRig Deploys ALMA Communicator
+        \u2013 DNS Tunneling Trojan"}, {"industries": ["Government", "Defense"], "TLP":
+        "white", "description": "REDBALDKNIGHT, also known as BRONZE BUTLER and Tick,
+        is a cyberespionage group known to target Japanese organizations such as government
+        agencies (including defense) as well as those in biotechnology, electronics
+        manufacturing, and industrial chemistry. Their campaigns employ the Daserf
+        backdoor (detected by Trend Micro as BKDR_DASERF, otherwise known as Muirim
+        and Nioupale) that has four main capabilities: execute shell commands, download
+        and upload data, take screenshots, and log keystrokes.", "created": "2017-11-08T17:50:30.005000",
+        "tags": ["daserf"], "modified": "2017-11-08T17:50:30.005000", "author_name":
+        "AlienVault", "public": 1, "references": ["http://blog.trendmicro.com/trendlabs-security-intelligence/redbaldknight-bronze-butler-daserf-backdoor-now-using-steganography/"],
+        "targeted_countries": ["Japan"], "indicators": [{"indicator": "01d681c51ad0c7c3d4b320973c61c28a353624ac665fd390553b364d17911f46",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 30785899}, {"indicator": "03a981039c48fc04a36aceae2d568ad3998aede562e276556cb279e7a56dfadf",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653509}, {"indicator": "04080fbab754dbf0c7529f8bbe661afef9c2cba74e3797428538ed5c243d705a",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 30785900}, {"indicator": "0a031665d05e82038d620facf9d4a86a89e78544f2f770f579c980dae2e252bf",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 956055}, {"indicator": "0ae1996e75ac11fadcc30f42a6ba0bf8c4afae7f75dd5ab4e0d03d6ecf095615",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653510}, {"indicator": "0d4860468a5eb86f7b30f012f176c9a67388f7e0fe0a88fffa3f5702af3d1118",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653511}, {"indicator": "21111136d523970e27833dd2db15d7c50803d8f6f4f377d4d9602ba9fbd355cd",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 30785903}, {"indicator": "22e1965154bdb91dd281f0e86c8be96bf1f9a1e5fe93c60a1d30b79c0c0f0d43",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 112202531}, {"indicator": "24a15f36c82433ce505aa839db46e9cc833de4c7777dd986bc421d4524b71173",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653512}, {"indicator": "27f3a4c757f6e81a0546e47b97cbaab5e5e2b82a6ec2694641cd41ec47b90766",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653513}, {"indicator": "337834f13f6b6a290f997102cce604f395fdc3be510b0db590f6298005cd3144",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653514}, {"indicator": "34251fe49998c20e18964056578c4e171e5337dbfceb40471bbf42cf78053bed",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653515}, {"indicator": "41679622e34ab635eb63d48bae021dc25d861c0fd58adb6066ac5f7d5fab52df",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653516}, {"indicator": "421ff96f145ccbd0b45404453a1591cb8ddced9d745fa69eef8ce20ea4ee5dfa",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653517}, {"indicator": "4681e3556c6b4fbcf1bdd7ed18af3ab7fd4b27bb94a92cef735a8263c831265a",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653518}, {"indicator": "52f07f619e24d38681fb0d8dddc39027ea73a35f28feb2a10d0c5e1830dc45e1",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653519}, {"indicator": "5c3ca904c979a2adaa201e1de76e857237357edd9842e82af2f40555df633ee0",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653520}, {"indicator": "68b59f65665677f77ad2a3c8f0cb565c38ee098aacc1a71618442dbe0835d8a3",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653521}, {"indicator": "837ab755bbf8eaaaa8aea077b1228978eb888c3b9b1ab420666c5477385e884c",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653522}, {"indicator": "85544d2bcaf8e6ca32bbc0a9e9583c9db1dce837043f555a7ff66363d5858439",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 112202555}, {"indicator": "8a22a6b52620d0d1beadba866b32ea3ae7d3ac2619717957ed7b867cb47fe005",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653523}, {"indicator": "94a9a9e14acaac99f7a980d36e57a451fcbce3bb4bf24e41f53d751c062e60e5",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653524}, {"indicator": "a43004b96a9f221b33c85d910af1c288e772423b08268bf539aebe52044a9244",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653525}, {"indicator": "a4afd9df1b4cc014c3a89d7b4a560fa3e368b02286c42841762714b23e68cc05",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 112202557}, {"indicator": "a51e4d5810182b75374e467c844141672ffb5a54a3fea781cc5aa58086cf7f07",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653526}, {"indicator": "b0966e89eae36a309d89a0c15c8a07677f58130fdc76bc98c16968376ec80626",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 112202559}, {"indicator": "c4e02d0a3f0ca0caf9ec011e37f084d7b33c679512a6fd7a2ba9b077c85ae2db",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653527}, {"indicator": "c6000c00fde81d58e63829374664151ac4c568252003fbe7d3fc742c6bd48d21",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653528}, {"indicator": "ccc0f0df164336f5fc394274e54fc08c3cb92e1e849b3dd3bce72f23a277ad3e",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653529}, {"indicator": "cd90180f256416b7bd4fac9d882ff66b248a1bca7a283777a9175eb225481f21",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653530}, {"indicator": "d904b65e23217b5b875b3488a5e0f86970931cd29f57ec993d3c34a907c00395",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653531}, {"indicator": "db8b494de8d897976288c8ccee707ff7b7967fb48caef99d75687584191c2411",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 956053}, {"indicator": "dfbd7754d0895b6340a7beb6ad2e5eec3bc8043e23debe63537f179b1f14dcd2",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653532}, {"indicator": "e2fd17445d81df89f7a9c1ff1c69c9b382215f597db5e4730f5c76557a6fd1f9",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 112202571}, {"indicator": "e4c7832101280b6900f91a9468b79b828708e0b87f13a655aa0ec1b03cea7c83",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 140653533}, {"indicator": "e8edde4519763bb6669ba99e33b4803a7655805b8c3475b49af0a49913577e51",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 30785916}, {"indicator": "f06b440052bd2c2eb127c33c35a80c4eca34a06360d3ee1bb37348d6029dc955",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 112202574}, {"indicator": "f8458a0711653071bf59a3153293771a6fb5d1de9af7ea814de58f473cba9d06",
+        "description": "", "created": "2017-11-08T17:50:31", "title": "", "content":
+        "", "type": "FileHash-SHA256", "id": 30785918}], "revision": 1, "adversary":
+        "Bronze Butler", "id": "5a0343e668ec8569a045bd37", "name": "Daserf Backdoor
+        Now Using Steganography"}, {"industries": ["government"], "TLP": "white",
+        "description": "Symantec has identified a previously unknown group called
+        Sowbug that has been conducting highly targeted cyber attacks against organizations
+        in South America and Southeast Asia and appears to be heavily focused on foreign
+        policy institutions and diplomatic targets. Sowbug has been seen mounting
+        classic espionage attacks by stealing documents from the organizations it
+        infiltrates. \n\nTo date, Sowbug appears to be focused mainly on government
+        entities in South America and Southeast Asia and has infiltrated organizations
+        in Argentina, Brazil, Ecuador, Peru, Brunei and Malaysia. The group is well
+        resourced, capable of infiltrating multiple targets simultaneously and will
+        often operate outside the working hours of targeted organizations in order
+        to maintain a low profile.", "created": "2017-11-07T22:17:11.663000", "tags":
+        ["Sowbug", "apt", "South America", "Southeast Asia"], "modified": "2017-11-07T22:17:11.663000",
+        "author_name": "AlienVault", "public": 1, "references": ["https://www.symantec.com/connect/blogs/sowbug-cyber-espionage-group-targets-south-american-and-southeast-asian-governments"],
+        "targeted_countries": ["Argentina", "Brazil", "Ecuador", "Peru", "Brunei Darussalam",
+        "Malaysia"], "indicators": [{"indicator": "00d356a7cf9f67dd5bb8b2a88e289bc8",
+        "description": "", "created": "2017-11-07T22:17:12", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 140399595}, {"indicator": "4984e9e1a5d595c079cc490a22d67490",
+        "description": "", "created": "2017-11-07T22:17:12", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 140399596}, {"indicator": "514f85ebb05cad9e004eee89dde2ed07",
+        "description": "", "created": "2017-11-07T22:17:12", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 140399597}, {"indicator": "967d60c417d70a02030938a2ee8a0b74",
+        "description": "", "created": "2017-11-07T22:17:12", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 140399598}, {"indicator": "c1f65ddabcc1f23d9ba1600789eb581b",
+        "description": "", "created": "2017-11-07T22:17:12", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 140399599}, {"indicator": "e4e1c98feac9356dbfcac1d8c362ab22",
+        "description": "", "created": "2017-11-07T22:17:12", "title": "", "content":
+        "", "type": "FileHash-MD5", "id": 140399600}, {"indicator": "cosecman.com",
+        "description": "", "created": "2017-11-07T22:17:12", "title": "", "content":
+        "", "type": "domain", "id": 140399601}, {"indicator": "nasomember.com", "description":
+        "", "created": "2017-11-07T22:17:12", "title": "", "content": "", "type":
+        "domain", "id": 140399602}, {"indicator": "unifoxs.com", "description": "",
+        "created": "2017-11-07T22:17:12", "title": "", "content": "", "type": "domain",
+        "id": 140399603}], "revision": 1, "adversary": "Sowbug", "id": "5a0230e71f36d51d6af80119",
+        "name": "Sowbug: Cyber espionage group targets South American and Southeast
+        Asian governments"}, {"industries": [], "TLP": "white", "description": "During
+        our monitoring of activities around the APT28 threat group, McAfee Advanced
+        Threat Research analysts identified a malicious Word document that appears
+        to leverage the Microsoft Office Dynamic Data Exchange (DDE) technique that
+        has been previously reported by Advanced Threat Research. This document likely
+        marks the first observed use of this technique by APT28. The use of DDE with
+        PowerShell allows an attacker to execute arbitrary code on a victim\u2019s
+        system regardless whether macros are enabled. (McAfee product detection is
+        covered in the Indicators of Compromise section at the end of the document.)\nAPT28
+        has recently focused on using different themes. In this case it capitalized
+        on the recent terrorist attack in New York City. The document itself is blank.
+        Once opened, the document contacts a control server to drop the first stage
+        of the malware, Seduploader, onto a victim\u2019s system.", "created": "2017-11-07T19:52:03.631000",
+        "tags": ["seduploader", "apt28", "powershell", "office", "word", "mcafee",
+        "dde"], "modified": "2017-11-07T19:52:03.631000", "author_name": "AlienVault",
+        "public": 1, "references": ["https://securingtomorrow.mcafee.com/mcafee-labs/apt28-threat-group-adopts-dde-technique-nyc-attack-theme-in-latest-campaign/"],
+        "targeted_countries": [], "indicators": [{"indicator": "satellitedeluxpanorama.com",
+        "description": "", "created": "2017-11-07T19:52:04", "title": "", "content":
+        "", "type": "domain", "id": 138810974}, {"indicator": "webviewres.net", "description":
+        "", "created": "2017-11-07T19:52:04", "title": "", "content": "", "type":
+        "domain", "id": 140381353}, {"indicator": "http://netmediaresources.com/config.txt",
+        "description": "", "created": "2017-11-07T19:52:04", "title": "", "content":
+        "", "type": "URL", "id": 140381354}, {"indicator": "http://netmediaresources.com/media/resource/vms.dll",
+        "description": "", "created": "2017-11-07T19:52:04", "title": "", "content":
+        "", "type": "URL", "id": 140381355}, {"indicator": "http://sendmevideo.org/SaberGuardian2017.docx",
+        "description": "", "created": "2017-11-07T19:52:04", "title": "", "content":
+        "", "type": "URL", "id": 140381356}, {"indicator": "http://sendmevideo.org/dh2025e/eh.dll",
+        "description": "", "created": "2017-11-07T19:52:04", "title": "", "content":
+        "", "type": "URL", "id": 138810972}, {"indicator": "1c6c700ceebfbe799e115582665105caa03c5c9e",
+        "description": "", "created": "2017-11-07T19:52:04", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 140381357}, {"indicator": "4bc722a9b0492a50bd86a1341f02c74c0d773db7",
+        "description": "", "created": "2017-11-07T19:52:04", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 140381358}, {"indicator": "68c2809560c7623d2307d8797691abf3eafe319a",
+        "description": "", "created": "2017-11-07T19:52:04", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 140381359}, {"indicator": "8a68f26d01372114f660e32ac4c9117e5d0577f1",
+        "description": "", "created": "2017-11-07T19:52:04", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 140381360}, {"indicator": "ab354807e687993fbeb1b325eb6e4ab38d428a1e",
+        "description": "", "created": "2017-11-07T19:52:04", "title": "", "content":
+        "", "type": "FileHash-SHA1", "id": 138810982}], "revision": 1, "adversary":
+        "Sofacy", "id": "5a020ee3ced01a160c3350b7", "name": "Threat Group APT28 Slips
+        Office Malware into Doc Citing NYC Terror Attack"}], "previous": null}'
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 14:53:24 GMT
+recorded_with: VCR 3.0.3

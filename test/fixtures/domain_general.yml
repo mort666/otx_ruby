@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/domain/spywaresite.info/general
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 14 Nov 2017 16:33:50 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '962'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"indicator": "spywaresite.info", "alexa": "http://www.alexa.com/siteinfo/spywaresite.info",
+        "whois": "http://whois.domaintools.com/spywaresite.info", "type": "domain",
+        "pulse_info": {"count": 2, "references": [], "pulses": [{"indicator_type_counts":
+        {"domain": 12026, "hostname": 3278, "FileHash-MD5": 8}, "pulse_source": "web",
+        "TLP": "green", "description": "CleanDNS Domain Reputation List from \nwww.malwaredomains.com",
+        "subscriber_count": 80, "tags": [], "export_count": 8, "is_following": 0,
+        "is_modified": true, "upvotes_count": 0, "modified_text": "287 days ago ",
+        "is_subscribing": 0, "references": [], "targeted_countries": [], "groups":
+        [{"name": "MISP FEED", "id": 76}, {"name": "CSIRT Digital", "id": 96}, {"name":
+        "Malware Report - J", "id": 170}], "vote": 0, "validator_count": 0, "is_author":
+        false, "adversary": "", "id": "588821475533f16199d99ccb", "observation": {"indicator_type_counts":
+        {"domain": 12026, "hostname": 3278, "FileHash-MD5": 8}, "pulse_source": "web",
+        "description": "CleanDNS Domain Reputation List from \nwww.malwaredomains.com",
+        "subscriber_count": 52, "cloned_from": null, "is_subscribed": 0, "comment_count":
+        0, "author_name": "cleandns_otx", "upvotes_count": 0, "is_subscribing": 0,
+        "references": [], "targeted_countries": [], "groups": [{"pulse_key": "588821475533f16199d99ccb",
+        "id": 76, "name": "MISP FEED"}, {"pulse_key": "588821475533f16199d99ccb",
+        "id": 96, "name": "CSIRT Digital"}, {"pulse_key": "588821475533f16199d99ccb",
+        "id": 170, "name": "Malware Report - J"}], "vote": 0, "validator_count": 0,
+        "adversary": "", "id": "588821475533f16199d99ccb", "extract_source": [], "industries":
+        [], "tlp": "green", "locked": 0, "name": "CleanDNS Domain Reputation List
+        - domains-malware-domains.txt", "is_following": 0, "created": "2017-01-25T03:53:43.101000",
+        "tags": [], "downvotes_count": 0, "modified": "2017-01-31T02:08:46.346000",
+        "export_count": 8, "avatar_url": "https://otx20-web-media.s3.amazonaws.com/media/avatars/user_25494/resized/80/avatar_1f60023fac.png",
+        "follower_count": 0, "votes_count": 0, "author_id": 25494, "user_subscriber_count":
+        28, "public": 1, "revision": 26}, "industries": [], "locked": 0, "name": "CleanDNS
+        Domain Reputation List - domains-malware-domains.txt", "created": "2017-01-25T03:53:43.101000",
+        "cloned_from": null, "downvotes_count": 0, "modified": "2017-01-31T02:08:46.346000",
+        "comment_count": 0, "indicator_count": 15312, "author": {"username": "cleandns_otx",
+        "is_subscribed": 0, "avatar_url": "https://otx20-web-media.s3.amazonaws.com/media/avatars/user_25494/resized/80/avatar_1f60023fac.png",
+        "is_following": 0, "id": "25494"}, "in_group": true, "follower_count": 0,
+        "votes_count": 0, "public": 1}]}, "base_indicator": {"indicator": "spywaresite.info",
+        "description": "", "title": "", "access_reason": "", "access_type": "public",
+        "content": "", "type": "domain", "id": 2102119}, "validation": [], "sections":
+        ["general", "geo", "url_list", "passive_dns", "malware", "whois", "http_scans"]}'
+    http_version: 
+  recorded_at: Tue, 14 Nov 2017 16:33:50 GMT
+recorded_with: VCR 3.0.3

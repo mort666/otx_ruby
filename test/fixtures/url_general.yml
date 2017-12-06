@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/url/http:/www.fotoidea.com/sport/4x4_san_ponso/slides/IMG_0068.html/general
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 16 Nov 2017 12:52:42 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '248'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"indicator": "http://www.fotoidea.com/sport/4x4_san_ponso/slides/IMG_0068.html",
+        "alexa": "http://www.alexa.com/siteinfo/fotoidea.com", "whois": "http://whois.domaintools.com/fotoidea.com",
+        "sections": ["general", "url_list", "http_scans"], "hostname": "www.fotoidea.com",
+        "pulse_info": {"count": 0, "references": [], "pulses": []}, "domain": "fotoidea.com",
+        "base_indicator": {}, "type": "url", "type_title": "URL"}'
+    http_version: 
+  recorded_at: Thu, 16 Nov 2017 12:52:42 GMT
+recorded_with: VCR 3.0.3

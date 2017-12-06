@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.10.1
+      - Faraday v0.13.1
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -18,47 +18,306 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Allow:
-      - GET, HEAD, OPTIONS
       Content-Type:
       - application/json
       Date:
-      - Thu, 02 Feb 2017 02:53:28 GMT
+      - Thu, 16 Nov 2017 12:52:39 GMT
       Server:
       - nginx
       Vary:
-      - Accept, Cookie
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
       Content-Length:
-      - '4607'
+      - '5053'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"indicator":"CVE-2014-0160","nvd_url":"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0160","date_modified":"2017-01-06T00:00:00","sections":["general"],"pulse_info":{"count":1,"references":["https://www.us-cert.gov/ncas/alerts.xml"],"pulses":[{"id":"563c17ae67db8c7a156ab753","name":"NCAS
-        Alerts","public":true,"TLP":"green","description":"NCAS Alerts US-CERT","tags":["earliest
-        pe","import","pe","uint32","uint16","mitm","flash","dns","e.g.","proxy","aaeh","privacy","windows","name","adobe
-        flash","simda","regin","malware","vista","united","wiper","microsoft","ssl","tcp","superfish","firefox","time","top","chrome","windows
-        server","search","microsoft office","web","server","lenovo","june","trojan","zip","fri","id","google","md5s","sys","i.e.","change","symantec","mbr","ids","md5","ascii","http","zeus","botnet","ftp","mon","financial","september","zeroaccess","beebone","openssl","kaspersky
-        lab","https","snort","vobfus","vpn","adobe","build","report","word","dll","kaspersky","tls","oracle","pdf","see","information","changeup","vulnerability","check","cutwail","overview","aes","july","u.s.","jul","vbobfus","united
-        kingdom","aug","cryptolocker","java","avoid","excel","application","email","vendor","singapore","putty","thailand","poland","ics","as"],"references":["https://www.us-cert.gov/ncas/alerts.xml"],"subscriber_count":30,"follower_count":0,"validator_count":0,"comment_count":0,"indicator_count":162,"author":{"id":"563a82db67db8c7a166a78dc","username":"matthewssa","avatar_url":"/static/img/default.png"},"modified":"2015-11-06T02:59:58.886000","created":"2015-11-06T02:59:58.886000","modified_text":"453
-        days ago ","is_modified":false,"is_subscribing":false,"is_following":false,"is_author":null,"cloned_from":null,"vote":null,"upvotes_count":2,"downvotes_count":2,"votes_count":0,"export_count":9,"indicator_type_counts":{"domain":2,"SHA256":2,"URL":24,"hostname":20,"IPv4":11,"CVE":36,"MD5":67},"adversary":null,"targeted_countries":[],"industries":[],"locked":false,"in_group":false,"groups":[],"observation":{"observation_created":"2015-11-06T02:59:59","description":"","title":"","access_reason":"","is_active":1,"access_type":"public","content":"","pulse_key":"563c17ae67db8c7a156ab753","role":null,"expiration":null}}]},"date_created":"2014-04-07T00:00:00","products":["cpe:/a:openssl:openssl:1.0.1","cpe:/a:openssl:openssl:1.0.1f","cpe:/a:openssl:openssl:1.0.1:beta1","cpe:/a:openssl:openssl:1.0.1:beta2","cpe:/a:openssl:openssl:1.0.1e","cpe:/a:openssl:openssl:1.0.1:beta3","cpe:/a:openssl:openssl:1.0.1d","cpe:/a:openssl:openssl:1.0.1c","cpe:/a:openssl:openssl:1.0.1b","cpe:/a:openssl:openssl:1.0.2:beta1","cpe:/a:openssl:openssl:1.0.1a"],"base_indicator":{"indicator":"CVE-2014-0160","description":"","title":"","access_reason":"","access_type":"public","content":"","type":"CVE","id":99865},"references":[{"external_source":"CONFIRM","href":"http://advisories.mageia.org/MGASA-2014-0165.html","type":"UNKNOWN","name":"http://advisories.mageia.org/MGASA-2014-0165.html"},{"external_source":"MISC","href":"http://blog.fox-it.com/2014/04/08/openssl-heartbleed-bug-live-blog/","type":"UNKNOWN","name":"http://blog.fox-it.com/2014/04/08/openssl-heartbleed-bug-live-blog/"},{"external_source":"CONFIRM","href":"http://cogentdatahub.com/ReleaseNotes.html","type":"UNKNOWN","name":"http://cogentdatahub.com/ReleaseNotes.html"},{"external_source":"CONFIRM","href":"http://download.schneider-electric.com/files?p_Doc_Ref=SEVD%202014-119-01","type":"UNKNOWN","name":"http://download.schneider-electric.com/files?p_Doc_Ref=SEVD%202014-119-01"},{"external_source":"CONFIRM","href":"http://git.openssl.org/gitweb/?p=openssl.git;a=commit;h=96db9023b881d7cd9f379b0c154650d6c108e9a3","type":"VENDOR_ADVISORY","name":"http://git.openssl.org/gitweb/?p=openssl.git;a=commit;h=96db9023b881d7cd9f379b0c154650d6c108e9a3"},{"external_source":"MISC","href":"http://heartbleed.com/","type":"UNKNOWN","name":"http://heartbleed.com/"},{"external_source":"FEDORA","href":"http://lists.fedoraproject.org/pipermail/package-announce/2014-April/131221.html","type":"UNKNOWN","name":"FEDORA-2014-4879"},{"external_source":"FEDORA","href":"http://lists.fedoraproject.org/pipermail/package-announce/2014-April/131291.html","type":"UNKNOWN","name":"FEDORA-2014-4910"},{"external_source":"FEDORA","href":"http://lists.fedoraproject.org/pipermail/package-announce/2014-August/136473.html","type":"UNKNOWN","name":"FEDORA-2014-9308"},{"external_source":"SUSE","href":"http://lists.opensuse.org/opensuse-security-announce/2014-04/msg00004.html","type":"UNKNOWN","name":"openSUSE-SU-2014:0492"},{"external_source":"SUSE","href":"http://lists.opensuse.org/opensuse-security-announce/2014-04/msg00005.html","type":"UNKNOWN","name":"SUSE-SA:2014:002"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139722163017074&w=2","type":"UNKNOWN","name":"HPSBMU02995"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139757726426985&w=2","type":"UNKNOWN","name":"HPSBMU02994"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139757819327350&w=2","type":"UNKNOWN","name":"HPSBMU02998"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139757919027752&w=2","type":"UNKNOWN","name":"HPSBMU02997"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139758572430452&w=2","type":"UNKNOWN","name":"HPSBST03001"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139765756720506&w=2","type":"UNKNOWN","name":"HPSBMU02999"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139774054614965&w=2","type":"UNKNOWN","name":"HPSBGN03008"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139774703817488&w=2","type":"UNKNOWN","name":"HPSBGN03010"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139808058921905&w=2","type":"UNKNOWN","name":"HPSBMU03012"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139817685517037&w=2","type":"UNKNOWN","name":"HPSBMU03019"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139817727317190&w=2","type":"UNKNOWN","name":"HPSBMU03017"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139817782017443&w=2","type":"UNKNOWN","name":"HPSBMU03018"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139824923705461&w=2","type":"UNKNOWN","name":"HPSBST03015"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139824993005633&w=2","type":"UNKNOWN","name":"HPSBMU03013"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139833395230364&w=2","type":"UNKNOWN","name":"HPSBGN03011"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139835815211508&w=2","type":"UNKNOWN","name":"HPSBHF03021"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139835844111589&w=2","type":"UNKNOWN","name":"HPSBPI03014"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139836085512508&w=2","type":"UNKNOWN","name":"HPSBMU03020"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139842151128341&w=2","type":"UNKNOWN","name":"HPSBST03016"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139843768401936&w=2","type":"UNKNOWN","name":"HPSBMU03023"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139869720529462&w=2","type":"UNKNOWN","name":"HPSBMU03025"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139869891830365&w=2","type":"UNKNOWN","name":"HPSBMU03022"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139889113431619&w=2","type":"UNKNOWN","name":"HPSBMU03024"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139889295732144&w=2","type":"UNKNOWN","name":"HPSBPI03031"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139905202427693&w=2","type":"UNKNOWN","name":"HPSBMU03029"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139905243827825&w=2","type":"UNKNOWN","name":"HPSBMU03028"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139905295427946&w=2","type":"UNKNOWN","name":"HPSBMU03033"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139905351928096&w=2","type":"UNKNOWN","name":"HPSBMU03030"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139905405728262&w=2","type":"UNKNOWN","name":"HPSBMU03032"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139905458328378&w=2","type":"UNKNOWN","name":"HPSBMU03009"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139905653828999&w=2","type":"UNKNOWN","name":"HPSBST03004"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=139905868529690&w=2","type":"UNKNOWN","name":"HPSBST03027"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=140015787404650&w=2","type":"UNKNOWN","name":"HPSBMU03040"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=140075368411126&w=2","type":"UNKNOWN","name":"HPSBMU03044"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=140724451518351&w=2","type":"UNKNOWN","name":"HPSBMU03037"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=140752315422991&w=2","type":"UNKNOWN","name":"HPSBMU03062"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=141287864628122&w=2","type":"UNKNOWN","name":"HPSBHF03136"},{"external_source":"HP","href":"http://marc.info/?l=bugtraq&m=142660345230545&w=2","type":"UNKNOWN","name":"SSRT101846"},{"external_source":"CONFIRM","href":"http://public.support.unisys.com/common/public/vulnerability/NVD_Detail_Rpt.aspx?ID=1","type":"UNKNOWN","name":"http://public.support.unisys.com/common/public/vulnerability/NVD_Detail_Rpt.aspx?ID=1"},{"external_source":"CONFIRM","href":"http://public.support.unisys.com/common/public/vulnerability/NVD_Detail_Rpt.aspx?ID=3","type":"UNKNOWN","name":"http://public.support.unisys.com/common/public/vulnerability/NVD_Detail_Rpt.aspx?ID=3"},{"external_source":"REDHAT","href":"http://rhn.redhat.com/errata/RHSA-2014-0376.html","type":"UNKNOWN","name":"RHSA-2014:0376"},{"external_source":"REDHAT","href":"http://rhn.redhat.com/errata/RHSA-2014-0377.html","type":"UNKNOWN","name":"RHSA-2014:0377"},{"external_source":"REDHAT","href":"http://rhn.redhat.com/errata/RHSA-2014-0378.html","type":"UNKNOWN","name":"RHSA-2014:0378"},{"external_source":"REDHAT","href":"http://rhn.redhat.com/errata/RHSA-2014-0396.html","type":"UNKNOWN","name":"RHSA-2014:0396"},{"external_source":"FULLDISC","href":"http://seclists.org/fulldisclosure/2014/Apr/109","type":"UNKNOWN","name":"20140409
-        Re: heartbleed OpenSSL bug CVE-2014-0160"},{"external_source":"FULLDISC","href":"http://seclists.org/fulldisclosure/2014/Apr/173","type":"UNKNOWN","name":"20140411
-        MRI Rubies may contain statically linked, vulnerable OpenSSL"},{"external_source":"FULLDISC","href":"http://seclists.org/fulldisclosure/2014/Apr/190","type":"UNKNOWN","name":"20140412
-        Re: heartbleed OpenSSL bug CVE-2014-0160"},{"external_source":"FULLDISC","href":"http://seclists.org/fulldisclosure/2014/Apr/90","type":"UNKNOWN","name":"20140408
-        heartbleed OpenSSL bug CVE-2014-0160"},{"external_source":"FULLDISC","href":"http://seclists.org/fulldisclosure/2014/Apr/91","type":"UNKNOWN","name":"20140408
-        Re: heartbleed OpenSSL bug CVE-2014-0160"},{"external_source":"FULLDISC","href":"http://seclists.org/fulldisclosure/2014/Dec/23","type":"UNKNOWN","name":"20141205
-        NEW: VMSA-2014-0012 - VMware vSphere product updates address security vulnerabilities"},{"external_source":"SECUNIA","href":"http://secunia.com/advisories/59139","type":"UNKNOWN","name":"59139"},{"external_source":"SECUNIA","href":"http://secunia.com/advisories/59243","type":"UNKNOWN","name":"59243"},{"external_source":"SECUNIA","href":"http://secunia.com/advisories/59347","type":"UNKNOWN","name":"59347"},{"external_source":"CISCO","href":"http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140409-heartbleed","type":"UNKNOWN","name":"20140409
-        OpenSSL Heartbeat Extension Vulnerability in Multiple Cisco Products"},{"external_source":"CONFIRM","href":"http://www-01.ibm.com/support/docview.wss?uid=isg400001841","type":"UNKNOWN","name":"http://www-01.ibm.com/support/docview.wss?uid=isg400001841"},{"external_source":"CONFIRM","href":"http://www-01.ibm.com/support/docview.wss?uid=isg400001843","type":"UNKNOWN","name":"http://www-01.ibm.com/support/docview.wss?uid=isg400001843"},{"external_source":"CONFIRM","href":"http://www-01.ibm.com/support/docview.wss?uid=ssg1S1004661","type":"UNKNOWN","name":"http://www-01.ibm.com/support/docview.wss?uid=ssg1S1004661"},{"external_source":"CONFIRM","href":"http://www-01.ibm.com/support/docview.wss?uid=swg21670161","type":"UNKNOWN","name":"http://www-01.ibm.com/support/docview.wss?uid=swg21670161"},{"external_source":"CONFIRM","href":"http://www.apcmedia.com/salestools/SJHN-7RKGNM/SJHN-7RKGNM_R4_EN.pdf","type":"UNKNOWN","name":"http://www.apcmedia.com/salestools/SJHN-7RKGNM/SJHN-7RKGNM_R4_EN.pdf"},{"external_source":"CONFIRM","href":"http://www.blackberry.com/btsc/KB35882","type":"UNKNOWN","name":"http://www.blackberry.com/btsc/KB35882"},{"external_source":"DEBIAN","href":"http://www.debian.org/security/2014/dsa-2896","type":"UNKNOWN","name":"DSA-2896"},{"external_source":"EXPLOIT-DB","href":"http://www.exploit-db.com/exploits/32745","type":"UNKNOWN","name":"32745"},{"external_source":"EXPLOIT-DB","href":"http://www.exploit-db.com/exploits/32764","type":"UNKNOWN","name":"32764"},{"external_source":"CONFIRM","href":"http://www.f-secure.com/en/web/labs_global/fsc-2014-1","type":"UNKNOWN","name":"http://www.f-secure.com/en/web/labs_global/fsc-2014-1"},{"external_source":"CONFIRM","href":"http://www.getchef.com/blog/2014/04/09/chef-server-11-0-12-release/","type":"UNKNOWN","name":"http://www.getchef.com/blog/2014/04/09/chef-server-11-0-12-release/"},{"external_source":"CONFIRM","href":"http://www.getchef.com/blog/2014/04/09/chef-server-heartbleed-cve-2014-0160-releases/","type":"UNKNOWN","name":"http://www.getchef.com/blog/2014/04/09/chef-server-heartbleed-cve-2014-0160-releases/"},{"external_source":"CONFIRM","href":"http://www.getchef.com/blog/2014/04/09/enterprise-chef-1-4-9-release/","type":"UNKNOWN","name":"http://www.getchef.com/blog/2014/04/09/enterprise-chef-1-4-9-release/"},{"external_source":"CONFIRM","href":"http://www.getchef.com/blog/2014/04/09/enterprise-chef-11-1-3-release/","type":"UNKNOWN","name":"http://www.getchef.com/blog/2014/04/09/enterprise-chef-11-1-3-release/"},{"external_source":"CONFIRM","href":"http://www.innominate.com/data/downloads/manuals/mdm_1.5.2.1_Release_Notes.pdf","type":"UNKNOWN","name":"http://www.innominate.com/data/downloads/manuals/mdm_1.5.2.1_Release_Notes.pdf"},{"external_source":"CERT-VN","href":"http://www.kb.cert.org/vuls/id/720951","type":"UNKNOWN","name":"VU#720951"},{"external_source":"CONFIRM","href":"http://www.kerio.com/support/kerio-control/release-history","type":"UNKNOWN","name":"http://www.kerio.com/support/kerio-control/release-history"},{"external_source":"MANDRIVA","href":"http://www.mandriva.com/security/advisories?name=MDVSA-2015:062","type":"UNKNOWN","name":"MDVSA-2015:062"},{"external_source":"CONFIRM","href":"http://www.openssl.org/news/secadv_20140407.txt","type":"VENDOR_ADVISORY","name":"http://www.openssl.org/news/secadv_20140407.txt"},{"external_source":"CONFIRM","href":"http://www.oracle.com/technetwork/topics/security/cpujul2014-1972956.html","type":"UNKNOWN","name":"http://www.oracle.com/technetwork/topics/security/cpujul2014-1972956.html"},{"external_source":"CONFIRM","href":"http://www.oracle.com/technetwork/topics/security/opensslheartbleedcve-2014-0160-2188454.html","type":"UNKNOWN","name":"http://www.oracle.com/technetwork/topics/security/opensslheartbleedcve-2014-0160-2188454.html"},{"external_source":"BUGTRAQ","href":"http://www.securityfocus.com/archive/1/archive/1/534161/100/0/threaded","type":"UNKNOWN","name":"20141205
-        NEW: VMSA-2014-0012 - VMware vSphere product updates address security vulnerabilities"},{"external_source":"BID","href":"http://www.securityfocus.com/bid/66690","type":"UNKNOWN","name":"66690"},{"external_source":"SECTRACK","href":"http://www.securitytracker.com/id/1030026","type":"UNKNOWN","name":"1030026"},{"external_source":"SECTRACK","href":"http://www.securitytracker.com/id/1030074","type":"UNKNOWN","name":"1030074"},{"external_source":"SECTRACK","href":"http://www.securitytracker.com/id/1030077","type":"UNKNOWN","name":"1030077"},{"external_source":"SECTRACK","href":"http://www.securitytracker.com/id/1030078","type":"UNKNOWN","name":"1030078"},{"external_source":"SECTRACK","href":"http://www.securitytracker.com/id/1030079","type":"UNKNOWN","name":"1030079"},{"external_source":"SECTRACK","href":"http://www.securitytracker.com/id/1030080","type":"UNKNOWN","name":"1030080"},{"external_source":"SECTRACK","href":"http://www.securitytracker.com/id/1030081","type":"UNKNOWN","name":"1030081"},{"external_source":"SECTRACK","href":"http://www.securitytracker.com/id/1030082","type":"UNKNOWN","name":"1030082"},{"external_source":"CONFIRM","href":"http://www.splunk.com/view/SP-CAAAMB3","type":"UNKNOWN","name":"http://www.splunk.com/view/SP-CAAAMB3"},{"external_source":"CONFIRM","href":"http://www.symantec.com/security_response/securityupdates/detail.jsp?fid=security_advisory&pvid=security_advisory&year=&suid=20160512_00","type":"UNKNOWN","name":"http://www.symantec.com/security_response/securityupdates/detail.jsp?fid=security_advisory&pvid=security_advisory&year=&suid=20160512_00"},{"external_source":"CERT","href":"http://www.us-cert.gov/ncas/alerts/TA14-098A","type":"UNKNOWN","name":"TA14-098A"},{"external_source":"CONFIRM","href":"http://www.vmware.com/security/advisories/VMSA-2014-0012.html","type":"UNKNOWN","name":"http://www.vmware.com/security/advisories/VMSA-2014-0012.html"},{"external_source":"CONFIRM","href":"http://www.websense.com/support/article/kbarticle/Vulnerabilities-resolved-in-TRITON-APX-Version-8-0","type":"UNKNOWN","name":"http://www.websense.com/support/article/kbarticle/Vulnerabilities-resolved-in-TRITON-APX-Version-8-0"},{"external_source":"MISC","href":"https://blog.torproject.org/blog/openssl-bug-cve-2014-0160","type":"UNKNOWN","name":"https://blog.torproject.org/blog/openssl-bug-cve-2014-0160"},{"external_source":"CONFIRM","href":"https://bugzilla.redhat.com/show_bug.cgi?id=1084875","type":"UNKNOWN","name":"https://bugzilla.redhat.com/show_bug.cgi?id=1084875"},{"external_source":"CONFIRM","href":"https://code.google.com/p/mod-spdy/issues/detail?id=85","type":"UNKNOWN","name":"https://code.google.com/p/mod-spdy/issues/detail?id=85"},{"external_source":"CONFIRM","href":"https://filezilla-project.org/versions.php?type=server","type":"UNKNOWN","name":"https://filezilla-project.org/versions.php?type=server"},{"external_source":"MISC","href":"https://gist.github.com/chapmajs/10473815","type":"UNKNOWN","name":"https://gist.github.com/chapmajs/10473815"},{"external_source":"HP","href":"https://h20566.www2.hp.com/portal/site/hpsc/template.PAGE/public/kb/docDisplay/?spf_p.tpst=kbDocDisplay&spf_p.prp_kbDocDisplay=wsrp-navigationalState%3DdocId%253Demr_na-c04260637-4%257CdocLocale%253Den_US%257CcalledBy%253DSearch_Result&javax.portlet.begCacheTok=com.vignette.cachetoken&javax.portlet.endCacheTok=com.vignette.cachetoken","type":"UNKNOWN","name":"HPSBST03000"},{"external_source":"MLIST","href":"https://lists.balabit.hu/pipermail/syslog-ng-announce/2014-April/000184.html","type":"UNKNOWN","name":"[syslog-ng-announce]
-        20140411 syslog-ng Premium Edition 5 LTS (5.0.4a) has been released"},{"external_source":"CONFIRM","href":"https://support.f5.com/kb/en-us/solutions/public/15000/100/sol15159.html?sr=36517217","type":"UNKNOWN","name":"https://support.f5.com/kb/en-us/solutions/public/15000/100/sol15159.html?sr=36517217"},{"external_source":"MISC","href":"https://www.cert.fi/en/reports/2014/vulnerability788210.html","type":"UNKNOWN","name":"https://www.cert.fi/en/reports/2014/vulnerability788210.html"}],"mitre_url":"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0160","cve":"CVE-2014-0160","cwe":"CWE-119","cvss":{"Generated-On-Datetime":"2015-10-21T10:03:47.423-04:00","Access-Vector":"NETWORK","Integrity-Impact":"NONE","Access-Complexity":"LOW","Availability-Impact":"NONE","Source":"http://nvd.nist.gov","Authentication":"NONE","Score":"5.0","Confidentiality-Impact":"PARTIAL"},"description":"The
-        (1) TLS and (2) DTLS implementations in OpenSSL 1.0.1 before 1.0.1g do not
-        properly handle Heartbeat Extension packets, which allows remote attackers
-        to obtain sensitive information from process memory via crafted packets that
-        trigger a buffer over-read, as demonstrated by reading private keys, related
-        to d1_both.c and t1_lib.c, aka the Heartbleed bug."}'
+      string: '{"indicator": "CVE-2014-0160", "exploits": [{"name": "OpenSSL 1.0.1f
+        TLS Heartbeat Extension - ''Heartbleed'' Memory Disclosure (Multiple SSL/TLS
+        versions)", "author": "Fitzl Csaba", "url": "https://github.com/offensive-security/exploit-database/blob/master/platforms/multiple/remote/32764.py",
+        "platform": "multiple", "date": "2014-04-09", "cve": "CVE-2014-0160", "type":
+        "remote", "port": "443"}, {"name": "OpenSSL TLS Heartbeat Extension - ''''Heartbleed''
+        Memory Disclosure", "author": "Jared Stafford", "url": "https://github.com/offensive-security/exploit-database/blob/master/platforms/multiple/remote/32745.py",
+        "platform": "multiple", "date": "2014-04-08", "cve": "CVE-2014-0160", "type":
+        "remote", "port": "443"}, {"name": "OpenSSL TLS Heartbeat Extension - ''''Heartbleed''
+        Memory Disclosure", "author": "Jared Stafford", "url": "https://github.com/offensive-security/exploit-database/blob/master/platforms/multiple/remote/32745.py",
+        "platform": "multiple", "date": "2014-04-08", "cve": "CVE-2014-0160", "type":
+        "remote", "port": "443"}, {"name": "OpenSSL TLS Heartbeat Extension - ''Heartbleed''
+        Information Leak Exploit (1)", "author": "prdelka", "url": "https://github.com/offensive-security/exploit-database/blob/master/platforms/multiple/remote/32791.c",
+        "platform": "multiple", "date": "2014-04-10", "cve": "CVE-2014-0160", "type":
+        "remote", "port": "443"}, {"name": "OpenSSL TLS Heartbeat Extension - ''Heartbleed''
+        Information Leak Exploit (2) (DTLS Support)", "author": "Ayman Sagy", "url":
+        "https://github.com/offensive-security/exploit-database/blob/master/platforms/multiple/remote/32998.c",
+        "platform": "multiple", "date": "2014-04-24", "cve": "CVE-2014-0160", "type":
+        "remote", "port": "0"}], "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0160",
+        "date_modified": "2017-11-14T00:00:00", "cwe": "CWE-119", "pulse_info": {"count":
+        3, "references": ["https://www.us-cert.gov/ncas/alerts.xml"], "pulses": [{"indicator_type_counts":
+        {"FileHash-SHA256": 2, "domain": 2, "URL": 24, "hostname": 20, "IPv4": 11,
+        "CVE": 36, "FileHash-MD5": 67}, "pulse_source": "web", "TLP": "green", "description":
+        "NCAS Alerts US-CERT", "subscriber_count": 33, "tags": ["earliest pe", "import",
+        "pe", "uint32", "uint16", "mitm", "flash", "dns", "e.g.", "proxy", "aaeh",
+        "privacy", "windows", "name", "adobe flash", "simda", "regin", "malware",
+        "vista", "united", "wiper", "microsoft", "ssl", "tcp", "superfish", "firefox",
+        "time", "top", "chrome", "windows server", "search", "microsoft office", "web",
+        "server", "lenovo", "june", "trojan", "zip", "fri", "id", "google", "md5s",
+        "sys", "i.e.", "change", "symantec", "mbr", "ids", "md5", "ascii", "http",
+        "zeus", "botnet", "ftp", "mon", "financial", "september", "zeroaccess", "beebone",
+        "openssl", "kaspersky lab", "https", "snort", "vobfus", "vpn", "adobe", "build",
+        "report", "word", "dll", "kaspersky", "tls", "oracle", "pdf", "see", "information",
+        "changeup", "vulnerability", "check", "cutwail", "overview", "aes", "july",
+        "u.s.", "jul", "vbobfus", "united kingdom", "aug", "cryptolocker", "java",
+        "avoid", "excel", "application", "email", "vendor", "singapore", "putty",
+        "thailand", "poland", "ics", "as"], "export_count": 2, "is_following": 0,
+        "is_modified": false, "upvotes_count": 2.0, "modified_text": "741 days ago
+        ", "is_subscribing": 0, "references": ["https://www.us-cert.gov/ncas/alerts.xml"],
+        "targeted_countries": [], "groups": [], "vote": 0, "validator_count": 0, "is_author":
+        false, "adversary": null, "id": "563c17ae67db8c7a156ab753", "observation":
+        {"indicator_type_counts": {"FileHash-SHA256": 2, "domain": 2, "URL": 24, "hostname":
+        20, "IPv4": 11, "CVE": 36, "FileHash-MD5": 67}, "pulse_source": "web", "description":
+        "NCAS Alerts US-CERT", "subscriber_count": 30, "cloned_from": null, "is_subscribed":
+        0, "comment_count": 0, "author_name": "matthewssa", "upvotes_count": 2.0,
+        "is_subscribing": 0, "references": ["https://www.us-cert.gov/ncas/alerts.xml"],
+        "targeted_countries": [], "groups": [], "vote": 0, "validator_count": 0, "adversary":
+        null, "id": "563c17ae67db8c7a156ab753", "extract_source": [], "industries":
+        [], "tlp": "green", "locked": 0, "name": "NCAS Alerts", "is_following": 0,
+        "created": "2015-11-06T02:59:58.886000", "tags": ["earliest pe", "import",
+        "pe", "uint32", "uint16", "mitm", "flash", "dns", "e.g.", "proxy", "aaeh",
+        "privacy", "windows", "name", "adobe flash", "simda", "regin", "malware",
+        "vista", "united", "wiper", "microsoft", "ssl", "tcp", "superfish", "firefox",
+        "time", "top", "chrome", "windows server", "search", "microsoft office", "web",
+        "server", "lenovo", "june", "trojan", "zip", "fri", "id", "google", "md5s",
+        "sys", "i.e.", "change", "symantec", "mbr", "ids", "md5", "ascii", "http",
+        "zeus", "botnet", "ftp", "mon", "financial", "september", "zeroaccess", "beebone",
+        "openssl", "kaspersky lab", "https", "snort", "vobfus", "vpn", "adobe", "build",
+        "report", "word", "dll", "kaspersky", "tls", "oracle", "pdf", "see", "information",
+        "changeup", "vulnerability", "check", "cutwail", "overview", "aes", "july",
+        "u.s.", "jul", "vbobfus", "united kingdom", "aug", "cryptolocker", "java",
+        "avoid", "excel", "application", "email", "vendor", "singapore", "putty",
+        "thailand", "poland", "ics", "as"], "downvotes_count": 2.0, "modified": "2015-11-06T02:59:58.886000",
+        "export_count": 2, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "follower_count": 0, "votes_count": 0.0, "author_id": 6090, "user_subscriber_count":
+        3, "public": 1, "revision": 1}, "industries": [], "locked": 0, "name": "NCAS
+        Alerts", "created": "2015-11-06T02:59:58.886000", "cloned_from": null, "downvotes_count":
+        2.0, "modified": "2015-11-06T02:59:58.886000", "comment_count": 0, "indicator_count":
+        162, "author": {"username": "matthewssa", "is_subscribed": 0, "avatar_url":
+        "https://otx.alienvault.com/static/img/default.png", "is_following": 0, "id":
+        "6090"}, "in_group": false, "follower_count": 0, "votes_count": 0.0, "public":
+        1}]}, "seen_wild": true, "products": ["cpe:/a:openssl:openssl:1.0.1", "cpe:/a:openssl:openssl:1.0.1:beta1",
+        "cpe:/a:openssl:openssl:1.0.1:beta2", "cpe:/a:openssl:openssl:1.0.1:beta3",
+        "cpe:/a:openssl:openssl:1.0.1a", "cpe:/a:openssl:openssl:1.0.1b", "cpe:/a:openssl:openssl:1.0.1c",
+        "cpe:/a:openssl:openssl:1.0.1d", "cpe:/a:openssl:openssl:1.0.1e", "cpe:/a:openssl:openssl:1.0.1f",
+        "cpe:/a:openssl:openssl:1.0.2:beta1"], "references": [{"external_source":
+        "CONFIRM", "href": "http://advisories.mageia.org/MGASA-2014-0165.html", "type":
+        "UNKNOWN", "name": "http://advisories.mageia.org/MGASA-2014-0165.html"}, {"external_source":
+        "MISC", "href": "http://blog.fox-it.com/2014/04/08/openssl-heartbleed-bug-live-blog/",
+        "type": "UNKNOWN", "name": "http://blog.fox-it.com/2014/04/08/openssl-heartbleed-bug-live-blog/"},
+        {"external_source": "CONFIRM", "href": "http://cogentdatahub.com/ReleaseNotes.html",
+        "type": "UNKNOWN", "name": "http://cogentdatahub.com/ReleaseNotes.html"},
+        {"external_source": "CONFIRM", "href": "http://download.schneider-electric.com/files?p_Doc_Ref=SEVD%202014-119-01",
+        "type": "UNKNOWN", "name": "http://download.schneider-electric.com/files?p_Doc_Ref=SEVD%202014-119-01"},
+        {"external_source": "CONFIRM", "href": "http://git.openssl.org/gitweb/?p=openssl.git;a=commit;h=96db9023b881d7cd9f379b0c154650d6c108e9a3",
+        "type": "VENDOR_ADVISORY", "name": "http://git.openssl.org/gitweb/?p=openssl.git;a=commit;h=96db9023b881d7cd9f379b0c154650d6c108e9a3"},
+        {"external_source": "MISC", "href": "http://heartbleed.com/", "type": "UNKNOWN",
+        "name": "http://heartbleed.com/"}, {"external_source": "FEDORA", "href": "http://lists.fedoraproject.org/pipermail/package-announce/2014-April/131221.html",
+        "type": "UNKNOWN", "name": "FEDORA-2014-4879"}, {"external_source": "FEDORA",
+        "href": "http://lists.fedoraproject.org/pipermail/package-announce/2014-April/131291.html",
+        "type": "UNKNOWN", "name": "FEDORA-2014-4910"}, {"external_source": "FEDORA",
+        "href": "http://lists.fedoraproject.org/pipermail/package-announce/2014-August/136473.html",
+        "type": "UNKNOWN", "name": "FEDORA-2014-9308"}, {"external_source": "SUSE",
+        "href": "http://lists.opensuse.org/opensuse-security-announce/2014-04/msg00004.html",
+        "type": "UNKNOWN", "name": "openSUSE-SU-2014:0492"}, {"external_source": "SUSE",
+        "href": "http://lists.opensuse.org/opensuse-security-announce/2014-04/msg00005.html",
+        "type": "UNKNOWN", "name": "SUSE-SA:2014:002"}, {"external_source": "HP",
+        "href": "http://marc.info/?l=bugtraq&m=139722163017074&w=2", "type": "UNKNOWN",
+        "name": "HPSBMU02995"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139757726426985&w=2",
+        "type": "UNKNOWN", "name": "HPSBMU02994"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=139757819327350&w=2", "type": "UNKNOWN", "name":
+        "HPSBMU02998"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139757919027752&w=2",
+        "type": "UNKNOWN", "name": "HPSBMU02997"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=139758572430452&w=2", "type": "UNKNOWN", "name":
+        "HPSBST03001"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139765756720506&w=2",
+        "type": "UNKNOWN", "name": "HPSBMU02999"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=139774054614965&w=2", "type": "UNKNOWN", "name":
+        "HPSBGN03008"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139774703817488&w=2",
+        "type": "UNKNOWN", "name": "HPSBGN03010"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=139808058921905&w=2", "type": "UNKNOWN", "name":
+        "HPSBMU03012"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139817685517037&w=2",
+        "type": "UNKNOWN", "name": "HPSBMU03019"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=139817727317190&w=2", "type": "UNKNOWN", "name":
+        "HPSBMU03017"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139817782017443&w=2",
+        "type": "UNKNOWN", "name": "HPSBMU03018"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=139824923705461&w=2", "type": "UNKNOWN", "name":
+        "HPSBST03015"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139824993005633&w=2",
+        "type": "UNKNOWN", "name": "HPSBMU03013"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=139833395230364&w=2", "type": "UNKNOWN", "name":
+        "HPSBGN03011"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139835815211508&w=2",
+        "type": "UNKNOWN", "name": "HPSBHF03021"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=139835844111589&w=2", "type": "UNKNOWN", "name":
+        "HPSBPI03014"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139836085512508&w=2",
+        "type": "UNKNOWN", "name": "HPSBMU03020"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=139842151128341&w=2", "type": "UNKNOWN", "name":
+        "HPSBST03016"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139843768401936&w=2",
+        "type": "UNKNOWN", "name": "HPSBMU03023"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=139869720529462&w=2", "type": "UNKNOWN", "name":
+        "HPSBMU03025"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139869891830365&w=2",
+        "type": "UNKNOWN", "name": "HPSBMU03022"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=139889113431619&w=2", "type": "UNKNOWN", "name":
+        "HPSBMU03024"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139889295732144&w=2",
+        "type": "UNKNOWN", "name": "HPSBPI03031"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=139905202427693&w=2", "type": "UNKNOWN", "name":
+        "HPSBMU03029"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139905243827825&w=2",
+        "type": "UNKNOWN", "name": "HPSBMU03028"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=139905295427946&w=2", "type": "UNKNOWN", "name":
+        "HPSBMU03033"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139905351928096&w=2",
+        "type": "UNKNOWN", "name": "HPSBMU03030"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=139905405728262&w=2", "type": "UNKNOWN", "name":
+        "HPSBMU03032"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139905458328378&w=2",
+        "type": "UNKNOWN", "name": "HPSBMU03009"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=139905653828999&w=2", "type": "UNKNOWN", "name":
+        "HPSBST03004"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=139905868529690&w=2",
+        "type": "UNKNOWN", "name": "HPSBST03027"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=140015787404650&w=2", "type": "UNKNOWN", "name":
+        "HPSBMU03040"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=140075368411126&w=2",
+        "type": "UNKNOWN", "name": "HPSBMU03044"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=140724451518351&w=2", "type": "UNKNOWN", "name":
+        "HPSBMU03037"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=140752315422991&w=2",
+        "type": "UNKNOWN", "name": "HPSBMU03062"}, {"external_source": "HP", "href":
+        "http://marc.info/?l=bugtraq&m=141287864628122&w=2", "type": "UNKNOWN", "name":
+        "HPSBHF03136"}, {"external_source": "HP", "href": "http://marc.info/?l=bugtraq&m=142660345230545&w=2",
+        "type": "UNKNOWN", "name": "SSRT101846"}, {"external_source": "CONFIRM", "href":
+        "http://public.support.unisys.com/common/public/vulnerability/NVD_Detail_Rpt.aspx?ID=1",
+        "type": "UNKNOWN", "name": "http://public.support.unisys.com/common/public/vulnerability/NVD_Detail_Rpt.aspx?ID=1"},
+        {"external_source": "CONFIRM", "href": "http://public.support.unisys.com/common/public/vulnerability/NVD_Detail_Rpt.aspx?ID=3",
+        "type": "UNKNOWN", "name": "http://public.support.unisys.com/common/public/vulnerability/NVD_Detail_Rpt.aspx?ID=3"},
+        {"external_source": "REDHAT", "href": "http://rhn.redhat.com/errata/RHSA-2014-0376.html",
+        "type": "UNKNOWN", "name": "RHSA-2014:0376"}, {"external_source": "REDHAT",
+        "href": "http://rhn.redhat.com/errata/RHSA-2014-0377.html", "type": "UNKNOWN",
+        "name": "RHSA-2014:0377"}, {"external_source": "REDHAT", "href": "http://rhn.redhat.com/errata/RHSA-2014-0378.html",
+        "type": "UNKNOWN", "name": "RHSA-2014:0378"}, {"external_source": "REDHAT",
+        "href": "http://rhn.redhat.com/errata/RHSA-2014-0396.html", "type": "UNKNOWN",
+        "name": "RHSA-2014:0396"}, {"external_source": "FULLDISC", "href": "http://seclists.org/fulldisclosure/2014/Apr/109",
+        "type": "UNKNOWN", "name": "20140409 Re: heartbleed OpenSSL bug CVE-2014-0160"},
+        {"external_source": "FULLDISC", "href": "http://seclists.org/fulldisclosure/2014/Apr/173",
+        "type": "UNKNOWN", "name": "20140411 MRI Rubies may contain statically linked,
+        vulnerable OpenSSL"}, {"external_source": "FULLDISC", "href": "http://seclists.org/fulldisclosure/2014/Apr/190",
+        "type": "UNKNOWN", "name": "20140412 Re: heartbleed OpenSSL bug CVE-2014-0160"},
+        {"external_source": "FULLDISC", "href": "http://seclists.org/fulldisclosure/2014/Apr/90",
+        "type": "UNKNOWN", "name": "20140408 heartbleed OpenSSL bug CVE-2014-0160"},
+        {"external_source": "FULLDISC", "href": "http://seclists.org/fulldisclosure/2014/Apr/91",
+        "type": "UNKNOWN", "name": "20140408 Re: heartbleed OpenSSL bug CVE-2014-0160"},
+        {"external_source": "FULLDISC", "href": "http://seclists.org/fulldisclosure/2014/Dec/23",
+        "type": "UNKNOWN", "name": "20141205 NEW: VMSA-2014-0012 - VMware vSphere
+        product updates address security vulnerabilities"}, {"external_source": "SECUNIA",
+        "href": "http://secunia.com/advisories/59139", "type": "UNKNOWN", "name":
+        "59139"}, {"external_source": "SECUNIA", "href": "http://secunia.com/advisories/59243",
+        "type": "UNKNOWN", "name": "59243"}, {"external_source": "SECUNIA", "href":
+        "http://secunia.com/advisories/59347", "type": "UNKNOWN", "name": "59347"},
+        {"external_source": "CONFIRM", "href": "http://support.citrix.com/article/CTX140605",
+        "type": "UNKNOWN", "name": "http://support.citrix.com/article/CTX140605"},
+        {"external_source": "CISCO", "href": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140409-heartbleed",
+        "type": "UNKNOWN", "name": "20140409 OpenSSL Heartbeat Extension Vulnerability
+        in Multiple Cisco Products"}, {"external_source": "CONFIRM", "href": "http://www-01.ibm.com/support/docview.wss?uid=isg400001841",
+        "type": "UNKNOWN", "name": "http://www-01.ibm.com/support/docview.wss?uid=isg400001841"},
+        {"external_source": "CONFIRM", "href": "http://www-01.ibm.com/support/docview.wss?uid=isg400001843",
+        "type": "UNKNOWN", "name": "http://www-01.ibm.com/support/docview.wss?uid=isg400001843"},
+        {"external_source": "CONFIRM", "href": "http://www-01.ibm.com/support/docview.wss?uid=ssg1S1004661",
+        "type": "UNKNOWN", "name": "http://www-01.ibm.com/support/docview.wss?uid=ssg1S1004661"},
+        {"external_source": "CONFIRM", "href": "http://www-01.ibm.com/support/docview.wss?uid=swg21670161",
+        "type": "UNKNOWN", "name": "http://www-01.ibm.com/support/docview.wss?uid=swg21670161"},
+        {"external_source": "CONFIRM", "href": "http://www.apcmedia.com/salestools/SJHN-7RKGNM/SJHN-7RKGNM_R4_EN.pdf",
+        "type": "UNKNOWN", "name": "http://www.apcmedia.com/salestools/SJHN-7RKGNM/SJHN-7RKGNM_R4_EN.pdf"},
+        {"external_source": "CONFIRM", "href": "http://www.blackberry.com/btsc/KB35882",
+        "type": "UNKNOWN", "name": "http://www.blackberry.com/btsc/KB35882"}, {"external_source":
+        "DEBIAN", "href": "http://www.debian.org/security/2014/dsa-2896", "type":
+        "UNKNOWN", "name": "DSA-2896"}, {"external_source": "EXPLOIT-DB", "href":
+        "http://www.exploit-db.com/exploits/32745", "type": "UNKNOWN", "name": "32745"},
+        {"external_source": "EXPLOIT-DB", "href": "http://www.exploit-db.com/exploits/32764",
+        "type": "UNKNOWN", "name": "32764"}, {"external_source": "CONFIRM", "href":
+        "http://www.f-secure.com/en/web/labs_global/fsc-2014-1", "type": "UNKNOWN",
+        "name": "http://www.f-secure.com/en/web/labs_global/fsc-2014-1"}, {"external_source":
+        "CONFIRM", "href": "http://www.getchef.com/blog/2014/04/09/chef-server-11-0-12-release/",
+        "type": "UNKNOWN", "name": "http://www.getchef.com/blog/2014/04/09/chef-server-11-0-12-release/"},
+        {"external_source": "CONFIRM", "href": "http://www.getchef.com/blog/2014/04/09/chef-server-heartbleed-cve-2014-0160-releases/",
+        "type": "UNKNOWN", "name": "http://www.getchef.com/blog/2014/04/09/chef-server-heartbleed-cve-2014-0160-releases/"},
+        {"external_source": "CONFIRM", "href": "http://www.getchef.com/blog/2014/04/09/enterprise-chef-1-4-9-release/",
+        "type": "UNKNOWN", "name": "http://www.getchef.com/blog/2014/04/09/enterprise-chef-1-4-9-release/"},
+        {"external_source": "CONFIRM", "href": "http://www.getchef.com/blog/2014/04/09/enterprise-chef-11-1-3-release/",
+        "type": "UNKNOWN", "name": "http://www.getchef.com/blog/2014/04/09/enterprise-chef-11-1-3-release/"},
+        {"external_source": "CONFIRM", "href": "http://www.innominate.com/data/downloads/manuals/mdm_1.5.2.1_Release_Notes.pdf",
+        "type": "UNKNOWN", "name": "http://www.innominate.com/data/downloads/manuals/mdm_1.5.2.1_Release_Notes.pdf"},
+        {"external_source": "CERT-VN", "href": "http://www.kb.cert.org/vuls/id/720951",
+        "type": "UNKNOWN", "name": "VU#720951"}, {"external_source": "CONFIRM", "href":
+        "http://www.kerio.com/support/kerio-control/release-history", "type": "UNKNOWN",
+        "name": "http://www.kerio.com/support/kerio-control/release-history"}, {"external_source":
+        "MANDRIVA", "href": "http://www.mandriva.com/security/advisories?name=MDVSA-2015:062",
+        "type": "UNKNOWN", "name": "MDVSA-2015:062"}, {"external_source": "CONFIRM",
+        "href": "http://www.openssl.org/news/secadv_20140407.txt", "type": "VENDOR_ADVISORY",
+        "name": "http://www.openssl.org/news/secadv_20140407.txt"}, {"external_source":
+        "CONFIRM", "href": "http://www.oracle.com/technetwork/topics/security/cpujul2014-1972956.html",
+        "type": "UNKNOWN", "name": "http://www.oracle.com/technetwork/topics/security/cpujul2014-1972956.html"},
+        {"external_source": "CONFIRM", "href": "http://www.oracle.com/technetwork/topics/security/opensslheartbleedcve-2014-0160-2188454.html",
+        "type": "UNKNOWN", "name": "http://www.oracle.com/technetwork/topics/security/opensslheartbleedcve-2014-0160-2188454.html"},
+        {"external_source": "BUGTRAQ", "href": "http://www.securityfocus.com/archive/1/archive/1/534161/100/0/threaded",
+        "type": "UNKNOWN", "name": "20141205 NEW: VMSA-2014-0012 - VMware vSphere
+        product updates address security vulnerabilities"}, {"external_source": "BID",
+        "href": "http://www.securityfocus.com/bid/66690", "type": "UNKNOWN", "name":
+        "66690"}, {"external_source": "SECTRACK", "href": "http://www.securitytracker.com/id/1030026",
+        "type": "UNKNOWN", "name": "1030026"}, {"external_source": "SECTRACK", "href":
+        "http://www.securitytracker.com/id/1030074", "type": "UNKNOWN", "name": "1030074"},
+        {"external_source": "SECTRACK", "href": "http://www.securitytracker.com/id/1030077",
+        "type": "UNKNOWN", "name": "1030077"}, {"external_source": "SECTRACK", "href":
+        "http://www.securitytracker.com/id/1030078", "type": "UNKNOWN", "name": "1030078"},
+        {"external_source": "SECTRACK", "href": "http://www.securitytracker.com/id/1030079",
+        "type": "UNKNOWN", "name": "1030079"}, {"external_source": "SECTRACK", "href":
+        "http://www.securitytracker.com/id/1030080", "type": "UNKNOWN", "name": "1030080"},
+        {"external_source": "SECTRACK", "href": "http://www.securitytracker.com/id/1030081",
+        "type": "UNKNOWN", "name": "1030081"}, {"external_source": "SECTRACK", "href":
+        "http://www.securitytracker.com/id/1030082", "type": "UNKNOWN", "name": "1030082"},
+        {"external_source": "CONFIRM", "href": "http://www.splunk.com/view/SP-CAAAMB3",
+        "type": "UNKNOWN", "name": "http://www.splunk.com/view/SP-CAAAMB3"}, {"external_source":
+        "CONFIRM", "href": "http://www.symantec.com/security_response/securityupdates/detail.jsp?fid=security_advisory&pvid=security_advisory&year=&suid=20160512_00",
+        "type": "UNKNOWN", "name": "http://www.symantec.com/security_response/securityupdates/detail.jsp?fid=security_advisory&pvid=security_advisory&year=&suid=20160512_00"},
+        {"external_source": "CERT", "href": "http://www.us-cert.gov/ncas/alerts/TA14-098A",
+        "type": "UNKNOWN", "name": "TA14-098A"}, {"external_source": "CONFIRM", "href":
+        "http://www.vmware.com/security/advisories/VMSA-2014-0012.html", "type": "UNKNOWN",
+        "name": "http://www.vmware.com/security/advisories/VMSA-2014-0012.html"},
+        {"external_source": "CONFIRM", "href": "http://www.websense.com/support/article/kbarticle/Vulnerabilities-resolved-in-TRITON-APX-Version-8-0",
+        "type": "UNKNOWN", "name": "http://www.websense.com/support/article/kbarticle/Vulnerabilities-resolved-in-TRITON-APX-Version-8-0"},
+        {"external_source": "MISC", "href": "https://blog.torproject.org/blog/openssl-bug-cve-2014-0160",
+        "type": "UNKNOWN", "name": "https://blog.torproject.org/blog/openssl-bug-cve-2014-0160"},
+        {"external_source": "CONFIRM", "href": "https://bugzilla.redhat.com/show_bug.cgi?id=1084875",
+        "type": "UNKNOWN", "name": "https://bugzilla.redhat.com/show_bug.cgi?id=1084875"},
+        {"external_source": "CONFIRM", "href": "https://code.google.com/p/mod-spdy/issues/detail?id=85",
+        "type": "UNKNOWN", "name": "https://code.google.com/p/mod-spdy/issues/detail?id=85"},
+        {"external_source": "CONFIRM", "href": "https://filezilla-project.org/versions.php?type=server",
+        "type": "UNKNOWN", "name": "https://filezilla-project.org/versions.php?type=server"},
+        {"external_source": "MISC", "href": "https://gist.github.com/chapmajs/10473815",
+        "type": "UNKNOWN", "name": "https://gist.github.com/chapmajs/10473815"}, {"external_source":
+        "HP", "href": "https://h20566.www2.hp.com/portal/site/hpsc/template.PAGE/public/kb/docDisplay/?spf_p.tpst=kbDocDisplay&spf_p.prp_kbDocDisplay=wsrp-navigationalState%3DdocId%253Demr_na-c04260637-4%257CdocLocale%253Den_US%257CcalledBy%253DSearch_Result&javax.portlet.begCacheTok=com.vignette.cachetoken&javax.portlet.endCacheTok=com.vignette.cachetoken",
+        "type": "UNKNOWN", "name": "HPSBST03000"}, {"external_source": "MLIST", "href":
+        "https://lists.balabit.hu/pipermail/syslog-ng-announce/2014-April/000184.html",
+        "type": "UNKNOWN", "name": "[syslog-ng-announce] 20140411 syslog-ng Premium
+        Edition 5 LTS (5.0.4a) has been released"}, {"external_source": "CONFIRM",
+        "href": "https://support.f5.com/kb/en-us/solutions/public/15000/100/sol15159.html",
+        "type": "UNKNOWN", "name": "https://support.f5.com/kb/en-us/solutions/public/15000/100/sol15159.html"},
+        {"external_source": "CONFIRM", "href": "https://support.f5.com/kb/en-us/solutions/public/15000/100/sol15159.html?sr=36517217",
+        "type": "UNKNOWN", "name": "https://support.f5.com/kb/en-us/solutions/public/15000/100/sol15159.html?sr=36517217"},
+        {"external_source": "MISC", "href": "https://www.cert.fi/en/reports/2014/vulnerability788210.html",
+        "type": "UNKNOWN", "name": "https://www.cert.fi/en/reports/2014/vulnerability788210.html"}],
+        "base_indicator": {"indicator": "CVE-2014-0160", "description": "", "title":
+        "", "access_reason": "", "access_type": "public", "content": "", "type": "CVE",
+        "id": 99865}, "date_created": "2014-04-07T00:00:00", "mitre_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0160",
+        "cve": "CVE-2014-0160", "sections": ["general"], "cvss": {"Generated-On-Datetime":
+        "2015-10-21T10:03:47.423-04:00", "Access-Vector": "NETWORK", "Integrity-Impact":
+        "NONE", "Access-Complexity": "LOW", "Score": "5.0", "Source": "http://nvd.nist.gov",
+        "Authentication": "NONE", "Availability-Impact": "NONE", "Confidentiality-Impact":
+        "PARTIAL"}, "description": "The (1) TLS and (2) DTLS implementations in OpenSSL
+        1.0.1 before 1.0.1g do not properly handle Heartbeat Extension packets, which
+        allows remote attackers to obtain sensitive information from process memory
+        via crafted packets that trigger a buffer over-read, as demonstrated by reading
+        private keys, related to d1_both.c and t1_lib.c, aka the Heartbleed bug."}'
     http_version: 
-  recorded_at: Thu, 02 Feb 2017 02:53:28 GMT
+  recorded_at: Thu, 16 Nov 2017 12:52:39 GMT
 recorded_with: VCR 3.0.3

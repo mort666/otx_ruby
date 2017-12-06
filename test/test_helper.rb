@@ -12,5 +12,6 @@ VCR.configure do |c|
   c.before_record do |i|
      i.request.headers.delete('X-OTX-API-KEY')
      i.request.headers.delete('X-Otx-Api-Key')
+     i.response.headers.delete('Set-Cookie')
   end
 end

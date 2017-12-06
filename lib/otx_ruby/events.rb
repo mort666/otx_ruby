@@ -6,12 +6,36 @@ module OTX
   #
   class Events < OTX::Base
     #
+    # Get subscribed events from the API
+    #
+    # @param limit [Integer] Number of records returned
+    # @param page [Integer] page of records returned
+    # @param params [Hash] Addtional parameters eg `modified_since: DateTime`
+    #
+    def get_events(limit = 10, page = 1, params = {})
+      uri = '/api/v1/pulses/events'
+      params['limit'] = limit
+      params['page'] = page
+
+      json_data = get(uri, params)
+
+      events = json_data['results']
+
+      results = []
+      events.each do |event|
+        results << OTX::Event.new(event)
+      end
+
+      return results
+    end
+
+    #
     # Get all events from the API, get all events in chunks defined by limit
     #
     # @param limit [Integer] Size of chunk of data to be Returned (default = 20)
     # @return [Array] Array of OTX::Event records
     #
-    def get_all(limit=20)
+    def get_all(limit = 20)
       uri = '/api/v1/pulses/events'
       params = {limit: limit}
       events = []
@@ -22,7 +46,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         events += json_data['results']
-      end while !page.nil?
+      end while page && !json_data['results'].empty?
 
       results = []
       events.each do |event|
@@ -40,7 +64,7 @@ module OTX
     # @param limit [Integer] Size of chunk of data to be Returned (default = 20)
     # @return [Array] Array of OTX::Event records
     #
-    def get_since(timestamp, limit=20)
+    def get_since(timestamp, limit = 20)
       uri = '/api/v1/pulses/events'
       params = {limit: limit, since: timestamp}
       events = []
@@ -51,7 +75,7 @@ module OTX
         params = URI::decode_www_form(URI(page).query).to_h unless page.nil?
 
         events += json_data['results']
-      end while !page.nil?
+      end while page && !json_data['results'].empty?
 
       results = []
       events.each do |event|

@@ -1,19 +1,28 @@
 module OTX
   #
   # Within the OTX system you are able to subscribe to pulses from other users,
-  # this class allows the retreival of the currently subscribed pulse feeds and the
-  # associated pulses
+  # this class allows the retreival of the currently subscribed pulse feeds and
+  # the associated pulses, as well as pulses from followed Users
   #
-  class Subscribed < OTX::Base
-    def get_subscribed(limit = 10, page = 1, params = {})
-      uri = '/api/v1/pulses/subscribed'
+  class Activity < OTX::Base
+    #
+    # Get pulse activity from the API
+    #
+    # @param limit [Integer] Number of records returned
+    # @param page [Integer] page of records returned
+    # @param params [Hash] Addtional parameters eg `modified_since: DateTime`
+    #
+    def get_activity(limit = 10, page = 1, params = {})
+      uri = '/api/v1/pulses/activity'
       params['limit'] = limit
       params['page'] = page
-      results = []
 
       json_data = get(uri, params)
 
-      json_data['results'].each do |pulse|
+      pulses = json_data['results']
+
+      results = []
+      pulses.each do |pulse|
         results << OTX::Pulse.new(pulse)
       end
 
@@ -21,13 +30,14 @@ module OTX
     end
 
     #
-    # Get all subscribed pulses from the API, get all events in chunks defined by limit
+    # Get all pulses activity from the API, get all events in chunks defined by
+    # limit
     #
     # @param limit [Integer] Size of chunk of data to be Returned (default = 20)
-    # @return [Array] Array of OTX::Pulse records
+    # @return [Array<OTX::Pulse>] Parsed Pulses
     #
     def get_all(limit = 20)
-      uri = '/api/v1/pulses/subscribed'
+      uri = '/api/v1/pulses/activity'
       params = {limit: limit}
       pulses = []
       begin
@@ -48,15 +58,16 @@ module OTX
     end
 
     #
-    # Get all subscribed pulses from the API, get all events in chunks defined by limit and since
-    # timestamp
+    # Get all pulses activity from the API, get all events in chunks defined by
+    # limit and since timestamp
     #
-    # @param timestamp [Time] Timestamp of point in time to get records since in ISO Format
+    # @param timestamp [Time] Timestamp of point in time to get records since in
+    # ISO Format
     # @param limit [Integer] Size of chunk of data to be Returned (default = 20)
-    # @return [Array] Array of OTX::Pulse records
+    # @return [Array<OTX::Pulse>] Parsed Pulses
     #
     def get_since(timestamp, limit = 20)
-      uri = '/api/v1/pulses/subscribed'
+      uri = '/api/v1/pulses/activity'
       params = {limit: limit, modified_since: timestamp}
       pulses = []
       begin

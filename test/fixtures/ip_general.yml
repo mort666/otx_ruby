@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/8.8.8.8/general
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 14 Nov 2017 16:34:00 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '1298'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"sections": ["general", "geo", "reputation", "url_list", "passive_dns",
+        "malware", "nids_list", "http_scans"], "city": null, "area_code": 0, "pulse_info":
+        {"count": 14, "references": [], "pulses": [{"indicator_type_counts": {"IPv4":
+        1}, "pulse_source": "web", "TLP": "white", "description": "", "subscriber_count":
+        0, "tags": [], "export_count": 0, "is_following": 0, "is_modified": false,
+        "upvotes_count": 0, "modified_text": "1 hour ago ", "is_subscribing": 0, "references":
+        [], "targeted_countries": [], "groups": [], "vote": 0, "validator_count":
+        0, "is_author": false, "adversary": "", "id": "5a0b0c6b5fe42a3413031e7c",
+        "observation": {"indicator_type_counts": {"IPv4": 1}, "pulse_source": "web",
+        "description": "", "subscriber_count": 0, "cloned_from": null, "is_subscribed":
+        0, "comment_count": 0, "author_name": "denvertracy", "upvotes_count": 0, "is_subscribing":
+        0, "references": [], "targeted_countries": [], "groups": [], "vote": 0, "validator_count":
+        0, "adversary": "", "id": "5a0b0c6b5fe42a3413031e7c", "extract_source": [],
+        "industries": [], "tlp": "white", "locked": 0, "name": "My Case", "is_following":
+        0, "created": "2017-11-14T15:31:55.601000", "tags": [], "downvotes_count":
+        0, "modified": "2017-11-14T15:31:55.601000", "export_count": 0, "avatar_url":
+        "https://otx.alienvault.com/static/img/default.png", "follower_count": 0,
+        "votes_count": 0, "author_id": 46209, "user_subscriber_count": 0, "public":
+        1, "revision": 1}, "industries": [], "locked": 0, "name": "My Case", "created":
+        "2017-11-14T15:31:55.601000", "cloned_from": null, "downvotes_count": 0, "modified":
+        "2017-11-14T15:31:55.601000", "comment_count": 0, "indicator_count": 1, "author":
+        {"username": "denvertracy", "is_subscribed": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "is_following": 0, "id": "46209"}, "in_group": false, "follower_count": 0,
+        "votes_count": 0, "public": 1}, {"indicator_type_counts": {"IPv4": 1}, "pulse_source":
+        "web", "TLP": "white", "description": "Indiador de test", "subscriber_count":
+        0, "tags": [], "export_count": 0, "is_following": 0, "is_modified": false,
+        "upvotes_count": 0, "modified_text": "137 days ago ", "is_subscribing": 0,
+        "references": [], "targeted_countries": [], "groups": [], "vote": 0, "validator_count":
+        0, "is_author": false, "adversary": "", "id": "595634a5e7adef3a014aac28",
+        "observation": {"indicator_type_counts": {"IPv4": 1}, "pulse_source": "web",
+        "description": "Indiador de test", "subscriber_count": 0, "cloned_from": null,
+        "is_subscribed": 0, "comment_count": 0, "author_name": "cterron", "upvotes_count":
+        0, "is_subscribing": 0, "references": [], "targeted_countries": [], "groups":
+        [], "vote": 0, "validator_count": 0, "adversary": "", "id": "595634a5e7adef3a014aac28",
+        "extract_source": [], "industries": [], "tlp": "white", "locked": 0, "name":
+        "Test de indicadores de Google", "is_following": 0, "created": "2017-06-30T11:23:17.299000",
+        "tags": [], "downvotes_count": 0, "modified": "2017-06-30T11:23:17.299000",
+        "export_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "follower_count": 0, "votes_count": 0, "author_id": 35671, "user_subscriber_count":
+        0, "public": 1, "revision": 1}, "industries": [], "locked": 0, "name": "Test
+        de indicadores de Google", "created": "2017-06-30T11:23:17.299000", "cloned_from":
+        null, "downvotes_count": 0, "modified": "2017-06-30T11:23:17.299000", "comment_count":
+        0, "indicator_count": 1, "author": {"username": "cterron", "is_subscribed":
+        0, "avatar_url": "https://otx.alienvault.com/static/img/default.png", "is_following":
+        0, "id": "35671"}, "in_group": false, "follower_count": 0, "votes_count":
+        0, "public": 1}, {"indicator_type_counts": {"IPv4": 1}, "pulse_source": "web",
+        "TLP": "green", "description": "", "subscriber_count": 5, "tags": [], "export_count":
+        0, "is_following": 0, "is_modified": true, "upvotes_count": 0.0, "modified_text":
+        "396 days ago ", "is_subscribing": 0, "references": [], "targeted_countries":
+        [], "groups": [], "vote": 0, "validator_count": 0, "is_author": false, "adversary":
+        "", "id": "5800ecf209115d00c64d681b", "observation": {"indicator_type_counts":
+        {"IPv4": 1}, "pulse_source": "web", "description": "", "subscriber_count":
+        4, "cloned_from": null, "is_subscribed": 0, "comment_count": 0, "author_name":
+        "stormey", "upvotes_count": 0.0, "is_subscribing": 0, "references": [], "targeted_countries":
+        [], "groups": [], "vote": 0, "validator_count": 0, "adversary": "", "id":
+        "5800ecf209115d00c64d681b", "extract_source": [], "industries": [], "tlp":
+        "green", "locked": 0, "name": "dont subscribe", "is_following": 0, "created":
+        "2016-10-14T14:34:26.728000", "tags": [], "downvotes_count": 1.0, "modified":
+        "2016-10-14T14:39:23.163000", "export_count": 0, "avatar_url": "https://otx.alienvault.com/static/img/default.png",
+        "follower_count": 0, "votes_count": -1.0, "author_id": 19965, "user_subscriber_count":
+        1, "public": 1, "revision": 3}, "industries": [], "locked": 0, "name": "dont
+        subscribe", "created": "2016-10-14T14:34:26.728000", "cloned_from": null,
+        "downvotes_count": 1.0, "modified": "2016-10-14T14:39:23.163000", "comment_count":
+        0, "indicator_count": 1, "author": {"username": "stormey", "is_subscribed":
+        0, "avatar_url": "https://otx.alienvault.com/static/img/default.png", "is_following":
+        0, "id": "19965"}, "in_group": false, "follower_count": 0, "votes_count":
+        -1.0, "public": 1}]}, "continent_code": "NA", "country_name": "United States",
+        "postal_code": null, "dma_code": 0, "country_code": "US", "flag_url": "/static/img/flags/us.png",
+        "asn": "AS15169 Google Inc.", "city_data": true, "indicator": "8.8.8.8", "whois":
+        "http://whois.domaintools.com/8.8.8.8", "type_title": "IPv4", "region": null,
+        "charset": 0, "longitude": -97.8219985961914, "country_code3": "USA", "reputation":
+        0, "base_indicator": {"indicator": "8.8.8.8", "description": "", "title":
+        "", "access_reason": "", "access_type": "public", "content": "", "type": "IPv4",
+        "id": 11911}, "latitude": 37.750999450683594, "validation": [{"source": "suspicious",
+        "message": "suspiciously short IP (len: 7)", "name": "Suspicious IP format
+        / Possible version number"}, {"source": "whitelist", "message": "contained
+        in 8.8.8.8", "name": "Whitelisted IP"}], "type": "IPv4", "flag_title": "United
+        States"}'
+    http_version: 
+  recorded_at: Tue, 14 Nov 2017 16:34:00 GMT
+recorded_with: VCR 3.0.3

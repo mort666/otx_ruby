@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/8.8.8.8/reputation
+    uri: https://otx.alienvault.com/api/v1/indicators/file/6c5360d41bd2b14b1565f5b18e5c203cf512e493/general
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 12:52:29 GMT
+      - Thu, 16 Nov 2017 12:52:16 GMT
       Server:
       - nginx
       Vary:
@@ -29,12 +29,15 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Content-Length:
-      - '40'
+      - '188'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"reputation": null}'
+      string: '{"indicator": "6c5360d41bd2b14b1565f5b18e5c203cf512e493", "sections":
+        ["general", "analysis"], "pulse_info": {"count": 0, "references": [], "pulses":
+        []}, "base_indicator": {}, "validation": [], "type": "sha1", "type_title":
+        "FileHash-SHA1"}'
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 12:52:29 GMT
+  recorded_at: Thu, 16 Nov 2017 12:52:16 GMT
 recorded_with: VCR 3.0.3

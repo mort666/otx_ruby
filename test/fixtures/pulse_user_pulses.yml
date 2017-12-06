@@ -1,0 +1,258 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/pulses/user/AlienVault?limit=10&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 16 Nov 2017 12:52:32 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 1057, "next": "https://otx.alienvault.com/api/v1/pulses/user/AlienVault?limit=10&page=2",
+        "results": [{"indicator_type_counts": {"URL": 58, "FileHash-SHA256": 46, "IPv4":
+        4}, "pulse_source": "web", "TLP": "white", "description": "This blog discusses
+        targeted attacks against the Middle East taking place between February and
+        October 2017 by a group Unit 42 is naming \u201cMuddyWater\u201d. This blog
+        links this recent activity with previous isolated public reporting on similar
+        attacks we believe are related. We refer to these attacks as MuddyWater due
+        to the confusion in attributing these attacks. Although the activity was previously
+        linked by others to the FIN7 threat actor group, our research suggests the
+        activity is in fact espionage related and unlikely to be FIN7 related.\n\nThe
+        MuddyWater attacks are primarily against Middle Eastern nations. However,
+        we have also observed attacks against surrounding nations and beyond, including
+        targets in India and the USA. MuddyWater attacks are characterized by the
+        use of a slowly evolving PowerShell-based first stage backdoor we call \u201cPOWERSTATS\u201d.
+        Despite broad scrutiny and reports on MuddyWater attacks, the activity continues
+        with only incremental changes to the tools and techniques.", "subscriber_count":
+        43452, "tags": ["MuddyWater", "powershell", "POWERSTATS", "DNSMessenger",
+        "LazaGne", "unit42"], "export_count": 23, "is_following": 0, "is_modified":
+        false, "upvotes_count": 0, "modified_text": "1 day ago ", "is_subscribing":
+        0, "references": ["https://researchcenter.paloaltonetworks.com/2017/11/unit42-muddying-the-water-targeted-attacks-in-the-middle-east/"],
+        "targeted_countries": ["Saudi Arabia", "Iraq", "Israel", "United Arab Emirates",
+        "Georgia", "India", "Pakistan", "Turkey", "United States"], "groups": [],
+        "vote": 0, "validator_count": 0, "is_author": false, "adversary": "", "id":
+        "5a0b695faa066457f990a598", "industries": ["government"], "locked": 0, "name":
+        "Muddying the Water: Targeted Attacks in the Middle East", "created": "2017-11-14T22:08:31.715000",
+        "cloned_from": null, "downvotes_count": 0, "modified": "2017-11-14T22:08:31.715000",
+        "comment_count": 0, "indicator_count": 108, "author": {"username": "AlienVault",
+        "is_subscribed": 0, "avatar_url": "https://otx20-web-media.s3.amazonaws.com/media/avatars/AlienVault/resized/80/unnamed
+        (1).jpg", "is_following": 0, "id": "2"}, "in_group": false, "follower_count":
+        0, "votes_count": 0, "public": 1}, {"indicator_type_counts": {"FileHash-SHA256":
+        29, "URL": 3, "hostname": 7, "FileHash-SHA1": 19, "CVE": 2, "FileHash-MD5":
+        27}, "pulse_source": "web", "TLP": "white", "description": "Ongoing reporting
+        by ClearSky", "subscriber_count": 43458, "tags": ["molerats", "palestine"],
+        "export_count": 25, "is_following": 0, "is_modified": false, "upvotes_count":
+        0, "modified_text": "1 day ago ", "is_subscribing": 0, "references": ["https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc",
+        "https://twitter.com/ClearskySec/status/929998314002673666"], "targeted_countries":
+        ["Israel"], "groups": [], "vote": 0, "validator_count": 0, "is_author": false,
+        "adversary": "Molerats", "id": "5a0b0b46fee07f41c7a21123", "industries": [],
+        "locked": 0, "name": "Continued Molerats Activity", "created": "2017-11-14T15:27:02.520000",
+        "cloned_from": null, "downvotes_count": 0, "modified": "2017-11-14T15:27:02.520000",
+        "comment_count": 0, "indicator_count": 87, "author": {"username": "AlienVault",
+        "is_subscribed": 0, "avatar_url": "https://otx20-web-media.s3.amazonaws.com/media/avatars/AlienVault/resized/80/unnamed
+        (1).jpg", "is_following": 0, "id": "2"}, "in_group": false, "follower_count":
+        0, "votes_count": 0, "public": 1}, {"indicator_type_counts": {"domain": 1,
+        "FileHash-MD5": 5}, "pulse_source": "web", "TLP": "white", "description":
+        "According to X-Force research, the new banking Trojan emerged in the wild
+        in September 2017, when its first test campaigns were launched. Our researchers
+        noted that IcedID has a modular malicious code with modern banking Trojan
+        capabilities comparable to malware such as the Zeus Trojan.\n\nAt this time,
+        the malware targets banks, payment card providers, mobile services providers,
+        payroll, webmail and e-commerce sites in the U.S. Two major banks in the U.K.
+        are also on the target list the malware fetches.", "subscriber_count": 43467,
+        "tags": ["iceid"], "export_count": 22, "is_following": 0, "is_modified": false,
+        "upvotes_count": 0, "modified_text": "2 days ago ", "is_subscribing": 0, "references":
+        ["http://securityintelligence.com/new-banking-trojan-icedid-discovered-by-ibm-x-force-research"],
+        "targeted_countries": [], "groups": [], "vote": 0, "validator_count": 0, "is_author":
+        false, "adversary": "IceID", "id": "5a09c743fee07f44d3a21123", "industries":
+        ["Finance"], "locked": 0, "name": "New Banking Trojan IcedID", "created":
+        "2017-11-13T16:24:35.479000", "cloned_from": null, "downvotes_count": 0, "modified":
+        "2017-11-13T16:24:35.479000", "comment_count": 0, "indicator_count": 6, "author":
+        {"username": "AlienVault", "is_subscribed": 0, "avatar_url": "https://otx20-web-media.s3.amazonaws.com/media/avatars/AlienVault/resized/80/unnamed
+        (1).jpg", "is_following": 0, "id": "2"}, "in_group": false, "follower_count":
+        0, "votes_count": 0, "public": 1}, {"indicator_type_counts": {"URL": 1, "FileHash-SHA256":
+        20, "hostname": 4}, "pulse_source": "web", "TLP": "white", "description":
+        "Unit 42 has discovered a new malware family we\u2019ve named \u201cReaver\u201d
+        with ties to attackers who use SunOrcal malware. SunOrcal activity has been
+        documented to at least 2013, and based on metadata surrounding some of the
+        C2s, may have been active as early as 2010. The new family appears to have
+        been in the wild since late 2016 and to date we have only identified 10 unique
+        samples, indicating it may be sparingly used. Reaver is also somewhat unique
+        in the fact that its final payload is in the form of a Control panel item,
+        or CPL file. To date, only 0.006% of all malware seen by Palo Alto Networks
+        employs this technique, indicating that it is in fact fairly rare.", "subscriber_count":
+        43461, "tags": ["china"], "export_count": 22, "is_following": 0, "is_modified":
+        false, "upvotes_count": 0, "modified_text": "4 days ago ", "is_subscribing":
+        0, "references": ["https://researchcenter.paloaltonetworks.com/2017/11/unit42-new-malware-with-ties-to-sunorcal-discovered/"],
+        "targeted_countries": ["Taiwan, Province of China"], "groups": [{"name": "AlienVault
+        Labs Threat Intelligence Subscription", "id": 69}], "vote": 0, "validator_count":
+        0, "is_author": false, "adversary": "SunOrcal", "id": "5a082b35fd011205ada56957",
+        "industries": [], "locked": 0, "name": "New Malware with Ties to SunOrcal
+        Discovered", "created": "2017-11-12T11:06:29.844000", "cloned_from": null,
+        "downvotes_count": 0, "modified": "2017-11-12T11:06:29.844000", "comment_count":
+        0, "indicator_count": 25, "author": {"username": "AlienVault", "is_subscribed":
+        0, "avatar_url": "https://otx20-web-media.s3.amazonaws.com/media/avatars/AlienVault/resized/80/unnamed
+        (1).jpg", "is_following": 0, "id": "2"}, "in_group": true, "follower_count":
+        0, "votes_count": 0, "public": 1}, {"indicator_type_counts": {"URL": 4, "FileHash-SHA256":
+        1}, "pulse_source": "web", "TLP": "white", "description": "A few months ago,
+        we covered the ChessMaster cyberespionage campaign, which leveraged a variety
+        of toolsets and malware such as ChChes and remote access trojans like RedLeaves
+        and PlugX to compromise its targets\u2014primarily organizations in Japan.
+        A few weeks ago, we observed new activity from ChessMaster, with notable evolutions
+        in terms of new tools and tactics that weren\u2019t present in the initial
+        attacks. From what we\u2019ve seen, ChessMaster is continuously evolving,
+        using open source tools and ones they developed, likely as a way to anonymize
+        their operations. Based on the way the campaign has developed, it won\u2019t
+        be surprising to see additional evolutions from ChessMaster in the future.",
+        "subscriber_count": 43454, "tags": ["apt10", "cnches", "china"], "export_count":
+        13, "is_following": 0, "is_modified": true, "upvotes_count": 0, "modified_text":
+        "5 days ago ", "is_subscribing": 0, "references": ["http://blog.trendmicro.com/trendlabs-security-intelligence/chessmasters-new-strategy-evolving-tools-tactics/"],
+        "targeted_countries": [], "groups": [], "vote": 0, "validator_count": 0, "is_author":
+        false, "adversary": "APT10", "id": "5a06e982aece4f705d614430", "industries":
+        [], "locked": 0, "name": "ChessMasters New Strategy: Evolving Tools and Tactics",
+        "created": "2017-11-11T12:13:54.837000", "cloned_from": null, "downvotes_count":
+        0, "modified": "2017-11-11T12:15:34.942000", "comment_count": 0, "indicator_count":
+        5, "author": {"username": "AlienVault", "is_subscribed": 0, "avatar_url":
+        "https://otx20-web-media.s3.amazonaws.com/media/avatars/AlienVault/resized/80/unnamed
+        (1).jpg", "is_following": 0, "id": "2"}, "in_group": false, "follower_count":
+        0, "votes_count": 0, "public": 1}, {"indicator_type_counts": {"FileHash-SHA256":
+        13, "email": 7, "YARA": 1}, "pulse_source": "web", "TLP": "white", "description":
+        "We previously reported on SamSam ransomware charging high ransoms for infected
+        servers. But SamSam isn\u2019t the only ransomware out there charging eye-watering
+        amounts to decrypt business servers.\n\nInitial reports of a new variant of
+        ransomware called LockCrypt started in June of this year. In October we saw
+        an increase in infections.", "subscriber_count": 43478, "tags": ["ransomware",
+        "lockcrypt"], "export_count": 34, "is_following": 0, "is_modified": false,
+        "upvotes_count": 0, "modified_text": "6 days ago ", "is_subscribing": 0, "references":
+        ["https://www.alienvault.com/blogs/labs-research/lockcrypt-ransomware-spreading-via-rdp-brute-force-attacks"],
+        "targeted_countries": [], "groups": [{"name": "Ransomware", "id": 66}], "vote":
+        0, "validator_count": 0, "is_author": false, "adversary": "", "id": "5a047b5c872e084d6bdfe706",
+        "industries": [], "locked": 0, "name": "LockCrypt Ransomware Spreading via
+        RDP Brute-Force Attacks", "created": "2017-11-09T15:59:24.319000", "cloned_from":
+        null, "downvotes_count": 0, "modified": "2017-11-09T15:59:24.319000", "comment_count":
+        1, "indicator_count": 21, "author": {"username": "AlienVault", "is_subscribed":
+        0, "avatar_url": "https://otx20-web-media.s3.amazonaws.com/media/avatars/AlienVault/resized/80/unnamed
+        (1).jpg", "is_following": 0, "id": "2"}, "in_group": true, "follower_count":
+        0, "votes_count": 0, "public": 1}, {"indicator_type_counts": {"FileHash-SHA256":
+        3, "domain": 1}, "pulse_source": "web", "TLP": "white", "description": "Unit
+        42 has been closely tracking the OilRig threat group since May 2016. One technique
+        we\u2019ve been tracking with this threat group is their use of the Clayslide
+        delivery document as attachments to spear-phishing emails in attacks since
+        May 2016. In our April 2017 posting OilRig Actors Provide a Glimpse into Development
+        and Testing Efforts we showed how we observed the OilRig threat group developing
+        and refining these Clayside delivery documents.\n\nRecently, we observed a
+        new version of the Clayslide delivery document used to install a new custom
+        Trojan whose developer calls it \u201cALMA Communicator\u201d. The delivery
+        document also saved the post-exploitation credential harvesting tool known
+        as Mimikatz, which we believe the threat actors will use to gather account
+        credentials from the compromised system. While we do not have detailed telemetry,
+        we have reason to believe this attack targeted an individual at a public utilities
+        company in the Middle East.", "subscriber_count": 43465, "tags": ["oilrig"],
+        "export_count": 16, "is_following": 0, "is_modified": false, "upvotes_count":
+        0, "modified_text": "7 days ago ", "is_subscribing": 0, "references": ["https://researchcenter.paloaltonetworks.com/2017/11/unit42-oilrig-deploys-alma-communicator-dns-tunneling-trojan/"],
+        "targeted_countries": [], "groups": [], "vote": 0, "validator_count": 0, "is_author":
+        false, "adversary": "OilRig", "id": "5a03a0473eb9410bc7e8ee0f", "industries":
+        ["Energy"], "locked": 0, "name": "OilRig Deploys ALMA Communicator \u2013
+        DNS Tunneling Trojan", "created": "2017-11-09T00:24:39.953000", "cloned_from":
+        null, "downvotes_count": 0, "modified": "2017-11-09T00:24:39.953000", "comment_count":
+        0, "indicator_count": 4, "author": {"username": "AlienVault", "is_subscribed":
+        0, "avatar_url": "https://otx20-web-media.s3.amazonaws.com/media/avatars/AlienVault/resized/80/unnamed
+        (1).jpg", "is_following": 0, "id": "2"}, "in_group": false, "follower_count":
+        0, "votes_count": 0, "public": 1}, {"indicator_type_counts": {"FileHash-SHA256":
+        38}, "pulse_source": "web", "TLP": "white", "description": "REDBALDKNIGHT,
+        also known as BRONZE BUTLER and Tick, is a cyberespionage group known to target
+        Japanese organizations such as government agencies (including defense) as
+        well as those in biotechnology, electronics manufacturing, and industrial
+        chemistry. Their campaigns employ the Daserf backdoor (detected by Trend Micro
+        as BKDR_DASERF, otherwise known as Muirim and Nioupale) that has four main
+        capabilities: execute shell commands, download and upload data, take screenshots,
+        and log keystrokes.", "subscriber_count": 43461, "tags": ["daserf"], "export_count":
+        22, "is_following": 0, "is_modified": false, "upvotes_count": 0, "modified_text":
+        "7 days ago ", "is_subscribing": 0, "references": ["http://blog.trendmicro.com/trendlabs-security-intelligence/redbaldknight-bronze-butler-daserf-backdoor-now-using-steganography/"],
+        "targeted_countries": ["Japan"], "groups": [], "vote": 0, "validator_count":
+        0, "is_author": false, "adversary": "Bronze Butler", "id": "5a0343e668ec8569a045bd37",
+        "industries": ["Government", "Defense"], "locked": 0, "name": "Daserf Backdoor
+        Now Using Steganography", "created": "2017-11-08T17:50:30.005000", "cloned_from":
+        null, "downvotes_count": 0, "modified": "2017-11-08T17:50:30.005000", "comment_count":
+        1, "indicator_count": 38, "author": {"username": "AlienVault", "is_subscribed":
+        0, "avatar_url": "https://otx20-web-media.s3.amazonaws.com/media/avatars/AlienVault/resized/80/unnamed
+        (1).jpg", "is_following": 0, "id": "2"}, "in_group": false, "follower_count":
+        0, "votes_count": 0, "public": 1}, {"indicator_type_counts": {"domain": 3,
+        "FileHash-MD5": 6}, "pulse_source": "web", "TLP": "white", "description":
+        "Symantec has identified a previously unknown group called Sowbug that has
+        been conducting highly targeted cyber attacks against organizations in South
+        America and Southeast Asia and appears to be heavily focused on foreign policy
+        institutions and diplomatic targets. Sowbug has been seen mounting classic
+        espionage attacks by stealing documents from the organizations it infiltrates.
+        \n\nTo date, Sowbug appears to be focused mainly on government entities in
+        South America and Southeast Asia and has infiltrated organizations in Argentina,
+        Brazil, Ecuador, Peru, Brunei and Malaysia. The group is well resourced, capable
+        of infiltrating multiple targets simultaneously and will often operate outside
+        the working hours of targeted organizations in order to maintain a low profile.",
+        "subscriber_count": 43471, "tags": ["Sowbug", "apt", "South America", "Southeast
+        Asia"], "export_count": 25, "is_following": 0, "is_modified": false, "upvotes_count":
+        0, "modified_text": "8 days ago ", "is_subscribing": 0, "references": ["https://www.symantec.com/connect/blogs/sowbug-cyber-espionage-group-targets-south-american-and-southeast-asian-governments"],
+        "targeted_countries": ["Argentina", "Brazil", "Ecuador", "Peru", "Brunei Darussalam",
+        "Malaysia"], "groups": [], "vote": 0, "validator_count": 0, "is_author": false,
+        "adversary": "Sowbug", "id": "5a0230e71f36d51d6af80119", "industries": ["government"],
+        "locked": 0, "name": "Sowbug: Cyber espionage group targets South American
+        and Southeast Asian governments", "created": "2017-11-07T22:17:11.663000",
+        "cloned_from": null, "downvotes_count": 0, "modified": "2017-11-07T22:17:11.663000",
+        "comment_count": 0, "indicator_count": 9, "author": {"username": "AlienVault",
+        "is_subscribed": 0, "avatar_url": "https://otx20-web-media.s3.amazonaws.com/media/avatars/AlienVault/resized/80/unnamed
+        (1).jpg", "is_following": 0, "id": "2"}, "in_group": false, "follower_count":
+        0, "votes_count": 0, "public": 1}, {"indicator_type_counts": {"URL": 4, "FileHash-SHA1":
+        5, "domain": 2}, "pulse_source": "web", "TLP": "white", "description": "During
+        our monitoring of activities around the APT28 threat group, McAfee Advanced
+        Threat Research analysts identified a malicious Word document that appears
+        to leverage the Microsoft Office Dynamic Data Exchange (DDE) technique that
+        has been previously reported by Advanced Threat Research. This document likely
+        marks the first observed use of this technique by APT28. The use of DDE with
+        PowerShell allows an attacker to execute arbitrary code on a victim\u2019s
+        system regardless whether macros are enabled. (McAfee product detection is
+        covered in the Indicators of Compromise section at the end of the document.)\nAPT28
+        has recently focused on using different themes. In this case it capitalized
+        on the recent terrorist attack in New York City. The document itself is blank.
+        Once opened, the document contacts a control server to drop the first stage
+        of the malware, Seduploader, onto a victim\u2019s system.", "subscriber_count":
+        43476, "tags": ["seduploader", "apt28", "powershell", "office", "word", "mcafee",
+        "dde"], "export_count": 29, "is_following": 0, "is_modified": false, "upvotes_count":
+        0, "modified_text": "8 days ago ", "is_subscribing": 0, "references": ["https://securingtomorrow.mcafee.com/mcafee-labs/apt28-threat-group-adopts-dde-technique-nyc-attack-theme-in-latest-campaign/"],
+        "targeted_countries": [], "groups": [], "vote": 0, "validator_count": 0, "is_author":
+        false, "adversary": "Sofacy", "id": "5a020ee3ced01a160c3350b7", "industries":
+        [], "locked": 0, "name": "Threat Group APT28 Slips Office Malware into Doc
+        Citing NYC Terror Attack", "created": "2017-11-07T19:52:03.631000", "cloned_from":
+        null, "downvotes_count": 0, "modified": "2017-11-07T19:52:03.631000", "comment_count":
+        0, "indicator_count": 11, "author": {"username": "AlienVault", "is_subscribed":
+        0, "avatar_url": "https://otx20-web-media.s3.amazonaws.com/media/avatars/AlienVault/resized/80/unnamed
+        (1).jpg", "is_following": 0, "id": "2"}, "in_group": false, "follower_count":
+        0, "votes_count": 0, "public": 1}], "previous": null}'
+    http_version: 
+  recorded_at: Thu, 16 Nov 2017 12:52:32 GMT
+recorded_with: VCR 3.0.3

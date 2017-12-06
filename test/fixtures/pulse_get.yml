@@ -1,0 +1,103 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/pulses/57204e9b3c4c3e015d93cb12
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 16 Nov 2017 12:52:31 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '1123'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"industries": [], "TLP": "green", "description": "The infamous Remote
+        Access Trojan (RAT) Poison Ivy (hereafter referred to as PIVY) has resurfaced
+        recently, and exhibits some new behaviors. PIVY has been observed targeting
+        a number of Asian countries for various purposes over the past year. Palo
+        Alto Networks\u2019 Unit 42 recently blogged about a new Poison Ivy variant
+        targeting Hong Kong activists dubbed SPIVY that uses DLL sideloading and operates
+        quite differently from a variant recently observed by ASERT that has been
+        active for at least the past 12 months.", "created": "2016-04-27T05:31:06.941000",
+        "tags": ["rat", "remote access trojan", "poison ivy", "pivy", "Myanmar", "asia",
+        "Hong Kong", "arbornetworks"], "modified": "2016-04-27T05:31:06.941000", "author_name":
+        "AlienVault", "public": 1, "references": ["https://www.arbornetworks.com/blog/asert/recent-poison-iv/"],
+        "targeted_countries": [], "indicators": [{"content": "", "indicator": "webserver.servehttp.com",
+        "description": "", "created": "2016-04-27T05:31:07", "is_active": 1, "title":
+        "", "access_reason": "", "access_type": "public", "access_groups": [], "role":
+        null, "expiration": null, "type": "hostname", "id": 361850, "observations":
+        3}, {"content": "", "indicator": "web.microsoftdefence.com", "description":
+        "", "created": "2016-04-27T05:31:07", "is_active": 1, "title": "", "access_reason":
+        "", "access_type": "public", "access_groups": [], "role": null, "expiration":
+        null, "type": "hostname", "id": 361851, "observations": 2}, {"content": "",
+        "indicator": "jackhex.md5c.net", "description": "", "created": "2016-04-27T05:31:07",
+        "is_active": 1, "title": "", "access_reason": "", "access_type": "public",
+        "access_groups": [], "role": null, "expiration": null, "type": "hostname",
+        "id": 175207, "observations": 5}, {"content": "", "indicator": "admin.nslookupdns.com",
+        "description": "", "created": "2016-04-27T05:31:07", "is_active": 1, "title":
+        "", "access_reason": "", "access_type": "public", "access_groups": [], "role":
+        null, "expiration": null, "type": "hostname", "id": 361852, "observations":
+        3}, {"content": "", "indicator": "news.tibetgroupworks.com", "description":
+        "", "created": "2016-04-27T05:31:07", "is_active": 1, "title": "", "access_reason":
+        "", "access_type": "public", "access_groups": [], "role": null, "expiration":
+        null, "type": "hostname", "id": 175151, "observations": 2}, {"content": "",
+        "indicator": "cbbfc3b5ff08de14fdb2316f3b14886dfe5504ef", "description": "",
+        "created": "2016-04-27T05:31:07", "is_active": 1, "title": "", "access_reason":
+        "", "access_type": "public", "access_groups": [], "role": null, "expiration":
+        null, "type": "FileHash-SHA1", "id": 361853, "observations": 1}, {"content":
+        "", "indicator": "63e00dbf45961ad11bd1eb55dff9c2771c2916a6", "description":
+        "", "created": "2016-04-27T05:31:07", "is_active": 1, "title": "", "access_reason":
+        "", "access_type": "public", "access_groups": [], "role": null, "expiration":
+        null, "type": "FileHash-SHA1", "id": 361854, "observations": 1}, {"content":
+        "", "indicator": "a7d206791b1cdec616e9b18ae6fa1548ca96a321", "description":
+        "", "created": "2016-04-27T05:31:07", "is_active": 1, "title": "", "access_reason":
+        "", "access_type": "public", "access_groups": [], "role": null, "expiration":
+        null, "type": "FileHash-SHA1", "id": 361855, "observations": 1}, {"content":
+        "", "indicator": "49e36de6d757ca44c43d5670d497bd8738c1d2a4", "description":
+        "", "created": "2016-04-27T05:31:07", "is_active": 1, "title": "", "access_reason":
+        "", "access_type": "public", "access_groups": [], "role": null, "expiration":
+        null, "type": "FileHash-SHA1", "id": 361856, "observations": 1}, {"content":
+        "", "indicator": "ec646c57f9ac5e56230a17aeca6523a4532ff472", "description":
+        "", "created": "2016-04-27T05:31:07", "is_active": 1, "title": "", "access_reason":
+        "", "access_type": "public", "access_groups": [], "role": null, "expiration":
+        null, "type": "FileHash-SHA1", "id": 361857, "observations": 1}, {"content":
+        "", "indicator": "f389e1c970b2ca28112a30a8cfef1f3973fa82ea", "description":
+        "", "created": "2016-04-27T05:31:07", "is_active": 1, "title": "", "access_reason":
+        "", "access_type": "public", "access_groups": [], "role": null, "expiration":
+        null, "type": "FileHash-SHA1", "id": 361858, "observations": 1}, {"content":
+        "", "indicator": "ef2618d58bd50fa232a19f9bcf3983d1e2dff266", "description":
+        "", "created": "2016-04-27T05:31:07", "is_active": 1, "title": "", "access_reason":
+        "", "access_type": "public", "access_groups": [], "role": null, "expiration":
+        null, "type": "FileHash-SHA1", "id": 361859, "observations": 1}, {"content":
+        "", "indicator": "675a3247f4c0e1105a41c685f4c2fb606e5b1eac", "description":
+        "", "created": "2016-04-27T05:31:07", "is_active": 1, "title": "", "access_reason":
+        "", "access_type": "public", "access_groups": [], "role": null, "expiration":
+        null, "type": "FileHash-SHA1", "id": 361860, "observations": 1}], "revision":
+        1, "adversary": null, "id": "57204e9b3c4c3e015d93cb12", "name": "Poison Ivy
+        Activity Targeting Myanmar, Asian Countries"}'
+    http_version: 
+  recorded_at: Thu, 16 Nov 2017 12:52:31 GMT
+recorded_with: VCR 3.0.3
