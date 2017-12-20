@@ -27,7 +27,9 @@ class IPTest < Minitest::Test
     VCR.use_cassette('ip_reputation') do
       ip = OTX::IP.new('test_api')
 
-      i = ip.get_reputation('8.8.8.8')
+      i = ip.get_reputation('94.23.1.215')
+
+      assert_equal 'OVH SAS', i.organization
     end
   end
 
