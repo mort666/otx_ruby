@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/8.8.8.8/reputation
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/94.23.1.215/reputation
     body:
       encoding: US-ASCII
       string: ''
@@ -21,20 +21,31 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 12:52:29 GMT
+      - Wed, 20 Dec 2017 18:11:41 GMT
       Server:
       - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Otx-Active:
+      - '0'
       Content-Length:
-      - '40'
+      - '417'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"reputation": null}'
+      string: '{"reputation": {"address": "94.23.1.215", "as": "16276", "threat_score":
+        2, "counts": {"Scanning Host": 1}, "first_seen": "2015-11-29T21:08:09", "city":
+        null, "allow_ping": "", "reputation_rel_checked": 0, "lon": 2.3499999046326,
+        "state": -1, "status": 1, "activities": [{"status": 1, "name": "Scanning Host",
+        "first_date": "2015-11-29T21:08:09", "data_key": "94.23.1.215 Hostile (1477
+        attacks)", "source": "dshield-daily", "last_date": "2015-11-29T21:08:09",
+        "data": []}], "server_type": "", "reputation_val_checked": 0, "lat": 48.860000610352,
+        "date_added": {"usec": 292000, "sec": 1448831289}, "country": "FR (France)",
+        "up": 0, "reputation_val": "2", "reputation_rel": "2", "organization": "OVH
+        SAS", "_id": {"$id": "565b693903b04d4a61009dd6"}, "last_seen": "2015-11-29T21:08:09"}}'
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 12:52:29 GMT
+  recorded_at: Wed, 20 Dec 2017 18:11:41 GMT
 recorded_with: VCR 3.0.3
