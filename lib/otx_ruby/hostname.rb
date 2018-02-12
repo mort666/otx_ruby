@@ -91,5 +91,15 @@ module OTX
 
       return results
     end
+
+    def nids_list(hostname)
+      uri = "/api/v1/indicators/hostname/#{hostname}/nids_list"
+
+      json_data = get(uri)
+
+      nids_list = OTX::Indicator::IP::NidsList.new(json_data)
+
+      return nids_list
+    end
   end
 end

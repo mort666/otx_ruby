@@ -101,5 +101,15 @@ module OTX
 
       return results
     end
+
+    def nids_list(domain)
+      uri = "/api/v1/indicators/#{type == :ipv6 ? 'IPv6' : 'IPv4'}/#{ip}/nids_list"
+
+      json_data = get(uri)
+
+      nids_list = OTX::Indicator::IP::NidsList.new(json_data)
+
+      return nids_list
+    end
   end
 end

@@ -9,13 +9,5 @@ module OTX
 
       return general
     end
-
-    def nids_hits
-      domains
-      ip
-      hostname
-
-      OTX::Indicator::IP::NidsList.new(json_data)
-    end
   end
 end

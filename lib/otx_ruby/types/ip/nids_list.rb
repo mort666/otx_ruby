@@ -2,7 +2,7 @@ module OTX
   module Indicator
     module IP
       class NidsList < OTX::Type::Base
-        attr_accessor :ip, :domain, :hostname, :nids_hits
+        attr_accessor :count, :limit, :results
       end
     end
   end
