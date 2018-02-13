@@ -96,7 +96,7 @@ module OTX
     # Tallies total NIDS rules linked to a hostname
     #
     # @param hostname [String] Hostname to check for NIDS rules
-    # @param [Integer] Total number of NIDS rules
+    # @return [Integer] Total number of NIDS rules
     #
     def nids_list(hostname)
       uri = "/api/v1/indicators/hostname/#{hostname}/passive_dns"

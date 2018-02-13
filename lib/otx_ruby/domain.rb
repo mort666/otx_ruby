@@ -92,7 +92,7 @@ module OTX
     # Tallies total NIDS rules linked to a domain
     #
     # @param domain [String] Domain to check for NIDS rules
-    # @param [Integer] Total number of NIDS rules
+    # @return [Integer] Total number of NIDS rules
     #
     def nids_list(domain)
       uri = "/api/v1/indicators/domain/#{domain}/passive_dns"
