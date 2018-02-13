@@ -88,9 +88,9 @@ class HostnameTest < Minitest::Test
     VCR.use_cassette('hostname_nids_list') do
       hostname = OTX::Hostname.new('test_api')
 
-      h = hostname.nids_list('8.8.8.8')
+      h = hostname.nids_list('otx.alienvault.com')
 
-      # assert_equal 4, i.count
+      assert_equal 0, h
     end
   end
 end

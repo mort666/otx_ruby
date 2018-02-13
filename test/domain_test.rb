@@ -82,11 +82,11 @@ class DomainTest < Minitest::Test
 
   def test_nids_list
     VCR.use_cassette('domain_nids_list') do
-      domain = OTX::Domain.new('993b4ca8940f3298987a511d5c6795760febbed7bde76f38012bd128b03ca1a0', 'test_api')
+      domain = OTX::Domain.new('test_api')
 
       d = domain.nids_list('spywaresite.info')
 
-      # assert_equal 4, d.count
+      assert_equal 6, d
     end
   end
 end

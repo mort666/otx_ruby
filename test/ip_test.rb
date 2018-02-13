@@ -122,7 +122,8 @@ class IPTest < Minitest::Test
 
       i = ip.nids_list('8.8.8.8')
 
-      # assert_equal 4, i.count
+      assert_equal 91, i.count
+      assert_equal '2014374', i.results[0]
     end
   end
 end
