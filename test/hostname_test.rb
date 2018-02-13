@@ -83,4 +83,14 @@ class HostnameTest < Minitest::Test
       assert_equal '443 header', h.last.key
     end
   end
+
+  def test_nids_list
+    VCR.use_cassette('hostname_nids_list') do
+      hostname = OTX::Hostname.new('test_api')
+
+      h = hostname.nids_list('8.8.8.8')
+
+      # assert_equal 4, i.count
+    end
+  end
 end
