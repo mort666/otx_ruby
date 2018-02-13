@@ -21,7 +21,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 13 Feb 2018 14:56:14 GMT
+      - Tue, 13 Feb 2018 20:09:49 GMT
       Server:
       - nginx
       Vary:
@@ -29,7 +29,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Otx-Active:
-      - '1'
+      - '0'
       Content-Length:
       - '49'
       Connection:
@@ -38,5 +38,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"passive_dns": [], "count": 0}'
     http_version: 
-  recorded_at: Tue, 13 Feb 2018 14:56:14 GMT
+  recorded_at: Tue, 13 Feb 2018 20:09:49 GMT
 recorded_with: VCR 3.0.3

@@ -4,6 +4,7 @@ require 'otx_ruby'
 require 'minitest/autorun'
 require 'webmock/minitest'
 require 'vcr'
+require 'pry'
 
 VCR.configure do |c|
   c.cassette_library_dir = "test/fixtures"

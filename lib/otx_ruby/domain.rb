@@ -87,7 +87,6 @@ module OTX
       return whois
     end
 
-
     #
     # Tallies total NIDS rules linked to a domain
     #
@@ -96,17 +95,19 @@ module OTX
     #
     def nids_list(domain)
       uri = "/api/v1/indicators/domain/#{domain}/passive_dns"
-
       json_data = get(uri)
-      ip_array = []
 
+      grant_access = self.instance_variable_get('@key')
+      ip_object = OTX::IP.new(grant_access)
+
+      ip_array = []
       json_data['passive_dns'].each do |r|
         ip_array << r['address']
       end
 
       total = 0
       ip_array.each do |ip|
-        nids_list = get("/api/v1/indicators/IPv4/#{ip}/nids_list")
+        nids_list = ip_object.nids_list(ip)
         total += nids_list.count
       end
 

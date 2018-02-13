@@ -21,7 +21,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 13 Feb 2018 14:45:20 GMT
+      - Tue, 13 Feb 2018 22:43:09 GMT
       Server:
       - nginx
       Vary:
@@ -29,7 +29,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Otx-Active:
-      - '1'
+      - '0'
       Content-Length:
       - '208'
       Connection:
@@ -42,7 +42,7 @@ http_interactions:
         States", "asset_type": "domain", "first": "2013-08-13 06:19:15"}], "count":
         1}'
     http_version: 
-  recorded_at: Tue, 13 Feb 2018 14:45:21 GMT
+  recorded_at: Tue, 13 Feb 2018 22:43:10 GMT
 - request:
     method: get
     uri: https://otx.alienvault.com/api/v1/indicators/IPv4/69.165.98.21/nids_list
@@ -58,13 +58,13 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 403
+      message: FORBIDDEN
     headers:
       Content-Type:
       - application/json
       Date:
-      - Tue, 13 Feb 2018 14:45:21 GMT
+      - Tue, 13 Feb 2018 22:43:20 GMT
       Server:
       - nginx
       Vary:
@@ -72,15 +72,14 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Otx-Active:
-      - '1'
+      - '0'
       Content-Length:
-      - '83'
+      - '57'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
-        null}'
+      string: '{"detail": "Authentication required"}'
     http_version: 
-  recorded_at: Tue, 13 Feb 2018 14:45:22 GMT
+  recorded_at: Tue, 13 Feb 2018 22:43:20 GMT
 recorded_with: VCR 3.0.3

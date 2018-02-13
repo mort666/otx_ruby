@@ -102,6 +102,8 @@ module OTX
       uri = "/api/v1/indicators/hostname/#{hostname}/passive_dns"
       json_data = get(uri)
 
+      grant_access = self.instance_variable_get('@key')
+
       ip_array = []
       json_data['passive_dns'].each do |r|
         ip_array << r['address']
@@ -109,7 +111,8 @@ module OTX
 
       total = 0
       ip_array.each do |ip|
-        nids_list = get("/api/v1/indicators/IPv4/#{ip}/nids_list")
+        ip_object = OTX::IP.new(grant_access)
+        nids_list = ip_object.nids_list(ip)
         total += nids_list.count
       end
 
