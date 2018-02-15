@@ -101,5 +101,22 @@ module OTX
 
       return results
     end
+
+    #
+    # NIDS rules associated with an IP
+    #
+    # @param ip [String] IP Address for lookup
+    # @param type [String] Format of IP Address e.g 'IPv4', 'IPv6'
+    # @return [Object] Object created from NIDS list json data
+    #
+    def get_nids_list(ip, type = :ipv4)
+      uri = "/api/v1/indicators/#{type == :ipv6 ? 'IPv6' : 'IPv4'}/#{ip}/nids_list"
+
+      json_data = get(uri)
+
+      nids_list = OTX::Indicator::IP::NidsList.new(json_data)
+
+      return nids_list
+    end
   end
 end

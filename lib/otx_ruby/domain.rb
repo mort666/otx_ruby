@@ -86,5 +86,25 @@ module OTX
 
       return whois
     end
+
+    #
+    # Tallies total NIDS rules linked to a domain
+    #
+    # @param domain [String] Domain to check for NIDS rules
+    # @param pda [Array] Passive DNS objects to check for linked NIDS rules
+    # @return [Integer] Total number of NIDS rules
+    #
+    def count_nids_list(domain, pda)
+      grant_access = self.instance_variable_get('@key')
+      ip_object = OTX::IP.new(grant_access)
+
+      total = 0
+      pda.each do |pdr|
+        nids_list = ip_object.nids_list(pdr.address)
+        total += nids_list.count
+      end
+
+      return total
+    end
   end
 end

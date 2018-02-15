@@ -73,7 +73,6 @@ module OTX
   end
 end
 
-
 module OTX
   #
   # Base Data Types for Returned Data from API

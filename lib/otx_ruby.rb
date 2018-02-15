@@ -44,6 +44,7 @@ require "otx_ruby/types/ip/url"
 require "otx_ruby/types/ip/dns"
 require "otx_ruby/types/ip/http_scan"
 require "otx_ruby/types/ip/whois"
+require "otx_ruby/types/ip/nids_list"
 
 #
 # Base AlienVault OTX Module

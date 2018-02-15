@@ -115,4 +115,15 @@ class IPTest < Minitest::Test
       assert_equal '443 title', i[2].key
     end
   end
+
+  def test_nids_list
+    VCR.use_cassette('ip_nids_list') do
+      ip = OTX::IP.new('test_api')
+
+      i = ip.count_nids_list('8.8.8.8')
+
+      assert_equal 91, i.count
+      assert_equal '2014374', i.results[0]
+    end
+  end
 end

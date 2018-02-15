@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://otx.alienvault.com/api/v1/indicators/hostname/otx.alienvault.com/passive_dns
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/8.8.8.8/nids_list
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 15 Feb 2018 12:06:43 GMT
+      - Tue, 13 Feb 2018 11:50:27 GMT
       Server:
       - nginx
       Vary:
@@ -29,14 +29,17 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Otx-Active:
-      - '0'
+      - '1'
       Content-Length:
-      - '49'
+      - '187'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"passive_dns": [], "count": 0}'
+      string: '{"count": 91, "results": ["2014374", "2014375", "2014372", "2014373",
+        "2014371", "2003657", "2014779", "2012115", "2011090", "2014868"], "next":
+        "https://otx.alienvault.com/api/v1/indicators/IPv4/8.8.8.8/nids_list?page=2",
+        "limit": 10, "page": 1, "previous": null}'
     http_version: 
-  recorded_at: Thu, 15 Feb 2018 12:06:43 GMT
+  recorded_at: Tue, 13 Feb 2018 11:50:27 GMT
 recorded_with: VCR 3.0.3

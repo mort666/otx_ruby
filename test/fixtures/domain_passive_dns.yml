@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.13.1
+      - Faraday v0.14.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,13 +21,15 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Nov 2017 16:33:52 GMT
+      - Thu, 15 Feb 2018 12:56:55 GMT
       Server:
       - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Otx-Active:
+      - '0'
       Content-Length:
       - '208'
       Connection:
@@ -40,5 +42,5 @@ http_interactions:
         States", "asset_type": "domain", "first": "2013-08-13 06:19:15"}], "count":
         1}'
     http_version: 
-  recorded_at: Tue, 14 Nov 2017 16:33:52 GMT
+  recorded_at: Thu, 15 Feb 2018 12:56:55 GMT
 recorded_with: VCR 3.0.3

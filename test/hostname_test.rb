@@ -3,7 +3,7 @@ require 'test_helper'
 class HostnameTest < Minitest::Test
   def test_get_general
     VCR.use_cassette('hostname_general') do
-      hostname = OTX::Hostname.new('2f6326698009066c406fc4db742b4c94c888b9b4ed7a4f2075471f25672981b6')
+      hostname = OTX::Hostname.new('test_api')
 
       h = hostname.get_general('otx.alienvault.com')
 
@@ -17,7 +17,7 @@ class HostnameTest < Minitest::Test
 
   def test_get_geo
     VCR.use_cassette('hostname_geo') do
-      hostname = OTX::Hostname.new('2f6326698009066c406fc4db742b4c94c888b9b4ed7a4f2075471f25672981b6')
+      hostname = OTX::Hostname.new('test_api')
 
       h = hostname.get_geo('otx.alienvault.com')
 
@@ -38,7 +38,7 @@ class HostnameTest < Minitest::Test
 
   def test_get_malware
     VCR.use_cassette('hostname_malware') do
-      hostname = OTX::Hostname.new('2f6326698009066c406fc4db742b4c94c888b9b4ed7a4f2075471f25672981b6')
+      hostname = OTX::Hostname.new('test_api')
 
       h = hostname.get_malware('otx.alienvault.com')
 
@@ -48,7 +48,7 @@ class HostnameTest < Minitest::Test
 
   def test_get_url_list
     VCR.use_cassette('hostname_url_list') do
-      hostname = OTX::Hostname.new('2f6326698009066c406fc4db742b4c94c888b9b4ed7a4f2075471f25672981b6')
+      hostname = OTX::Hostname.new('test_api')
 
       h = hostname.get_url_list('otx.alienvault.com')
 
@@ -63,7 +63,7 @@ class HostnameTest < Minitest::Test
 
   def test_get_passive_dns
     VCR.use_cassette('hostname_passive_dns') do
-      hostname = OTX::Hostname.new('2f6326698009066c406fc4db742b4c94c888b9b4ed7a4f2075471f25672981b6')
+      hostname = OTX::Hostname.new('test_api')
 
       h = hostname.get_passive_dns('otx.alienvault.com')
     end
@@ -71,7 +71,7 @@ class HostnameTest < Minitest::Test
 
   def test_get_http_scans
     VCR.use_cassette('hostname_http_scans') do
-      hostname = OTX::Hostname.new('2f6326698009066c406fc4db742b4c94c888b9b4ed7a4f2075471f25672981b6')
+      hostname = OTX::Hostname.new('test_api')
 
       h = hostname.get_http_scans('otx.alienvault.com')
 
@@ -81,6 +81,18 @@ class HostnameTest < Minitest::Test
       assert_equal 'HTTP/1.1 200 OK Content Type: text/html  charset=utf 8 Date: Wed  13 Sep 2017 19:32:44 GMT Server: nginx Vary: Accept Encoding X Frame Options: SAMEORIGIN Connection: keep alive ', h.last.value
       assert_equal '443 Header', h.last.name
       assert_equal '443 header', h.last.key
+    end
+  end
+
+  def test_nids_list
+    VCR.use_cassette('hostname_nids_list') do
+      hostname = OTX::Hostname.new('test_api')
+
+      passive_dns = hostname.get_passive_dns('www.bb.com')
+
+      h = hostname.count_nids_list('www.bb.com', passive_dns)
+
+      assert_equal 37, h
     end
   end
 end
