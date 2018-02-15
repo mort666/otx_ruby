@@ -87,8 +87,10 @@ class HostnameTest < Minitest::Test
   def test_nids_list
     VCR.use_cassette('hostname_nids_list') do
       hostname = OTX::Hostname.new('test_api')
+      passive_dns = hostname.passive_dns('www.bb.com')
+      ips = passive_dns.get_ips
 
-      h = hostname.nids_list('www.bb.com')
+      h = hostname.nids_list('www.bb.com', ips)
 
       assert_equal 37, h
     end

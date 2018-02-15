@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.13.1
+      - Faraday v0.14.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,13 +21,15 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 Nov 2017 14:55:14 GMT
+      - Thu, 15 Feb 2018 12:06:43 GMT
       Server:
       - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Otx-Active:
+      - '0'
       Content-Length:
       - '49'
       Connection:
@@ -36,5 +38,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"passive_dns": [], "count": 0}'
     http_version: 
-  recorded_at: Mon, 20 Nov 2017 14:55:14 GMT
+  recorded_at: Thu, 15 Feb 2018 12:06:43 GMT
 recorded_with: VCR 3.0.3
