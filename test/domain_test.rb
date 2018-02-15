@@ -84,9 +84,9 @@ class DomainTest < Minitest::Test
     VCR.use_cassette('domain_nids_list') do
       domain = OTX::Domain.new('test_api')
 
-      d = domain.nids_list('spywaresite.info')
+      d = domain.nids_list('firewall-gateway.com')
 
-      assert_equal 6, d
+      assert_equal 167, d
     end
   end
 end

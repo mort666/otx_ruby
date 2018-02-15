@@ -3,7 +3,7 @@ require 'test_helper'
 class HostnameTest < Minitest::Test
   def test_get_general
     VCR.use_cassette('hostname_general') do
-      hostname = OTX::Hostname.new('2f6326698009066c406fc4db742b4c94c888b9b4ed7a4f2075471f25672981b6')
+      hostname = OTX::Hostname.new('test_api')
 
       h = hostname.get_general('otx.alienvault.com')
 
@@ -17,7 +17,7 @@ class HostnameTest < Minitest::Test
 
   def test_get_geo
     VCR.use_cassette('hostname_geo') do
-      hostname = OTX::Hostname.new('2f6326698009066c406fc4db742b4c94c888b9b4ed7a4f2075471f25672981b6')
+      hostname = OTX::Hostname.new('test_api')
 
       h = hostname.get_geo('otx.alienvault.com')
 
@@ -38,7 +38,7 @@ class HostnameTest < Minitest::Test
 
   def test_get_malware
     VCR.use_cassette('hostname_malware') do
-      hostname = OTX::Hostname.new('2f6326698009066c406fc4db742b4c94c888b9b4ed7a4f2075471f25672981b6')
+      hostname = OTX::Hostname.new('test_api')
 
       h = hostname.get_malware('otx.alienvault.com')
 
@@ -48,7 +48,7 @@ class HostnameTest < Minitest::Test
 
   def test_get_url_list
     VCR.use_cassette('hostname_url_list') do
-      hostname = OTX::Hostname.new('2f6326698009066c406fc4db742b4c94c888b9b4ed7a4f2075471f25672981b6')
+      hostname = OTX::Hostname.new('test_api')
 
       h = hostname.get_url_list('otx.alienvault.com')
 
@@ -63,7 +63,7 @@ class HostnameTest < Minitest::Test
 
   def test_get_passive_dns
     VCR.use_cassette('hostname_passive_dns') do
-      hostname = OTX::Hostname.new('2f6326698009066c406fc4db742b4c94c888b9b4ed7a4f2075471f25672981b6')
+      hostname = OTX::Hostname.new('test_api')
 
       h = hostname.get_passive_dns('otx.alienvault.com')
     end
@@ -71,7 +71,7 @@ class HostnameTest < Minitest::Test
 
   def test_get_http_scans
     VCR.use_cassette('hostname_http_scans') do
-      hostname = OTX::Hostname.new('2f6326698009066c406fc4db742b4c94c888b9b4ed7a4f2075471f25672981b6')
+      hostname = OTX::Hostname.new('test_api')
 
       h = hostname.get_http_scans('otx.alienvault.com')
 
@@ -88,9 +88,9 @@ class HostnameTest < Minitest::Test
     VCR.use_cassette('hostname_nids_list') do
       hostname = OTX::Hostname.new('test_api')
 
-      h = hostname.nids_list('otx.alienvault.com')
+      h = hostname.nids_list('www.bb.com')
 
-      assert_equal 0, h
+      assert_equal 37, h
     end
   end
 end

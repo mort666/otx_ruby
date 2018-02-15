@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://otx.alienvault.com/api/v1/indicators/hostname/otx.alienvault.com/passive_dns
+    uri: https://otx.alienvault.com/api/v1/indicators/hostname/www.bb.com/passive_dns
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 13 Feb 2018 20:09:49 GMT
+      - Thu, 15 Feb 2018 11:02:12 GMT
       Server:
       - nginx
       Vary:
@@ -29,14 +29,102 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Otx-Active:
-      - '0'
+      - '1'
       Content-Length:
-      - '49'
+      - '243'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"passive_dns": [], "count": 0}'
+      string: '{"passive_dns": [{"last": "2016-05-11 10:42:06", "indicator_link":
+        "/indicator/hostname/www.bb.com", "hostname": "www.bb.com", "address": "205.178.189.129",
+        "flag_url": "/static/img/flags/us.png", "flag_title": "United States", "asset_type":
+        "hostname", "first": "2016-05-11 10:42:06"}, {"last": "2015-01-09 23:36:44",
+        "indicator_link": "/indicator/hostname/www.bb.com", "hostname": "www.bb.com",
+        "address": "198.202.143.20", "flag_url": "/static/img/flags/us.png", "flag_title":
+        "United States", "asset_type": "hostname", "first": "2015-01-09 23:36:43"}],
+        "count": 2}'
     http_version: 
-  recorded_at: Tue, 13 Feb 2018 20:09:49 GMT
+  recorded_at: Thu, 15 Feb 2018 11:02:12 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/205.178.189.129/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 11:02:15 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '203'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 37, "results": ["2022913", "2016879", "2008974", "2009024",
+        "2003068", "2018481", "2014297", "3679", "2001581", "2012888"], "next": "https://otx.alienvault.com/api/v1/indicators/IPv4/205.178.189.129/nids_list?page=2",
+        "limit": 10, "page": 1, "previous": null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 11:02:15 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/198.202.143.20/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 11:02:16 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 11:02:16 GMT
 recorded_with: VCR 3.0.3

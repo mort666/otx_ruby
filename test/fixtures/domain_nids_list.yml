@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://otx.alienvault.com/api/v1/indicators/domain/spywaresite.info/passive_dns
+    uri: https://otx.alienvault.com/api/v1/indicators/domain/firewall-gateway.com/passive_dns
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 13 Feb 2018 22:43:09 GMT
+      - Thu, 15 Feb 2018 10:55:35 GMT
       Server:
       - nginx
       Vary:
@@ -29,23 +29,149 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Otx-Active:
-      - '0'
+      - '1'
       Content-Length:
-      - '208'
+      - '1584'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"passive_dns": [{"last": "2013-08-13 06:19:15", "indicator_link":
-        "/indicator/domain/spywaresite.info", "hostname": "spywaresite.info", "address":
-        "69.165.98.21", "flag_url": "/static/img/flags/us.png", "flag_title": "United
-        States", "asset_type": "domain", "first": "2013-08-13 06:19:15"}], "count":
-        1}'
+      string: '{"passive_dns": [{"last": "2017-07-19 18:13:51", "indicator_link":
+        "/indicator/hostname/andro-api.firewall-gateway.com", "hostname": "andro-api.firewall-gateway.com",
+        "address": "91.11.245.194", "flag_url": "/static/img/flags/de.png", "flag_title":
+        "Germany", "asset_type": "hostname", "first": "2017-07-19 18:00:43"}, {"last":
+        "2016-11-09 23:19:17", "indicator_link": "/indicator/hostname/indecam.firewall-gateway.com",
+        "hostname": "indecam.firewall-gateway.com", "address": "87.79.86.116", "flag_url":
+        "/static/img/flags/de.png", "flag_title": "Germany", "asset_type": "hostname",
+        "first": "2016-11-09 23:19:17"}, {"last": "2016-09-26 19:35:15", "indicator_link":
+        "/indicator/hostname/aepvw.firewall-gateway.com", "hostname": "aepvw.firewall-gateway.com",
+        "address": "91.215.154.182", "flag_url": "/static/img/flags/bg.png", "flag_title":
+        "Bulgaria", "asset_type": "hostname", "first": "2016-09-26 19:35:15"}, {"last":
+        "2016-08-26 04:47:48", "indicator_link": "/indicator/hostname/gelicuddre.firewall-gateway.com",
+        "hostname": "gelicuddre.firewall-gateway.com", "address": "195.154.243.7",
+        "flag_url": "/static/img/flags/fr.png", "flag_title": "France", "asset_type":
+        "hostname", "first": "2016-08-26 04:47:48"}, {"last": "2016-08-23 17:32:26",
+        "indicator_link": "/indicator/hostname/tiomooensun.firewall-gateway.com",
+        "hostname": "tiomooensun.firewall-gateway.com", "address": "195.154.243.7",
+        "flag_url": "/static/img/flags/fr.png", "flag_title": "France", "asset_type":
+        "hostname", "first": "2016-08-23 17:32:26"}, {"last": "2016-08-16 20:26:43",
+        "indicator_link": "/indicator/hostname/arhivexjyjdj.firewall-gateway.com",
+        "hostname": "arhivexjyjdj.firewall-gateway.com", "address": "46.17.47.102",
+        "flag_url": "/static/img/flags/ru.png", "flag_title": "Russian Federation",
+        "asset_type": "hostname", "first": "2016-08-16 20:26:43"}, {"last": "2016-08-08
+        03:40:20", "indicator_link": "/indicator/hostname/nbmcqp3.firewall-gateway.com",
+        "hostname": "nbmcqp3.firewall-gateway.com", "address": "137.74.150.65", "flag_url":
+        "/static/img/flags/fr.png", "flag_title": "France", "asset_type": "hostname",
+        "first": "2016-08-08 03:40:20"}, {"last": "2016-08-08 03:36:32", "indicator_link":
+        "/indicator/hostname/artotauce.firewall-gateway.com", "hostname": "artotauce.firewall-gateway.com",
+        "address": "195.154.243.7", "flag_url": "/static/img/flags/fr.png", "flag_title":
+        "France", "asset_type": "hostname", "first": "2016-08-08 03:36:31"}, {"last":
+        "2016-08-06 15:53:51", "indicator_link": "/indicator/hostname/turnsimleras.firewall-gateway.com",
+        "hostname": "turnsimleras.firewall-gateway.com", "address": "195.154.243.7",
+        "flag_url": "/static/img/flags/fr.png", "flag_title": "France", "asset_type":
+        "hostname", "first": "2016-08-06 15:53:51"}, {"last": "2016-07-26 02:08:46",
+        "indicator_link": "/indicator/hostname/wwgdrvi4p.firewall-gateway.com", "hostname":
+        "wwgdrvi4p.firewall-gateway.com", "address": "188.165.20.14", "flag_url":
+        "/static/img/flags/pl.png", "flag_title": "Poland", "asset_type": "hostname",
+        "first": "2016-07-26 02:08:46"}, {"last": "2016-07-21 01:53:14", "indicator_link":
+        "/indicator/hostname/moebbk6.firewall-gateway.com", "hostname": "moebbk6.firewall-gateway.com",
+        "address": "149.202.30.5", "flag_url": "/static/img/flags/fr.png", "flag_title":
+        "France", "asset_type": "hostname", "first": "2016-07-21 01:53:14"}, {"last":
+        "2016-07-10 03:19:20", "indicator_link": "/indicator/hostname/uwwlp41.firewall-gateway.com",
+        "hostname": "uwwlp41.firewall-gateway.com", "address": "94.23.95.218", "flag_url":
+        "/static/img/flags/pl.png", "flag_title": "Poland", "asset_type": "hostname",
+        "first": "2016-07-10 03:19:20"}, {"last": "2016-04-29 18:53:16", "indicator_link":
+        "/indicator/hostname/kasperskysecurity.firewall-gateway.com", "hostname":
+        "kasperskysecurity.firewall-gateway.com", "address": "58.158.177.102", "flag_url":
+        "/static/img/flags/jp.png", "flag_title": "Japan", "asset_type": "hostname",
+        "first": "2016-04-29 18:53:16"}, {"last": "2016-04-21 13:55:17", "indicator_link":
+        "/indicator/hostname/breu-boehm.firewall-gateway.com", "hostname": "breu-boehm.firewall-gateway.com",
+        "address": "91.4.111.170", "flag_url": "/static/img/flags/de.png", "flag_title":
+        "Germany", "asset_type": "hostname", "first": "2016-04-21 13:55:17"}, {"last":
+        "2016-04-21 13:19:43", "indicator_link": "/indicator/hostname/bingbot.firewall-gateway.com",
+        "hostname": "bingbot.firewall-gateway.com", "address": "103.230.122.131",
+        "flag_url": "/static/img/flags/hk.png", "flag_title": "Hong Kong", "asset_type":
+        "hostname", "first": "2016-04-21 13:15:27"}, {"last": "2016-04-21 13:15:24",
+        "indicator_link": "/indicator/hostname/firefox.firewall-gateway.com", "hostname":
+        "firefox.firewall-gateway.com", "address": "103.230.122.131", "flag_url":
+        "/static/img/flags/hk.png", "flag_title": "Hong Kong", "asset_type": "hostname",
+        "first": "2016-04-21 13:15:22"}, {"last": "2016-04-12 09:40:53", "indicator_link":
+        "/indicator/hostname/richmastersserver.firewall-gateway.com", "hostname":
+        "richmastersserver.firewall-gateway.com", "address": "24.134.109.31", "flag_url":
+        "/static/img/flags/de.png", "flag_title": "Germany", "asset_type": "hostname",
+        "first": "2016-04-12 09:40:53"}, {"last": "2016-03-19 20:07:24", "indicator_link":
+        "/indicator/hostname/drivgoogle.firewall-gateway.com", "hostname": "drivgoogle.firewall-gateway.com",
+        "address": "5.54.19.17", "flag_url": "/static/img/flags/gr.png", "flag_title":
+        "Greece", "asset_type": "hostname", "first": "2015-11-12 10:16:29"}, {"last":
+        "2016-03-18 10:57:36", "indicator_link": "/indicator/hostname/xusader.firewall-gateway.com",
+        "hostname": "xusader.firewall-gateway.com", "address": "78.54.195.166", "flag_url":
+        "/static/img/flags/de.png", "flag_title": "Germany", "asset_type": "hostname",
+        "first": "2016-03-18 10:57:36"}, {"last": "2016-03-11 18:47:54", "indicator_link":
+        "/indicator/hostname/updata.firewall-gateway.com", "hostname": "updata.firewall-gateway.com",
+        "address": "87.117.229.109", "flag_url": "/static/img/flags/gb.png", "flag_title":
+        "United Kingdom", "asset_type": "hostname", "first": "2016-03-11 18:47:54"},
+        {"last": "2016-01-27 10:41:08", "indicator_link": "/indicator/hostname/guestshouse.firewall-gateway.com",
+        "hostname": "guestshouse.firewall-gateway.com", "address": "185.34.136.206",
+        "flag_url": "/static/img/flags/nl.png", "flag_title": "Netherlands", "asset_type":
+        "hostname", "first": "2016-01-27 10:41:08"}, {"last": "2016-01-26 13:39:22",
+        "indicator_link": "/indicator/hostname/mail.firewall-gateway.com", "hostname":
+        "mail.firewall-gateway.com", "address": "46.127.56.109", "flag_url": "/static/img/flags/ch.png",
+        "flag_title": "Switzerland", "asset_type": "hostname", "first": "2016-01-26
+        13:39:22"}, {"last": "2016-01-20 09:36:40", "indicator_link": "/indicator/hostname/naujokat.firewall-gateway.com",
+        "hostname": "naujokat.firewall-gateway.com", "address": "93.221.118.239",
+        "flag_url": "/static/img/flags/de.png", "flag_title": "Germany", "asset_type":
+        "hostname", "first": "2016-01-20 09:36:39"}, {"last": "2016-01-20 09:35:43",
+        "indicator_link": "/indicator/hostname/krarc-brb.firewall-gateway.com", "hostname":
+        "krarc-brb.firewall-gateway.com", "address": "212.37.175.43", "flag_url":
+        "/static/img/flags/de.png", "flag_title": "Germany", "asset_type": "hostname",
+        "first": "2016-01-20 09:35:43"}, {"last": "2016-01-14 02:01:40", "indicator_link":
+        "/indicator/hostname/news.firewall-gateway.com", "hostname": "news.firewall-gateway.com",
+        "address": "95.154.195.171", "flag_url": "/static/img/flags/gb.png", "flag_title":
+        "United Kingdom", "asset_type": "hostname", "first": "2016-01-14 02:01:40"},
+        {"last": "2016-01-14 02:01:38", "indicator_link": "/indicator/hostname/intersecurity.firewall-gateway.com",
+        "hostname": "intersecurity.firewall-gateway.com", "address": "78.129.252.159",
+        "flag_url": "/static/img/flags/gb.png", "flag_title": "United Kingdom", "asset_type":
+        "hostname", "first": "2016-01-14 02:01:38"}, {"last": "2015-12-20 03:21:54",
+        "indicator_link": "/indicator/hostname/allpackages.firewall-gateway.com",
+        "hostname": "allpackages.firewall-gateway.com", "address": "37.59.97.205",
+        "flag_url": "/static/img/flags/fr.png", "flag_title": "France", "asset_type":
+        "hostname", "first": "2015-06-09 02:13:45"}, {"last": "2015-12-09 05:13:27",
+        "indicator_link": "/indicator/hostname/downloadtzz.firewall-gateway.com",
+        "hostname": "downloadtzz.firewall-gateway.com", "address": "109.230.231.224",
+        "flag_url": "/static/img/flags/de.png", "flag_title": "Germany", "asset_type":
+        "hostname", "first": "2015-12-09 05:13:22"}, {"last": "2015-11-26 19:42:44",
+        "indicator_link": "/indicator/hostname/accountsgoogle.firewall-gateway.com",
+        "hostname": "accountsgoogle.firewall-gateway.com", "address": "95.154.195.171",
+        "flag_url": "/static/img/flags/gb.png", "flag_title": "United Kingdom", "asset_type":
+        "hostname", "first": "2015-11-26 19:42:44"}, {"last": "2015-11-05 21:15:54",
+        "indicator_link": "/indicator/hostname/account-help.firewall-gateway.com",
+        "hostname": "account-help.firewall-gateway.com", "address": "109.169.86.6",
+        "flag_url": "/static/img/flags/gb.png", "flag_title": "United Kingdom", "asset_type":
+        "hostname", "first": "2015-11-05 21:15:54"}, {"last": "2015-10-07 23:52:27",
+        "indicator_link": "/indicator/hostname/binocularhell.firewall-gateway.com",
+        "hostname": "binocularhell.firewall-gateway.com", "address": "192.34.56.121",
+        "flag_url": "/static/img/flags/us.png", "flag_title": "United States", "asset_type":
+        "hostname", "first": "2015-10-07 23:52:27"}, {"last": "2015-09-15 00:25:33",
+        "indicator_link": "/indicator/hostname/accounts-google.firewall-gateway.com",
+        "hostname": "accounts-google.firewall-gateway.com", "address": "1.1.1.1",
+        "flag_url": "/static/img/flags/au.png", "flag_title": "Australia", "asset_type":
+        "hostname", "first": "2015-09-12 03:13:33"}, {"last": "2015-06-16 03:27:29",
+        "indicator_link": "/indicator/hostname/indecam.firewall-gateway.com", "hostname":
+        "indecam.firewall-gateway.com", "address": "85.197.1.110", "flag_url": "/static/img/flags/de.png",
+        "flag_title": "Germany", "asset_type": "hostname", "first": "2015-06-16 03:27:28"},
+        {"last": "2015-06-14 04:37:23", "indicator_link": "/indicator/hostname/masters.firewall-gateway.com",
+        "hostname": "masters.firewall-gateway.com", "address": "91.44.71.141", "flag_url":
+        "/static/img/flags/de.png", "flag_title": "Germany", "asset_type": "hostname",
+        "first": "2015-06-14 04:37:23"}, {"last": "2013-08-29 05:30:16", "indicator_link":
+        "/indicator/hostname/www.firewall-gateway.com", "hostname": "www.firewall-gateway.com",
+        "address": "78.47.37.42", "flag_url": "/static/img/flags/de.png", "flag_title":
+        "Germany", "asset_type": "hostname", "first": "2013-08-29 05:30:16"}], "count":
+        35}'
     http_version: 
-  recorded_at: Tue, 13 Feb 2018 22:43:10 GMT
+  recorded_at: Thu, 15 Feb 2018 10:55:36 GMT
 - request:
     method: get
-    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/69.165.98.21/nids_list
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/91.11.245.194/nids_list
     body:
       encoding: US-ASCII
       string: ''
@@ -58,13 +184,13 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 403
-      message: FORBIDDEN
+      code: 200
+      message: OK
     headers:
       Content-Type:
       - application/json
       Date:
-      - Tue, 13 Feb 2018 22:43:20 GMT
+      - Thu, 15 Feb 2018 10:55:36 GMT
       Server:
       - nginx
       Vary:
@@ -72,14 +198,1379 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Otx-Active:
-      - '0'
+      - '1'
       Content-Length:
-      - '57'
+      - '92'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"detail": "Authentication required"}'
+      string: '{"count": 1, "results": ["2003068"], "next": null, "limit": 10, "page":
+        1, "previous": null}'
     http_version: 
-  recorded_at: Tue, 13 Feb 2018 22:43:20 GMT
+  recorded_at: Thu, 15 Feb 2018 10:55:36 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/87.79.86.116/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:37 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:37 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/91.215.154.182/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:38 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:38 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/195.154.243.7/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:39 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '113'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 6, "results": ["2014487", "2014479", "2014499", "2014507",
+        "2014501", "2014503"], "next": null, "limit": 10, "page": 1, "previous": null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:39 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/195.154.243.7/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:40 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '113'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 6, "results": ["2014487", "2014479", "2014499", "2014507",
+        "2014501", "2014503"], "next": null, "limit": 10, "page": 1, "previous": null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:40 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/46.17.47.102/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:41 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '111'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 3, "results": ["2008578", "2011716", "2403351"], "next":
+        null, "limit": 10, "page": 1, "previous": null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:41 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/137.74.150.65/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:41 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:41 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/195.154.243.7/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:42 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '113'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 6, "results": ["2014487", "2014479", "2014499", "2014507",
+        "2014501", "2014503"], "next": null, "limit": 10, "page": 1, "previous": null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:42 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/195.154.243.7/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:43 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '113'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 6, "results": ["2014487", "2014479", "2014499", "2014507",
+        "2014501", "2014503"], "next": null, "limit": 10, "page": 1, "previous": null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:43 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/188.165.20.14/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:44 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:44 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/149.202.30.5/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:44 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:45 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/94.23.95.218/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:45 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:45 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/58.158.177.102/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:46 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '202'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 14, "results": ["2022323", "2814488", "2823044", "2021716",
+        "2820680", "2815568", "2807908", "2003068", "2016922", "2016968"], "next":
+        "https://otx.alienvault.com/api/v1/indicators/IPv4/58.158.177.102/nids_list?page=2",
+        "limit": 10, "page": 1, "previous": null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:46 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/91.4.111.170/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:47 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:47 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/103.230.122.131/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:48 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:48 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/103.230.122.131/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:49 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:49 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/24.134.109.31/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:49 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:50 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/5.54.19.17/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:50 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:50 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/78.54.195.166/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:51 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:51 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/87.117.229.109/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:52 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '92'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 1, "results": ["2003068"], "next": null, "limit": 10, "page":
+        1, "previous": null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:52 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/185.34.136.206/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:53 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:53 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/46.127.56.109/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:54 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:54 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/93.221.118.239/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:54 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:55 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/212.37.175.43/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:55 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '92'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 1, "results": ["2003068"], "next": null, "limit": 10, "page":
+        1, "previous": null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:55 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/95.154.195.171/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:56 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '99'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 2, "results": ["4000326", "4000325"], "next": null, "limit":
+        10, "page": 1, "previous": null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:56 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/78.129.252.159/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:57 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:57 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/37.59.97.205/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:58 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:58 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/109.230.231.224/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:59 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:55:59 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/95.154.195.171/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:55:59 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '99'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 2, "results": ["4000326", "4000325"], "next": null, "limit":
+        10, "page": 1, "previous": null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:56:00 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/109.169.86.6/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:56:01 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:56:01 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/192.34.56.121/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:56:02 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '103'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 2, "results": ["2003068", "2804363"], "next": null, "limit":
+        10, "page": 1, "previous": null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:56:02 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/1.1.1.1/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:56:02 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '192'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 115, "results": ["2009285", "2013479", "2801262", "2011540",
+        "2002810", "2002811", "2009211", "2009210", "2101441", "2101443"], "next":
+        "https://otx.alienvault.com/api/v1/indicators/IPv4/1.1.1.1/nids_list?page=2",
+        "limit": 10, "page": 1, "previous": null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:56:03 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/85.197.1.110/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:56:03 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '92'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 1, "results": ["2003068"], "next": null, "limit": 10, "page":
+        1, "previous": null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:56:03 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/91.44.71.141/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:56:04 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 0, "results": [], "next": null, "limit": 10, "page": 1, "previous":
+        null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:56:04 GMT
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/78.47.37.42/nids_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Feb 2018 10:56:05 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '1'
+      Content-Length:
+      - '92'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 1, "results": ["2003068"], "next": null, "limit": 10, "page":
+        1, "previous": null}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:56:05 GMT
 recorded_with: VCR 3.0.3
