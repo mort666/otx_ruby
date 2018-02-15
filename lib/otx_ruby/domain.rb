@@ -100,7 +100,7 @@ module OTX
 
       total = 0
       pda.each do |pdr|
-        nids_list = ip_object.nids_list(pdr.address)
+        nids_list = ip_object.get_nids_list(pdr.address)
         total += nids_list.count
       end
 
