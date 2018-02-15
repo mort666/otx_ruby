@@ -86,7 +86,7 @@ class DomainTest < Minitest::Test
 
       passive_dns = domain.get_passive_dns('firewall-gateway.com')
 
-      d = domain.nids_list('firewall-gateway.com', passive_dns)
+      d = domain.get_nids_list('firewall-gateway.com', passive_dns)
 
       assert_equal 167, d
     end

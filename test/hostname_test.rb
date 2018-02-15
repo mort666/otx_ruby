@@ -90,7 +90,7 @@ class HostnameTest < Minitest::Test
 
       passive_dns = hostname.get_passive_dns('www.bb.com')
 
-      h = hostname.nids_list('www.bb.com', passive_dns)
+      h = hostname.count_nids_list('www.bb.com', passive_dns)
 
       assert_equal 37, h
     end
