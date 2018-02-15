@@ -99,7 +99,7 @@ module OTX
     # @param pda [Array] Passive DNS objects to check for linked NIDS rules
     # @return [Integer] Total number of NIDS rules
     #
-    def nids_list(hostname, pda)
+    def count_nids_list(hostname, pda)
       grant_access = self.instance_variable_get('@key')
       ip_object = OTX::IP.new(grant_access)
 

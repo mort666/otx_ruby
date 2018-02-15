@@ -109,7 +109,7 @@ module OTX
     # @param type [String] Format of IP Address e.g 'IPv4', 'IPv6'
     # @return [Object] Object created from NIDS list json data
     #
-    def nids_list(ip, type = :ipv4)
+    def get_nids_list(ip, type = :ipv4)
       uri = "/api/v1/indicators/#{type == :ipv6 ? 'IPv6' : 'IPv4'}/#{ip}/nids_list"
 
       json_data = get(uri)
