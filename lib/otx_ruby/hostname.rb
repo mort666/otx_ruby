@@ -93,34 +93,19 @@ module OTX
     end
 
     #
-    # Builds a PassiveDNS object using returned JSON from the OTX api
-    #
-    # @param [String] Hostname to check for passive dns results
-    # @return [Object] Passive dns object built from OTX json results
-    #
-    def passive_dns(hostname)
-      uri = "/api/v1/indicators/hostname/#{hostname}/passive_dns"
-      json_data = get(uri)
-
-      passive_dns = OTX::Indicator::IP::PassiveDNS.new(json_data)
-
-      return passive_dns
-    end
-
-    #
     # Tallies total NIDS rules linked to a hostname
     #
     # @param hostname [String] Hostname to check for NIDS rules
-    # @param ips [Array] IPs to check for linked NIDS rules
+    # @param pda [Array] Passive DNS objects to check for linked NIDS rules
     # @return [Integer] Total number of NIDS rules
     #
-    def nids_list(hostname, ips)
+    def nids_list(hostname, pda)
       grant_access = self.instance_variable_get('@key')
       ip_object = OTX::IP.new(grant_access)
 
       total = 0
-      ips.each do |ip|
-        nids_list = ip_object.nids_list(ip)
+      pda.each do |pdr|
+        nids_list = ip_object.nids_list(pdr.address)
         total += nids_list.count
       end
 

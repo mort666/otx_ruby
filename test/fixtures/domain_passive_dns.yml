@@ -21,7 +21,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 15 Feb 2018 12:06:45 GMT
+      - Thu, 15 Feb 2018 12:56:55 GMT
       Server:
       - nginx
       Vary:
@@ -42,5 +42,5 @@ http_interactions:
         States", "asset_type": "domain", "first": "2013-08-13 06:19:15"}], "count":
         1}'
     http_version: 
-  recorded_at: Thu, 15 Feb 2018 12:06:46 GMT
+  recorded_at: Thu, 15 Feb 2018 12:56:55 GMT
 recorded_with: VCR 3.0.3

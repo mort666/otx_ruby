@@ -84,10 +84,9 @@ class DomainTest < Minitest::Test
     VCR.use_cassette('domain_nids_list') do
       domain = OTX::Domain.new('test_api')
 
-      passive_dns = domain.passive_dns('firewall-gateway.com')
-      ips = passive_dns.get_ips
+      passive_dns = domain.get_passive_dns('firewall-gateway.com')
 
-      d = domain.nids_list('firewall-gateway.com', ips)
+      d = domain.nids_list('firewall-gateway.com', passive_dns)
 
       assert_equal 167, d
     end
