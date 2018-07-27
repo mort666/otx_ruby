@@ -1,4 +1,4 @@
 module OTX
   # Library Version Number
-  VERSION = "0.9.0"
+  VERSION = "0.9.1"
 end
