@@ -3,7 +3,7 @@ module OTX
     class Activity < OTX::Type::Base
       attr_accessor :domain, :name, :visible, :url, :data,
       :source, :vt, :file, :data_key, :md5, :status, :first_date, :data_key,
-      :last_date
+      :last_date, :type
 
       def initialize(attributes={})
         attributes.each do |key, value|
