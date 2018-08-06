@@ -1,9 +1,0 @@
-machine:
-  ruby:
-    version: 2.3.5
-database:
-  override:
-    - echo 'no database'
-dependencies:
-  pre:
-    - gem install bundler
