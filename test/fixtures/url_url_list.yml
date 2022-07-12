@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://otx.alienvault.com/api/v1/indicators/url/http:/www.fotoidea.com/sport/4x4_san_ponso/slides/IMG_0068.html/url_list?limit=20&page=1
+    uri: https://otx.alienvault.com/api/v1/indicators/url/http://www.fotoidea.com/sport/4x4_san_ponso/slides/IMG_0068.html/url_list?limit=20&page=1
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.13.1
+      - Faraday v2.3.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -20,46 +20,62 @@ http_interactions:
     headers:
       Content-Type:
       - application/json
-      Date:
-      - Thu, 16 Nov 2017 12:52:41 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
       Content-Length:
-      - '914'
+      - '929'
       Connection:
       - keep-alive
+      Date:
+      - Tue, 12 Jul 2022 13:57:47 GMT
+      Server:
+      - gunicorn
+      Cache-Control:
+      - max-age=0
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Remote-User-Name:
+      - Anonymous
+      X-Otx-Active:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f138cee49761f5f7e3b88ec7b66614ee.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - LHR50-P4
+      X-Amz-Cf-Id:
+      - Ok5TMwjnlZdM3NBuvY8msAAVecfjrjRs9woeLpRi-vbIrrOO2yP_Bg==
     body:
       encoding: ASCII-8BIT
-      string: '{"flag_url": "/static/img/flags/it.png", "city_data": true, "city":
-        "Arezzo", "url_list": [{"url": "http://www.fotoidea.com/sport/4x4_san_ponso/slides/IMG_0068.html",
-        "httpcode": null, "secs": 1403816077.0, "params": {}, "result": {"urlworker":
-        {"has_file_analysis": false, "url": "http://www.fotoidea.com/sport/4x4_san_ponso/slides/IMG_0068.html",
-        "ip": null, "filemagic": "HTML document text", "http_response": {"CONTENT-LENGTH":
-        "14620", "ACCEPT-RANGES": "bytes", "VARY": "Accept-Encoding", "SERVER": "Apache",
-        "LAST-MODIFIED": "Sat, 14 Jun 2014 12:37:30 GMT", "CONNECTION": "close", "ETAG":
-        "\"92a46a-391c-4fbcb0eb2109d\"", "DATE": "Thu, 26 Jun 2014 18:54:30 GMT",
-        "CONTENT-TYPE": "text/html"}, "md5": "04072e86378dba3d8bbf772126164f85"}},
-        "date": "2014-06-26T20:54:37.829000", "deep_analysis": true}, {"url": "http://www.fotoidea.com/sport/4x4_san_ponso/slides/IMG_0068.html",
-        "httpcode": 200, "secs": 1403801671.0, "gsb": [["goog-malware-shavar", "www.fotoidea.com/"]],
-        "params": {}, "result": {"urlworker": {"sha256": "0bab81c82264a65205bf1a718c4d2511d698b365df44463294eec7859e4ba812",
-        "url": "http://www.fotoidea.com/sport/4x4_san_ponso/slides/IMG_0068.html",
+      string: '{"url_list": [{"url": "http://www.fotoidea.com/sport/4x4_san_ponso/slides/IMG_0068.html",
+        "result": {"urlworker": {"url": "http://www.fotoidea.com/sport/4x4_san_ponso/slides/IMG_0068.html",
+        "ip": null, "md5": "04072e86378dba3d8bbf772126164f85", "filemagic": "HTML
+        document text", "http_response": {"CONTENT-LENGTH": "14620", "ACCEPT-RANGES":
+        "bytes", "VARY": "Accept-Encoding", "SERVER": "Apache", "LAST-MODIFIED": "Sat,
+        14 Jun 2014 12:37:30 GMT", "CONNECTION": "close", "ETAG": "\"92a46a-391c-4fbcb0eb2109d\"",
+        "DATE": "Thu, 26 Jun 2014 18:54:30 GMT", "CONTENT-TYPE": "text/html"}, "has_file_analysis":
+        false}}, "params": {}, "date": "2014-06-26T20:54:37.829000", "checked": 1,
+        "deep_analysis": true, "secs": 1403816077.0, "httpcode": null}, {"url": "http://www.fotoidea.com/sport/4x4_san_ponso/slides/IMG_0068.html",
+        "result": {"urlworker": {"url": "http://www.fotoidea.com/sport/4x4_san_ponso/slides/IMG_0068.html",
         "ip": "213.205.40.169", "filetype": "text/html", "filemagic": "HTML document,
-        UTF-8 Unicode text, with very long lines", "has_file_analysis": false, "http_response":
-        {"CONTENT-LENGTH": "3937", "CONTENT-ENCODING": "gzip", "ACCEPT-RANGES": "bytes",
-        "VARY": "Accept-Encoding", "KEEP-ALIVE": "timeout=15, max=80", "SERVER": "Apache",
-        "LAST-MODIFIED": "Sat, 14 Jun 2014 12:37:30 GMT", "CONNECTION": "Keep-Alive",
-        "ETAG": "\"92a46a-391c-4fbcb0eb2109d\"", "DATE": "Thu, 26 Jun 2014 14:54:33
-        GMT", "CONTENT-TYPE": "text/html"}, "http_code": 200, "md5": "04072e86378dba3d8bbf772126164f85"},
+        UTF-8 Unicode text, with very long lines", "http_response": {"CONTENT-LENGTH":
+        "3937", "CONTENT-ENCODING": "gzip", "ACCEPT-RANGES": "bytes", "VARY": "Accept-Encoding",
+        "KEEP-ALIVE": "timeout=15, max=80", "SERVER": "Apache", "LAST-MODIFIED": "Sat,
+        14 Jun 2014 12:37:30 GMT", "CONNECTION": "Keep-Alive", "ETAG": "\"92a46a-391c-4fbcb0eb2109d\"",
+        "DATE": "Thu, 26 Jun 2014 14:54:33 GMT", "CONTENT-TYPE": "text/html"}, "sha256":
+        "0bab81c82264a65205bf1a718c4d2511d698b365df44463294eec7859e4ba812", "http_code":
+        200, "md5": "04072e86378dba3d8bbf772126164f85", "has_file_analysis": false},
         "safebrowsing": {"matches": [["goog-malware-shavar", "www.fotoidea.com/"]],
-        "response_code": 0}}, "date": "2014-06-26T16:54:31", "deep_analysis": true}],
-        "charset": 0, "area_code": 0, "continent_code": "EU", "country_code3": "ITA",
-        "latitude": 43.41669845581055, "postal_code": "52100", "longitude": 11.883299827575684,
-        "country_code": "IT", "country_name": "Italy", "net_loc": "www.fotoidea.com",
-        "region": "16", "dma_code": 0, "flag_title": "Italy"}'
-    http_version: 
-  recorded_at: Thu, 16 Nov 2017 12:52:41 GMT
-recorded_with: VCR 3.0.3
+        "response_code": 0}}, "params": {}, "date": "2014-06-26T16:54:31", "checked":
+        1, "deep_analysis": true, "secs": 1403801671.0, "httpcode": 200, "gsb": [["goog-malware-shavar",
+        "www.fotoidea.com/"]]}], "net_loc": "www.fotoidea.com", "city_data": true,
+        "city": "Arezzo", "region": "52", "continent_code": "EU", "country_code3":
+        "ITA", "country_code2": "IT", "subdivision": "AR", "latitude": 43.4631, "postal_code":
+        "52100", "longitude": 11.8783, "accuracy_radius": 500, "country_code": "IT",
+        "country_name": "Italy", "dma_code": 0, "charset": 0, "area_code": 0, "flag_title":
+        "Italy", "flag_url": "/assets/images/flags/it.png"}'
+  recorded_at: Tue, 12 Jul 2022 13:58:18 GMT
+recorded_with: VCR 6.1.0
