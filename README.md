@@ -7,6 +7,7 @@ This gem provides a wrapper for Ruby applications to pull pulses from OTX and be
 ## Build Status
 
 [![security](https://hakiri.io/github/mort666/otx_ruby/master.svg)](https://hakiri.io/github/mort666/otx_ruby/master) [![CircleCI](https://circleci.com/gh/mort666/otx_ruby/tree/master.svg?style=svg)](https://circleci.com/gh/mort666/otx_ruby/tree/master)
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -65,4 +66,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/mort66
 
 ## Copyright
 
-Copyright (c) 2015-2016 Stephen Kapp. See LICENSE for details.
+Copyright (c) 2015-2022 Stephen Kapp and Reaper Technologies Limited. See LICENSE for details.
