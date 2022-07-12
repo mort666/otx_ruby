@@ -45,9 +45,6 @@ jobs:
             RAILS_ENV: test
             RACK_ENV: test
       - run:
-          name: Run Brakeman Security Scanner
-          command: brakeman --exit-on-warn -o $CIRCLE_ARTIFACTS/brakeman.html
-      - run:
           name: Run Bundle Audit
           command: |
             sudo gem install bundler-audit
